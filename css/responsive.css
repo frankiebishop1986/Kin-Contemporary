@@ -1,0 +1,164 @@
+/* TABLET */
+@media screen and (max-width: 1024px) {
+    nav {
+        height: auto;
+        padding: 28px 30px;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero {
+        margin: 40px auto 90px;
+        padding: 0 30px;
+    }
+
+    .hero-image {
+        height: 500px;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .artist-grid,
+    .works-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .exhibition {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 22px 20px;
+        gap: 22px;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .hero {
+        margin: 30px auto 70px;
+        padding: 0 18px;
+    }
+
+    .hero-image {
+        height: 520px;
+    }
+
+    .hero-text {
+        left: 24px;
+        right: 24px;
+        bottom: 35px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+        line-height: 1;
+    }
+
+    .hero-text h3 {
+        font-size: 14px;
+    }
+
+    .hero-button {
+        padding: 14px 20px;
+        font-size: 10px;
+    }
+
+    .featured-artists,
+    .available-works {
+        padding: 0 18px;
+        margin-bottom: 80px;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .artist-grid,
+    .works-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .artist-card img,
+    .work-card img {
+        height: 360px;
+    }
+
+    .work-card {
+        padding-right: 0;
+    }
+
+    .exhibition {
+        padding: 60px 18px;
+        margin-bottom: 80px;
+    }
+
+    .exhibition-image img {
+        height: 320px;
+    }
+
+    .exhibition-text h2 {
+        font-size: 34px;
+    }
+
+    .philosophy {
+        padding: 0 18px;
+        margin-bottom: 80px;
+    }
+
+    .philosophy h2 {
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 50px 22px 30px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-bottom div {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
