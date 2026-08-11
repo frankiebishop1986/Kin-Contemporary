@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Explore limited edition prints available through KIN Contemporary." name="description"/>
+<title>Limited Editions | KIN Contemporary</title>
+<link href="images/favicon2.png" rel="icon" type="image/png"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<!-- Main stylesheet -->
+<link href="css/style.css?v=43" rel="stylesheet"/>
+<!-- Font Awesome -->
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/b94eebf806.js">
+</script>
+</head>
+<body>
+<!-- =====================================================
+         HEADER
+    ====================================================== -->
+<header class="site-header">
+<nav class="main-navigation">
+<div class="brand">
+<a aria-label="KIN Contemporary home" href="index.html">
+<img alt="KIN Contemporary logo" class="logo" src="images/kinlogo.png"/>
+</a>
+</div>
+<ul class="navigation-links">
+<li>
+<a href="artists.html">
+                        Artists
+                    </a>
+</li>
+<li>
+<a href="exhibitions.html">
+                        Exhibitions
+                    </a>
+</li>
+<li>
+<a class="active" href="available-works.html">
+                        Available Works
+                    </a>
+</li>
+<li>
+<a href="about.html">
+                        About
+                    </a>
+</li>
+<li>
+<a href="contact.html">
+                        Contact
+                    </a>
+</li>
+<li>
+<a aria-label="Search" class="icon-link" href="#">
+<i class="fa-solid fa-magnifying-glass"></i>
+</a>
+</li>
+<li>
+<a aria-label="Shopping bag" class="icon-link" href="#">
+<i class="fa-solid fa-bag-shopping"></i>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<!-- =====================================================
+         ORIGINAL ARTWORKS PAGE
+    ====================================================== -->
+<main class="shop-works-page">
+<!-- =================================================
+             PAGE HEADER
+        ================================================== -->
+<section class="shop-works-header">
+<div class="shop-works-heading">
+<h1>Limited Editions</h1>
+<!-- VIEW OPTIONS -->
+<div class="shop-view-controls">
+<span class="shop-view-label">
+                        View as
+                    </span>
+<!-- 3 COLUMNS -->
+<button aria-label="View artworks in 3 columns" class="shop-view-button" data-columns="3" type="button">
+<span class="view-icon view-icon-3">
+<span></span>
+<span></span>
+<span></span>
+</span>
+</button>
+<!-- 4 COLUMNS -->
+<button aria-label="View artworks in 4 columns" class="shop-view-button active" data-columns="4" type="button">
+<span class="view-icon view-icon-4">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</span>
+</button>
+<!-- 5 COLUMNS -->
+<button aria-label="View artworks in 5 columns" class="shop-view-button" data-columns="5" type="button">
+<span class="view-icon view-icon-5">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</span>
+</button>
+</div>
+</div>
+<!-- FILTER BUTTON -->
+<button aria-controls="artwork-filter-panel" aria-expanded="false" class="artwork-filter-button shop-filter-button" type="button">
+<i class="fa-solid fa-sliders"></i>
+
+                Filter and sort
+
+            </button>
+</section>
+<!-- =================================================
+             FILTER OVERLAY
+        ================================================== -->
+<div aria-hidden="true" class="filter-overlay"></div>
+<!-- =================================================
+             FILTER PANEL
+        ================================================== -->
+<div class="artwork-filter-panel" id="artwork-filter-panel">
+<!-- CLOSE -->
+<button aria-label="Close filters" class="filter-close" type="button">
+<span></span>
+<span></span>
+</button>
+<!-- SORT -->
+<div class="filter-group">
+<h3>Sort</h3>
+<label>
+<input name="sort" type="radio" value="most-relevant"/>
+        Most Relevant
+    </label>
+<label>
+<input name="sort" type="radio" value="price-low-high"/>
+        Price: Low to High
+    </label>
+<label>
+<input name="sort" type="radio" value="price-high-low"/>
+        Price: High to Low
+    </label>
+<label>
+<input name="sort" type="radio" value="date-old-new"/>
+        Date: Old to New
+    </label>
+<label>
+<input name="sort" type="radio" value="date-new-old"/>
+        Date: New to Old
+    </label>
+</div>
+<!-- MEDIUM / TYPE -->
+<div class="filter-group"><h3>Medium / Type</h3><label><input name="medium" type="checkbox" value="print"/> Print</label></div>
+<!-- SIZE -->
+<div class="filter-group">
+<h3>
+                    Size
+                </h3>
+<label>
+<input name="size" type="checkbox" value="small">
+
+                    Small
+
+                </input></label>
+<label>
+<input name="size" type="checkbox" value="medium"/>
+
+                    Medium
+
+                </label>
+<label>
+<input name="size" type="checkbox" value="large"/>
+
+                    Large
+
+                </label>
+</div>
+<!-- AVAILABILITY -->
+<div class="filter-group">
+<h3>
+                    Availability
+                </h3>
+<label>
+<input name="availability" type="checkbox" value="available"/>
+
+                    Available
+
+                </label>
+<label>
+<input name="availability" type="checkbox" value="sold"/>
+
+                    Sold
+
+                </label>
+<label>
+<input name="availability" type="checkbox" value="reserved"/>
+
+                    Reserved
+
+                </label>
+</div>
+<!-- ARTIST -->
+<div class="filter-group"><h3>Artist</h3><label><input name="artist" type="checkbox" value="federico-boni"/> Federico Boni</label><label><input name="artist" type="checkbox" value="jakey-pedro"/> Jakey Pedro</label><label><input name="artist" type="checkbox" value="sean-loch"/> Sean Loch</label></div>
+<!-- FILTER ACTIONS -->
+<div class="filter-actions">
+<button class="filter-clear" type="button">
+                    Clear
+                </button>
+<button class="filter-apply" type="button">
+                    Apply
+                </button>
+</div>
+</div>
+<!-- =================================================
+             ORIGINAL ARTWORK GRID
+        ================================================== -->
+<section aria-label="Limited edition prints" class="shop-artwork-grid columns-4"><a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="print" data-price="1625" data-size="large" data-title="big rodeo (print)" data-year="2026" href="#">
+<div class="artwork-image">
+<img alt="Big Rodeo (Print) by Jakey Pedro" class="active" src="images/jakey-pedro-print-01-1.jpg"/>
+<img alt="Big Rodeo (Print) displayed in a room" src="images/jakey-pedro-print-01-2.jpg"/>
+<img alt="Detail of Big Rodeo (Print)" src="images/jakey-pedro-print-01-3.jpg"/>
+<img alt="Side view of Big Rodeo (Print)" src="images/jakey-pedro-print-01-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            BIG RODEO 
+        </h3>
+<p>
+            Jakey Pedro
+        </p>
+<span>
+            1625 AUD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="print" data-price="336" data-size="large" data-title="criss cross applesauce" data-year="2026" href="#">
+<div class="artwork-image">
+<img alt="Criss Cross, Applesauce by Sean Loch" class="active" src="images/sean-loch-print-02-1.jpg"/>
+<img alt="Criss Cross, Applesauce displayed in a room" src="images/sean-loch-print-02-2.jpg"/>
+<img alt="Detail of Criss Cross, Applesauce" src="images/sean-loch-print-02-3.jpg"/>
+<img alt="Side view of Criss Cross, Applesauce" src="images/sean-loch-print-02-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            CRISS CROSS, APPLESAUCE
+        </h3>
+<p>
+            Sean Loch
+        </p>
+<span>
+            336 AUD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="print" data-price="1525" data-size="large" data-title="flower lover (print)" data-year="2026" href="#">
+<div class="artwork-image">
+<img alt="Flower Lover (Print) by Jakey Pedro" class="active" src="images/jakey-pedro-print-03-1.jpg"/>
+<img alt="Flower Lover (Print) displayed in a room" src="images/jakey-pedro-print-03-2.jpg"/>
+<img alt="Detail of Flower Lover (Print)" src="images/jakey-pedro-print-03-3.jpg"/>
+<img alt="Side view of Flower Lover (Print)" src="images/jakey-pedro-print-03-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            FLOWER LOVER
+        </h3>
+<p>
+            Jakey Pedro
+        </p>
+<span>
+            1525 AUD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="print" data-price="1425" data-size="large" data-title="high fashion cow girl (print)" data-year="2026" href="#">
+<div class="artwork-image">
+<img alt="High Fashion Cow Girl (Print) by Jakey Pedro" class="active" src="images/jakey-pedro-print-02-1.jpg"/>
+<img alt="High Fashion Cow Girl (Print) displayed in a room" src="images/jakey-pedro-print-02-2.jpg"/>
+<img alt="Detail of High Fashion Cow Girl (Print)" src="images/jakey-pedro-print-02-3.jpg"/>
+<img alt="Side view of High Fashion Cow Girl (Print)" src="images/jakey-pedro-print-02-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            HIGH FASHION COW GIRL
+        </h3>
+<p>
+            Jakey Pedro
+        </p>
+<span>
+            1425 AUD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="print" data-price="415" data-size="small" data-title="monolith" data-year="2025" href="#">
+<div class="artwork-image">
+<img alt="Monolith by Federico Boni" class="active" src="images/federico-boni-print-03-1.jpg"/>
+<img alt="Monolith displayed in a room" src="images/federico-boni-print-03-2.jpg"/>
+<img alt="Detail of Monolith" src="images/federico-boni-print-03-3.jpg"/>
+<img alt="Side view of Monolith" src="images/federico-boni-print-03-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            MONOLITH
+        </h3>
+<p>
+            Federico Boni
+        </p>
+<span>
+            415 AUD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="print" data-price="725" data-size="large" data-title="ocean-inside" data-year="2025" href="#">
+<div class="artwork-image">
+<img alt="Ocean Inside by Federico Boni" class="active" src="images/federico-boni-print-01-1.jpg"/>
+<img alt="Ocean Inside displayed in a room" src="images/federico-boni-print-01-2.jpg"/>
+<img alt="Detail of Ocean Inside" src="images/federico-boni-print-01-3.jpg"/>
+<img alt="Side view of Ocean Inside" src="images/federico-boni-print-01-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            OCEAN INSIDE
+        </h3>
+<p>
+            Federico Boni
+        </p>
+<span>
+            725 AUD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="print" data-price="695" data-size="large" data-title="pink george" data-year="2026" href="#">
+<div class="artwork-image">
+<img alt="Pink George by Sean Loch" class="active" src="images/sean-loch-print-01-1.jpg"/>
+<img alt="Pink George displayed in a room" src="images/sean-loch-print-01-2.jpg"/>
+<img alt="Detail of Pink George" src="images/sean-loch-print-01-3.jpg"/>
+<img alt="Side view of Pink George" src="images/sean-loch-print-01-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            PINK GEORGE
+        </h3>
+<p>
+            Sean Loch
+        </p>
+<span>
+            695 AUD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="print" data-price="625" data-size="medium" data-title="waiting-wishing" data-year="2025" href="#">
+<div class="artwork-image">
+<img alt="Waiting Wishing by Federico Boni" class="active" src="images/federico-boni-print-02-1.jpg"/>
+<img alt="Waiting Wishing displayed in a room" src="images/federico-boni-print-02-2.jpg"/>
+<img alt="Detail of Waiting Wishing" src="images/federico-boni-print-02-3.jpg"/>
+<img alt="Side view of Waiting Wishing" src="images/federico-boni-print-02-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            WAITING, WISHING
+        </h3>
+<p>
+            Federico Boni
+        </p>
+<span>
+            625 AUD
+        </span>
+</div>
+</a></section>
+</main>
+<!-- =====================================================
+         FOOTER
+    ====================================================== -->
+<footer class="site-footer">
+<div class="footer-grid">
+<!-- BRAND -->
+<div class="footer-brand">
+<a aria-label="KIN Contemporary home" href="index.html">
+<img alt="KIN Contemporary logo" src="images/kinlogo.png"/>
+</a>
+<p>
+                    A digital frontier for contemporary fine art.
+                </p>
+</div>
+<!-- NAVIGATION -->
+<div class="footer-column">
+<h3>
+                    Navigation
+                </h3>
+<a href="artists.html">
+                    Artists
+                </a>
+<a href="exhibitions.html">
+                    Exhibitions
+                </a>
+<a href="available-works.html">
+                    Curated Collections
+                </a>
+<a href="press.html">
+                    Press
+                </a>
+</div>
+<!-- SUPPORT -->
+<div class="footer-column">
+<h3>
+                    Support
+                </h3>
+<a href="shipping-return.html">
+                    Shipping &amp; Returns
+                </a>
+<a href="certificate-of-authenticity.html">
+                    Certificates of Authenticity
+                </a>
+<a href="payment-options.html">
+                    Payment options
+                </a>
+<a href="contact.html">
+                    Contact
+                </a>
+</div>
+<!-- CONNECT -->
+<div class="footer-column">
+<h3>
+                    Connect
+                </h3>
+<div class="socials">
+<a aria-label="KIN Contemporary on Instagram" href="https://www.instagram.com/kin_contemporary/" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+<a class="artsy-link" href="#">
+                        Artsy
+                    </a>
+</div>
+<h3>
+                    Newsletter
+                </h3>
+<form class="newsletter">
+<label class="visually-hidden" for="limited-editions-newsletter-email">
+                        Email address
+                    </label>
+<input id="limited-editions-newsletter-email" placeholder="Email Address" required="" type="email"/>
+<button type="submit">
+                        Join
+                    </button>
+</form>
+</div>
+</div>
+<!-- FOOTER BOTTOM -->
+<div class="footer-bottom">
+<p>
+                © 2026 KIN Contemporary. All rights reserved.
+            </p>
+<div>
+<a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+<a href="terms-of-service.html">
+                    Terms of Service
+                </a>
+</div>
+</div>
+</footer>
+<!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+<script src="js/script.js?v=3"></script>
+</body>
+</html>
