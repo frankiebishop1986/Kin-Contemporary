@@ -115,15 +115,14 @@
 
                 <li>
 
-                    <a
-                        href="#"
-                        class="icon-link"
-                        aria-label="Search"
-                    >
-
-                        <i class="fa-solid fa-magnifying-glass"></i>
-
-                    </a>
+                   <a
+    href="#"
+    class="icon-link search-toggle"
+    aria-label="Search"
+    aria-expanded="false"
+>
+    <i class="fa-solid fa-magnifying-glass"></i>
+</a>
 
                 </li>
 
@@ -146,7 +145,97 @@
         </nav>
 
     </header>
+<!-- =====================================================
+     KIN SEARCH
+====================================================== -->
 
+<div
+    class="site-search"
+    id="site-search"
+    aria-hidden="true"
+>
+
+    <div class="site-search-inner">
+
+        <div class="site-search-top">
+
+            <div class="site-search-input-wrap">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="search"
+                    id="site-search-input"
+                    placeholder="Search artists, artworks, paintings, sculptures..."
+                    autocomplete="off"
+                    aria-label="Search KIN Contemporary"
+                >
+
+            </div>
+
+            <button
+                type="button"
+                class="site-search-close"
+                aria-label="Close search"
+            >
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+
+        <div class="site-search-suggestions">
+
+            <span>
+                Popular searches
+            </span>
+
+            <button
+                type="button"
+                data-search-term="painting"
+            >
+                Painting
+            </button>
+
+            <button
+                type="button"
+                data-search-term="sculpture"
+            >
+                Sculpture
+            </button>
+
+            <button
+                type="button"
+                data-search-term="prints"
+            >
+                Prints
+            </button>
+
+            <button
+                type="button"
+                data-search-term="limited edition"
+            >
+                Limited Edition
+            </button>
+
+        </div>
+
+
+        <div
+            class="site-search-results"
+            id="site-search-results"
+        ></div>
+
+    </div>
+
+</div>
+
+
+<div
+    class="site-search-backdrop"
+    aria-hidden="true"
+></div>
     <!-- =====================================================
          ARTIST PAGE
     ====================================================== -->
@@ -682,7 +771,7 @@ A defining element of my work is the dialogue between two-dimensional and three-
                 <!-- ARTWORK 1 -->
 
                 <a
-    href="#"
+    href="medusa-ii.html"
     class="artwork-card"
     data-title="medusa 2"
     data-artist="federico-boni"
@@ -740,7 +829,7 @@ A defining element of my work is the dialogue between two-dimensional and three-
                 <!-- ARTWORK 2 -->
 
                <a
-    href="#"
+    href="medusa.html"
     class="artwork-card"
     data-title="medusa"
     data-artist="federico-boni"
@@ -796,7 +885,7 @@ A defining element of my work is the dialogue between two-dimensional and three-
 <!-- ARTWORK 3 -->
 
 <a
-    href="#"
+    href="ocean-inside.html"
     class="artwork-card"
     data-title="ocean inside"
     data-artist="federico-boni"
@@ -854,7 +943,7 @@ A defining element of my work is the dialogue between two-dimensional and three-
 <!-- ARTWORK 4 -->
 
 <a
-    href="#"
+    href="waiting-wishing.html"
     class="artwork-card"
     data-title="waiting wishing"
     data-artist="federico-boni"
@@ -911,7 +1000,7 @@ A defining element of my work is the dialogue between two-dimensional and three-
 <!-- ARTWORK 5 -->
 
 <a
-    href="#"
+    href="penguin.html"
     class="artwork-card"
     data-title="penguin"
     data-artist="federico-boni"
@@ -969,7 +1058,7 @@ A defining element of my work is the dialogue between two-dimensional and three-
 <!-- ARTWORK 6 -->
 
 <a
-    href="#"
+    href="insight.html"
     class="artwork-card"
     data-title="insight"
     data-artist="federico-boni"
@@ -1027,7 +1116,7 @@ A defining element of my work is the dialogue between two-dimensional and three-
 <!-- ARTWORK 7 -->
 
 <a
-    href="#"
+    href="icarus.html"
     class="artwork-card"
     data-title="icarus"
     data-artist="federico-boni"
@@ -1085,7 +1174,7 @@ A defining element of my work is the dialogue between two-dimensional and three-
 <!-- ARTWORK 8 -->
 
 <a
-    href="#"
+    href="monolith.html"
     class="artwork-card"
     data-title="monolith"
     data-artist="federico-boni"
@@ -1143,7 +1232,7 @@ A defining element of my work is the dialogue between two-dimensional and three-
 <!-- ARTWORK 9 -->
 
 <a
-    href="#"
+    href="deus-ex-machina.html"
     class="artwork-card"
     data-title="deus ex machina"
     data-artist="federico-boni"
@@ -1200,13 +1289,13 @@ A defining element of my work is the dialogue between two-dimensional and three-
 <!-- ARTWORK 10 -->
 
 <a
-    href="#"
+    href="roots-of-memory.html"
     class="artwork-card"
     data-title="roots of memory"
     data-artist="federico-boni"
     data-medium="painting"
     data-size="medium"
-    data-price="2550"
+    data-price="1950"
     data-year="2026"
     data-availability="available"
 >
@@ -1247,7 +1336,7 @@ A defining element of my work is the dialogue between two-dimensional and three-
         </p>
 
         <span>
-            2550 AUD
+            1950 AUD
         </span>
 
     </div>
@@ -1258,7 +1347,7 @@ A defining element of my work is the dialogue between two-dimensional and three-
 <!-- ARTWORK 11 -->
 
 <a
-    href="#"
+    href="metamorphosis.html"
     class="artwork-card"
     data-title="metamorphosis"
     data-artist="federico-boni"
@@ -1345,7 +1434,7 @@ A defining element of my work is the dialogue between two-dimensional and three-
                 <!-- LIMITED EDITION PRINT 1 -->
 
 <a
-    href="#"
+    href="ocean-inside-limited.html"
     class="artwork-card"
     data-title="ocean-inside"
     data-artist="federico-boni"
@@ -1404,7 +1493,7 @@ A defining element of my work is the dialogue between two-dimensional and three-
                  <!-- LIMITED EDITION PRINT 2 -->
 
 <a
-    href="#"
+    href="waiting-wishing-limited.html"
     class="artwork-card"
     data-title="waiting-wishing"
     data-artist="federico-boni"
@@ -1462,14 +1551,14 @@ A defining element of my work is the dialogue between two-dimensional and three-
                  <!-- LIMITED EDITION PRINT 3 -->
 
 <a
-    href="#"
+    href="monolith-limited.html"
     class="artwork-card"
     data-title="monolith"
     data-artist="federico-boni"
     data-medium="print"
     data-size="small"
-    data-price="415"
-    data-year="2025"
+    data-price="725"
+    data-year="2026"
     data-availability="available"
 >
 
@@ -1509,7 +1598,7 @@ A defining element of my work is the dialogue between two-dimensional and three-
         </p>
 
         <span>
-            415 AUD
+            725 AUD
         </span>
 
     </div>
@@ -1659,7 +1748,7 @@ A defining element of my work is the dialogue between two-dimensional and three-
         <div class="footer-bottom">
 
             <p>
-                © 2026 KIN Contemporary. All rights reserved.
+                © 2026 Kin Contemporary. All rights reserved.
             </p>
 
             <div>
@@ -1678,7 +1767,7 @@ A defining element of my work is the dialogue between two-dimensional and three-
 
     </footer>
 
-    <script src="js/script.js?v=2"></script>
+    <script src="js/script.js?v=3"></script>
 
 </body>
 

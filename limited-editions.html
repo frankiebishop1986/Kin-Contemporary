@@ -56,8 +56,13 @@
                     </a>
 </li>
 <li>
-<a aria-label="Search" class="icon-link" href="#">
-<i class="fa-solid fa-magnifying-glass"></i>
+<a
+    href="#"
+    class="icon-link search-toggle"
+    aria-label="Search"
+    aria-expanded="false"
+>
+    <i class="fa-solid fa-magnifying-glass"></i>
 </a>
 </li>
 <li>
@@ -68,6 +73,97 @@
 </ul>
 </nav>
 </header>
+<!-- =====================================================
+     KIN SEARCH
+====================================================== -->
+
+<div
+    class="site-search"
+    id="site-search"
+    aria-hidden="true"
+>
+
+    <div class="site-search-inner">
+
+        <div class="site-search-top">
+
+            <div class="site-search-input-wrap">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="search"
+                    id="site-search-input"
+                    placeholder="Search artists, artworks, paintings, sculptures..."
+                    autocomplete="off"
+                    aria-label="Search KIN Contemporary"
+                >
+
+            </div>
+
+            <button
+                type="button"
+                class="site-search-close"
+                aria-label="Close search"
+            >
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+
+        <div class="site-search-suggestions">
+
+            <span>
+                Popular searches
+            </span>
+
+            <button
+                type="button"
+                data-search-term="painting"
+            >
+                Painting
+            </button>
+
+            <button
+                type="button"
+                data-search-term="sculpture"
+            >
+                Sculpture
+            </button>
+
+            <button
+                type="button"
+                data-search-term="prints"
+            >
+                Prints
+            </button>
+
+            <button
+                type="button"
+                data-search-term="limited edition"
+            >
+                Limited Edition
+            </button>
+
+        </div>
+
+
+        <div
+            class="site-search-results"
+            id="site-search-results"
+        ></div>
+
+    </div>
+
+</div>
+
+
+<div
+    class="site-search-backdrop"
+    aria-hidden="true"
+></div>
 <!-- =====================================================
          ORIGINAL ARTWORKS PAGE
     ====================================================== -->
@@ -222,7 +318,7 @@
 <!-- =================================================
              ORIGINAL ARTWORK GRID
         ================================================== -->
-<section aria-label="Limited edition prints" class="shop-artwork-grid columns-4"><a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="print" data-price="1625" data-size="large" data-title="big rodeo (print)" data-year="2026" href="#">
+<section aria-label="Limited edition prints" class="shop-artwork-grid columns-4"><a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="print" data-price="1625" data-size="large" data-title="big rodeo (print)" data-year="2026" href="big-rodeo-limited.html">
 <div class="artwork-image">
 <img alt="Big Rodeo (Print) by Jakey Pedro" class="active" src="images/jakey-pedro-print-01-1.jpg"/>
 <img alt="Big Rodeo (Print) displayed in a room" src="images/jakey-pedro-print-01-2.jpg"/>
@@ -240,7 +336,7 @@
             1625 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="print" data-price="336" data-size="large" data-title="criss cross applesauce" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="print" data-price="336" data-size="large" data-title="criss cross applesauce" data-year="2026" href="criss-cross-applesauce-limited.html">
 <div class="artwork-image">
 <img alt="Criss Cross, Applesauce by Sean Loch" class="active" src="images/sean-loch-print-02-1.jpg"/>
 <img alt="Criss Cross, Applesauce displayed in a room" src="images/sean-loch-print-02-2.jpg"/>
@@ -258,7 +354,7 @@
             336 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="print" data-price="1525" data-size="large" data-title="flower lover (print)" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="print" data-price="1495" data-size="large" data-title="flower lover (print)" data-year="2026" href="flower-lover-limited.html">
 <div class="artwork-image">
 <img alt="Flower Lover (Print) by Jakey Pedro" class="active" src="images/jakey-pedro-print-03-1.jpg"/>
 <img alt="Flower Lover (Print) displayed in a room" src="images/jakey-pedro-print-03-2.jpg"/>
@@ -276,7 +372,7 @@
             1525 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="print" data-price="1425" data-size="large" data-title="high fashion cow girl (print)" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="print" data-price="1425" data-size="large" data-title="high fashion cow girl (print)" data-year="2026" href="high-fashion-cowgirl-limited.html">
 <div class="artwork-image">
 <img alt="High Fashion Cow Girl (Print) by Jakey Pedro" class="active" src="images/jakey-pedro-print-02-1.jpg"/>
 <img alt="High Fashion Cow Girl (Print) displayed in a room" src="images/jakey-pedro-print-02-2.jpg"/>
@@ -285,7 +381,7 @@
 </div>
 <div class="artwork-info">
 <h3>
-            HIGH FASHION COW GIRL
+            HIGH FASHION COWGIRL
         </h3>
 <p>
             Jakey Pedro
@@ -294,7 +390,7 @@
             1425 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="print" data-price="415" data-size="small" data-title="monolith" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="print" data-price="415" data-size="small" data-title="monolith" data-year="2025" href="monolith-limited.html">
 <div class="artwork-image">
 <img alt="Monolith by Federico Boni" class="active" src="images/federico-boni-print-03-1.jpg"/>
 <img alt="Monolith displayed in a room" src="images/federico-boni-print-03-2.jpg"/>
@@ -309,10 +405,10 @@
             Federico Boni
         </p>
 <span>
-            415 AUD
+            725 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="print" data-price="725" data-size="large" data-title="ocean-inside" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="print" data-price="725" data-size="large" data-title="ocean-inside" data-year="2025" href="ocean-inside-limited.html">
 <div class="artwork-image">
 <img alt="Ocean Inside by Federico Boni" class="active" src="images/federico-boni-print-01-1.jpg"/>
 <img alt="Ocean Inside displayed in a room" src="images/federico-boni-print-01-2.jpg"/>
@@ -330,7 +426,7 @@
             725 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="print" data-price="695" data-size="large" data-title="pink george" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="print" data-price="695" data-size="large" data-title="pink george" data-year="2026" href="pink-george-limited.html">
 <div class="artwork-image">
 <img alt="Pink George by Sean Loch" class="active" src="images/sean-loch-print-01-1.jpg"/>
 <img alt="Pink George displayed in a room" src="images/sean-loch-print-01-2.jpg"/>
@@ -348,7 +444,7 @@
             695 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="print" data-price="625" data-size="medium" data-title="waiting-wishing" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="print" data-price="625" data-size="medium" data-title="waiting-wishing" data-year="2025" href="waiting-wishing-limited.html">
 <div class="artwork-image">
 <img alt="Waiting Wishing by Federico Boni" class="active" src="images/federico-boni-print-02-1.jpg"/>
 <img alt="Waiting Wishing displayed in a room" src="images/federico-boni-print-02-2.jpg"/>
@@ -448,7 +544,7 @@
 <!-- FOOTER BOTTOM -->
 <div class="footer-bottom">
 <p>
-                © 2026 KIN Contemporary. All rights reserved.
+                © 2026 Kin Contemporary. All rights reserved.
             </p>
 <div>
 <a href="privacy-policy.html">

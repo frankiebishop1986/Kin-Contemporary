@@ -50,8 +50,8 @@
 
     <script
         src="https://kit.fontawesome.com/b94eebf806.js"
-        crossorigin="anonymous">
-    </script>
+        crossorigin="anonymous"
+    ></script>
 
 </head>
 
@@ -88,49 +88,62 @@
             <ul class="navigation-links">
 
                 <li>
+
                     <a href="artists.html">
                         Artists
                     </a>
+
                 </li>
 
 
                 <li>
+
                     <a href="exhibitions.html">
                         Exhibitions
                     </a>
+
                 </li>
 
 
                 <li>
+
                     <a
                         href="available-works.html"
                         class="active"
                     >
                         Available Works
                     </a>
+
                 </li>
 
 
                 <li>
+
                     <a href="about.html">
                         About
                     </a>
+
                 </li>
 
 
                 <li>
+
                     <a href="contact.html">
                         Contact
                     </a>
+
                 </li>
 
+
+                <!-- SEARCH -->
 
                 <li>
 
                     <a
                         href="#"
-                        class="icon-link"
+                        class="icon-link search-toggle"
                         aria-label="Search"
+                        aria-expanded="false"
                     >
 
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -139,6 +152,8 @@
 
                 </li>
 
+
+                <!-- SHOPPING BAG -->
 
                 <li>
 
@@ -159,6 +174,121 @@
         </nav>
 
     </header>
+
+
+
+    <!-- =====================================================
+         KIN SEARCH
+    ====================================================== -->
+
+    <div
+        class="site-search"
+        id="site-search"
+        aria-hidden="true"
+    >
+
+        <div class="site-search-inner">
+
+
+            <!-- SEARCH BAR -->
+
+            <div class="site-search-top">
+
+                <div class="site-search-input-wrap">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="search"
+                        id="site-search-input"
+                        placeholder="Search artists, artworks, paintings, sculptures..."
+                        autocomplete="off"
+                        aria-label="Search KIN Contemporary"
+                    >
+
+                </div>
+
+
+                <!-- CLOSE SEARCH -->
+
+                <button
+                    type="button"
+                    class="site-search-close"
+                    aria-label="Close search"
+                >
+
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- POPULAR SEARCHES -->
+
+            <div class="site-search-suggestions">
+
+                <span>
+                    Popular searches
+                </span>
+
+
+                <button
+                    type="button"
+                    data-search-term="painting"
+                >
+                    Painting
+                </button>
+
+
+                <button
+                    type="button"
+                    data-search-term="sculpture"
+                >
+                    Sculpture
+                </button>
+
+
+                <button
+                    type="button"
+                    data-search-term="prints"
+                >
+                    Prints
+                </button>
+
+
+                <button
+                    type="button"
+                    data-search-term="limited edition"
+                >
+                    Limited Edition
+                </button>
+
+            </div>
+
+
+
+            <!-- SEARCH RESULTS -->
+
+            <div
+                class="site-search-results"
+                id="site-search-results"
+            ></div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- SEARCH BACKDROP -->
+
+    <div
+        class="site-search-backdrop"
+        aria-hidden="true"
+    ></div>
 
 
 
@@ -411,7 +541,7 @@
         <div class="footer-bottom">
 
             <p>
-                © 2026 KIN Contemporary. All rights reserved.
+                © 2026 Kin Contemporary. All rights reserved.
             </p>
 
 
@@ -430,6 +560,14 @@
         </div>
 
     </footer>
+
+
+
+    <!-- =====================================================
+         MAIN JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/script.js?v=3"></script>
 
 
 </body>

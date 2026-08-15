@@ -55,8 +55,13 @@
                     </a>
 </li>
 <li>
-<a aria-label="Search" class="icon-link" href="#">
-<i class="fa-solid fa-magnifying-glass"></i>
+<a
+    href="#"
+    class="icon-link search-toggle"
+    aria-label="Search"
+    aria-expanded="false"
+>
+    <i class="fa-solid fa-magnifying-glass"></i>
 </a>
 </li>
 <li>
@@ -67,6 +72,97 @@
 </ul>
 </nav>
 </header>
+<!-- =====================================================
+     KIN SEARCH
+====================================================== -->
+
+<div
+    class="site-search"
+    id="site-search"
+    aria-hidden="true"
+>
+
+    <div class="site-search-inner">
+
+        <div class="site-search-top">
+
+            <div class="site-search-input-wrap">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="search"
+                    id="site-search-input"
+                    placeholder="Search artists, artworks, paintings, sculptures..."
+                    autocomplete="off"
+                    aria-label="Search KIN Contemporary"
+                >
+
+            </div>
+
+            <button
+                type="button"
+                class="site-search-close"
+                aria-label="Close search"
+            >
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+
+        <div class="site-search-suggestions">
+
+            <span>
+                Popular searches
+            </span>
+
+            <button
+                type="button"
+                data-search-term="painting"
+            >
+                Painting
+            </button>
+
+            <button
+                type="button"
+                data-search-term="sculpture"
+            >
+                Sculpture
+            </button>
+
+            <button
+                type="button"
+                data-search-term="prints"
+            >
+                Prints
+            </button>
+
+            <button
+                type="button"
+                data-search-term="limited edition"
+            >
+                Limited Edition
+            </button>
+
+        </div>
+
+
+        <div
+            class="site-search-results"
+            id="site-search-results"
+        ></div>
+
+    </div>
+
+</div>
+
+
+<div
+    class="site-search-backdrop"
+    aria-hidden="true"
+></div>
 <!-- =====================================================
          ORIGINAL ARTWORKS PAGE
     ====================================================== -->
@@ -325,7 +421,7 @@
 <!-- =================================================
              ORIGINAL ARTWORK GRID
         ================================================== -->
-<section aria-label="Original artworks" class="shop-artwork-grid columns-4"><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="1350" data-size="small" data-title="algo del pasado" data-year="2026" href="#">
+<section aria-label="Original artworks" class="shop-artwork-grid columns-4"><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="1350" data-size="small" data-title="algo del pasado" data-year="2026" href="algo-del-pasado.html">
 <div class="artwork-image">
 <img alt="Algo del Pasado by Pablo Martìn" class="active" src="images/pablo-martin-artwork-08-1.jpg"/>
 <img alt="Algo del Pasado displayed in a room" src="images/pablo-martin-artwork-08-2.jpg"/>
@@ -343,7 +439,7 @@
             1350 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="all a dream" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="all a dream" data-year="2025" href="all-a-dream.html">
 <div class="artwork-image">
 <img alt="All a Dream by Tim Fry" class="active" src="images/tim-fry-artwork-19-1.jpg"/>
 <img alt="All a Dream displayed in a room" src="images/tim-fry-artwork-19-2.jpg"/>
@@ -361,7 +457,7 @@
             475 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="675" data-size="small" data-title="as my father used to say" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="675" data-size="small" data-title="as my father used to say" data-year="2026" href="as-my-father-used-to-say.html">
 <div class="artwork-image">
 <img alt="As My Father Used to Say by Audrey Rhoda" class="active" src="images/audrey-rhoda-artwork-12-1.jpg"/>
 <img alt="As My Father Used to Say displayed in a room" src="images/audrey-rhoda-artwork-12-2.jpg"/>
@@ -379,7 +475,7 @@
             675 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="sold" data-medium="painting" data-price="8750" data-size="large" data-title="big rodeo" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="sold" data-medium="painting" data-price="8750" data-size="large" data-title="big rodeo" data-year="2026" href="big-rodeo.html">
 <div class="artwork-image">
 <img alt="Big Rodeo by Jakey Pedro" class="active" src="images/jakey-pedro-artwork-08-1.jpg"/>
 <img alt="Big Rodeo displayed in a room" src="images/jakey-pedro-artwork-08-2.jpg"/>
@@ -397,7 +493,7 @@
             SOLD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="bittersweet symphony" data-year="2024" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="bittersweet symphony" data-year="2024" href="bittersweet-symphony.html">
 <div class="artwork-image">
 <img alt="Bittersweet Symphony by Tim Fry" class="active" src="images/tim-fry-artwork-07-1.jpg"/>
 <img alt="Bittersweet Symphony displayed in a room" src="images/tim-fry-artwork-07-2.jpg"/>
@@ -415,7 +511,7 @@
             575 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="black" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="black" data-year="2025" href="black.html">
 <div class="artwork-image">
 <img alt="Black by Tim Fry" class="active" src="images/tim-fry-artwork-15-1.jpg"/>
 <img alt="Black displayed in a room" src="images/tim-fry-artwork-15-2.jpg"/>
@@ -433,7 +529,7 @@
             475 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="blue" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="blue" data-year="2025" href="blue.html">
 <div class="artwork-image">
 <img alt="Blue by Tim Fry" class="active" src="images/tim-fry-artwork-16-1.jpg"/>
 <img alt="Blue displayed in a room" src="images/tim-fry-artwork-16-2.jpg"/>
@@ -451,7 +547,7 @@
             475 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3400" data-size="large" data-title="butterfly drunk" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3400" data-size="large" data-title="butterfly drunk" data-year="2026" href="butterfly-drunk.html">
 <div class="artwork-image">
 <img alt="Butterfly Drunk by Sean Loch" class="active" src="images/sean-loch-artwork-07-1.jpg"/>
 <img alt="Butterfly Drunk displayed in a room" src="images/sean-loch-artwork-07-2.jpg"/>
@@ -469,7 +565,7 @@
             3400 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3995" data-size="large" data-title="chubby bunny" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3995" data-size="large" data-title="chubby bunny" data-year="2026" href="chubby-bunny.html">
 <div class="artwork-image">
 <img alt="Chubby Bunny by Sean Loch" class="active" src="images/sean-loch-artwork-01-1.jpg"/>
 <img alt="Chubby Bunny displayed in a room" src="images/sean-loch-artwork-01-2.jpg"/>
@@ -487,7 +583,7 @@
                             3995 AUD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="720" data-size="small" data-title="codex" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="720" data-size="small" data-title="codex" data-year="2026" href="codex.html">
 <div class="artwork-image">
 <img alt="Codex by Pablo Martìn" class="active" src="images/pablo-martin-artwork-05-1.jpg"/>
 <img alt="Codex displayed in a room" src="images/pablo-martin-artwork-05-2.jpg"/>
@@ -505,7 +601,7 @@
             720 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="cosmic gypsy" data-year="2024" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="cosmic gypsy" data-year="2024" href="cosmic-gypsy.html">
 <div class="artwork-image">
 <img alt="Cosmic Gypsy by Tim Fry" class="active" src="images/tim-fry-artwork-10-1.jpg"/>
 <img alt="Cosmic Gypsy displayed in a room" src="images/tim-fry-artwork-10-2.jpg"/>
@@ -523,7 +619,7 @@
             575 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3700" data-size="large" data-title="criss cross, applesauce" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3700" data-size="large" data-title="criss cross, applesauce" data-year="2026" href="criss-cross-applesauce.html">
 <div class="artwork-image">
 <img alt="Criss Cross, Applesauce by Sean Loch" class="active" src="images/sean-loch-artwork-12-1.jpg"/>
 <img alt="Criss Cross, Applesauce displayed in a room" src="images/sean-loch-artwork-12-2.jpg"/>
@@ -542,7 +638,7 @@
         </span>
 </div>
 </a>
-<a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="painting" data-price="1800" data-size="medium" data-title="cowboy juice(yellow)" data-year="2026" href="#">
+<a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="painting" data-price="1800" data-size="medium" data-title="cowboy juice(yellow)" data-year="2026" href="cowboy-juice-yellow.html">
 <div class="artwork-image">
 <img alt="Cowboy Juice (Yellow) by Jakey Pedro" class="active" src="images/jakey-pedro-artwork-07-1.jpg"/>
 <img alt="Cowboy Juice (Yellow) displayed in a room" src="images/jakey-pedro-artwork-07-2.jpg"/>
@@ -563,7 +659,7 @@
 
 </a>
 
-<a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="deep forest" data-year="2024" href="#">
+<a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="deep forest" data-year="2024" href="deep-forest.html">
 <div class="artwork-image">
 <img alt="Deep Forest by Tim Fry" class="active" src="images/tim-fry-artwork-09-1.jpg"/>
 <img alt="Deep Forest displayed in a room" src="images/tim-fry-artwork-09-2.jpg"/>
@@ -581,7 +677,7 @@
             575 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="dejavu of the soul" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="dejavu of the soul" data-year="2025" href="dejavu-of-the-soul.html">
 <div class="artwork-image">
 <img alt="Dejavu of the Soul by Tim Fry" class="active" src="images/tim-fry-artwork-11-1.jpg"/>
 <img alt="Dejavu of the Soul displayed in a room" src="images/tim-fry-artwork-11-2.jpg"/>
@@ -599,7 +695,7 @@
             475 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="2250" data-size="medium" data-title="deus ex machina" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="2250" data-size="medium" data-title="deus ex machina" data-year="2026" href="deus-ex-machina.html">
 <div class="artwork-image">
 <img alt="Deus Ex Machina by Federico Boni" class="active" src="images/federico-boni-artwork-09-1.jpg"/>
 <img alt="Deus Ex Machina displayed in a room" src="images/federico-boni-artwork-09-2.jpg"/>
@@ -617,7 +713,7 @@
             2250 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="alessandro-daquila" data-availability="available" data-medium="sculpture" data-price="6550" data-size="medium" data-title="dolce rumore verde" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="alessandro-daquila" data-availability="available" data-medium="sculpture" data-price="6550" data-size="medium" data-title="dolce rumore verde" data-year="2025" href="dolce-rumore-verde.html">
 <div class="artwork-image">
 <img alt="Dolce Rumore Verde by Alessandro D'Aquila" class="active" src="images/alessandro-daquila-artwork-03-1.jpg"/>
 <img alt="Dolce Rumore Verde displayed in a room" src="images/alessandro-daquila-artwork-03-2.jpg"/>
@@ -635,7 +731,7 @@
             6550 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="720" data-size="small" data-title="el dibujo de figura en todo su valor" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="720" data-size="small" data-title="el dibujo de figura en todo su valor" data-year="2026" href="el-dibujo-de-figura-en-todo-su-valor.html">
 <div class="artwork-image">
 <img alt="El Dibujo de Figura en Todo su Valor by Pablo Martìn" class="active" src="images/pablo-martin-artwork-04-1.jpg"/>
 <img alt="El Dibujo de Figura en Todo su Valor displayed in a room" src="images/pablo-martin-artwork-04-2.jpg"/>
@@ -653,12 +749,12 @@
             720 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="alessandro-daquila" data-availability="available" data-medium="sculpture" data-price="4995" data-size="medium" data-title="El Mar" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="alessandro-daquila" data-availability="available" data-medium="sculpture" data-price="4995" data-size="medium" data-title="El Mar" data-year="2026" href="el-mar.html">
 <div class="artwork-image">
 <img alt="El Mar by Alessandro D'Aquila" class="active" src="images/alessandro-daquila-artwork-05-1.jpg"/>
 <img alt="El Mar displayed in a room" src="images/alessandro-daquila-artwork-05-2.jpg"/>
-<img alt="Detail of Hotel California" src="images/tim-fry-artwork-05-3.jpg"/>
-<img alt="Side view of Hotel California" src="images/tim-fry-artwork-05-4.jpg"/>
+<img alt="Detail of Hotel California" src="images/alessandro-daquila-artwork-05-3.jpg"/>
+<img alt="Side view of Hotel California" src="images/alessandro-daquila-artwork-05-4.jpg"/>
 </div>
 <div class="artwork-info">
 <h3>
@@ -671,7 +767,7 @@
             4995 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="1350" data-size="medium" data-title="falso profeta" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="1350" data-size="medium" data-title="falso profeta" data-year="2026" href="falso-profeta.html">
 <div class="artwork-image">
 <img alt="Falso Profeta by Pablo Martìn" class="active" src="images/pablo-martin-artwork-07-1.jpg"/>
 <img alt="Falso Profeta displayed in a room" src="images/pablo-martin-artwork-07-2.jpg"/>
@@ -689,7 +785,7 @@
             1350 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="720" data-size="small" data-title="fifteen" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="720" data-size="small" data-title="fifteen" data-year="2026" href="fifteen.html">
 <div class="artwork-image">
 <img alt="Fifteen by Pablo Martìn" class="active" src="images/pablo-martin-artwork-06-1.jpg"/>
 <img alt="Fifteen displayed in a room" src="images/pablo-martin-artwork-06-2.jpg"/>
@@ -707,7 +803,7 @@
             720 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="5250" data-size="large" data-title="flaneur" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="5250" data-size="large" data-title="flaneur" data-year="2026" href="flaneur.html">
 <div class="artwork-image">
 <img alt="Flaneur by Audrey Rhoda" class="active" src="images/audrey-rhoda-artwork-04-1.jpg"/>
 <img alt="Flaneur displayed in a room" src="images/audrey-rhoda-artwork-04-2.jpg"/>
@@ -725,7 +821,7 @@
             5250 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="sold" data-medium="painting" data-price="5750" data-size="large" data-title="flower lover" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="sold" data-medium="painting" data-price="5750" data-size="large" data-title="flower lover" data-year="2026" href="flower-lover.html">
 <div class="artwork-image">
 <img alt="Flower Lover by Jakey Pedro" class="active" src="images/jakey-pedro-artwork-02-1.jpg"/>
 <img alt="Flower Lover displayed in a room" src="images/jakey-pedro-artwork-02-2.jpg"/>
@@ -743,7 +839,7 @@
                           SOLD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="4200" data-size="large" data-title="folks we know" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="4200" data-size="large" data-title="folks we know" data-year="2026" href="folks-we-know.html">
 <div class="artwork-image">
 <img alt="Folks We Know by Sean Loch" class="active" src="images/sean-loch-artwork-10-1.jpg"/>
 <img alt="Folks We Know displayed in a room" src="images/sean-loch-artwork-10-2.jpg"/>
@@ -761,7 +857,7 @@
             4200 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="560" data-size="small" data-title="future" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="560" data-size="small" data-title="future" data-year="2026" href="future.html">
 <div class="artwork-image">
 <img alt="Future by Pablo Martìn" class="active" src="images/pablo-martin-artwork-01-1.jpg"/>
 <img alt="Future displayed in a room" src="images/pablo-martin-artwork-01-2.jpg"/>
@@ -779,7 +875,7 @@
                             560 AUD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="green" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="green" data-year="2026" href="green.html">
 <div class="artwork-image">
 <img alt="Green by Tim Fry" class="active" src="images/tim-fry-artwork-18-1.jpg"/>
 <img alt="Green displayed in a room" src="images/tim-fry-artwork-18-2.jpg"/>
@@ -797,7 +893,7 @@
             475 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="560" data-size="small" data-title="head" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="560" data-size="small" data-title="head" data-year="2026" href="head.html">
 <div class="artwork-image">
 <img alt="Head by Pablo Martìn" class="active" src="images/pablo-martin-artwork-02-1.jpg"/>
 <img alt="Head displayed in a room" src="images/pablo-martin-artwork-02-2.jpg"/>
@@ -815,7 +911,7 @@
                             560 AUD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="sold" data-medium="painting" data-price="3750" data-size="medium" data-title="high fashion cow-girl" data-year="2024" href="#">
+</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="sold" data-medium="painting" data-price="3750" data-size="medium" data-title="high fashion cow-girl" data-year="2024" href="high-fashion-cow-girl.html">
 <div class="artwork-image">
 <img alt="High Fashion Cow-Girl by Jakey Pedro" class="active" src="images/jakey-pedro-artwork-03-1.jpg"/>
 <img alt="High Fashion Cow-Girl displayed in a room" src="images/jakey-pedro-artwork-03-2.jpg"/>
@@ -833,7 +929,7 @@
            SOLD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="2750" data-size="large" data-title="hit me with music" data-year="2023" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="2750" data-size="large" data-title="hit me with music" data-year="2023" href="hit-me-with-music.html">
 <div class="artwork-image">
 <img alt="Hit Me with Music by Tim Fry" class="active" src="images/tim-fry-artwork-01-1.jpg"/>
 <img alt="Hit Me with Music displayed in a room" src="images/tim-fry-artwork-01-2.jpg"/>
@@ -851,7 +947,7 @@
                             2750 AUD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="hotel california" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="hotel california" data-year="2026" href="hotel-california.html">
 <div class="artwork-image">
 <img alt="Hotel California by Tim Fry" class="active" src="images/tim-fry-artwork-05-1.jpg"/>
 <img alt="Hotel California displayed in a room" src="images/tim-fry-artwork-05-2.jpg"/>
@@ -869,7 +965,7 @@
             575 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="house of the rising sun" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="house of the rising sun" data-year="2026" href="house-of-the-rising-sun.html">
 <div class="artwork-image">
 <img alt="House of the Rising Sun by Tim Fry" class="active" src="images/tim-fry-artwork-03-1.jpg"/>
 <img alt="House of the Rising Sun displayed in a room" src="images/tim-fry-artwork-03-2.jpg"/>
@@ -887,7 +983,7 @@
             575 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="im addicted to you" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="im addicted to you" data-year="2025" href="im-addicted-to-you.html">
 <div class="artwork-image">
 <img alt="I'm Addicted to You by Tim Fry" class="active" src="images/tim-fry-artwork-12-1.jpg"/>
 <img alt="I'm Addicted to You displayed in a room" src="images/tim-fry-artwork-12-2.jpg"/>
@@ -905,7 +1001,7 @@
             475 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="im so fancy" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="im so fancy" data-year="2026" href="im-so-fancy.html">
 <div class="artwork-image">
 <img alt="I'm So Fancy by Tim Fry" class="active" src="images/tim-fry-artwork-06-1.jpg"/>
 <img alt="I'm So Fancy displayed in a room" src="images/tim-fry-artwork-06-2.jpg"/>
@@ -923,7 +1019,7 @@
             575 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="1950" data-size="medium" data-title="icarus" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="1950" data-size="medium" data-title="icarus" data-year="2026" href="icarus.html">
 <div class="artwork-image">
 <img alt="Icarus by Federico Boni" class="active" src="images/federico-boni-artwork-07-1.jpg"/>
 <img alt="Icarus displayed in a room" src="images/federico-boni-artwork-07-2.jpg"/>
@@ -941,7 +1037,7 @@
             1950 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="6500" data-size="large" data-title="if not, why not" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="6500" data-size="large" data-title="if not, why not" data-year="2026" href="if-not-why-not.html">
 <div class="artwork-image">
 <img alt="If Not, Why Not by Audrey Rhoda" class="active" src="images/audrey-rhoda-artwork-13-1.jpg"/>
 <img alt="If Not, Why Not displayed in a room" src="images/audrey-rhoda-artwork-13-2.jpg"/>
@@ -959,7 +1055,7 @@
             6500 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="675" data-size="small" data-title="if you only knew" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="675" data-size="small" data-title="if you only knew" data-year="2026" href="if-you-only-knew.html">
 <div class="artwork-image">
 <img alt="If You Only Knew by Audrey Rhoda" class="active" src="images/audrey-rhoda-artwork-07-1.jpg"/>
 <img alt="If You Only Knew displayed in a room" src="images/audrey-rhoda-artwork-07-2.jpg"/>
@@ -977,7 +1073,7 @@
             675 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="alessandro-daquila" data-availability="available" data-medium="sculpture" data-price="4995" data-size="medium" data-title="ignavi" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="alessandro-daquila" data-availability="available" data-medium="sculpture" data-price="4995" data-size="medium" data-title="ignavi" data-year="2025" href="ignavi.html">
 <div class="artwork-image">
 <img alt="IGNAVI by Alessandro D'Aquila" class="active" src="images/alessandro-daquila-artwork-02-1.jpg"/>
 <img alt="IGNAVI displayed in a room" src="images/alessandro-daquila-artwork-02-2.jpg"/>
@@ -995,7 +1091,7 @@
                             4995 AUD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="675" data-size="small" data-title="in a reliably unpredictable state of mind" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="675" data-size="small" data-title="in a reliably unpredictable state of mind" data-year="2026" href="in-a-reliably-unpredictable-state-of-mind.html">
 <div class="artwork-image">
 <img alt="In a Reliably Unpredictable State of Mind by Audrey Rhoda" class="active" src="images/audrey-rhoda-artwork-08-1.jpg"/>
 <img alt="In a Reliably Unpredictable State of Mind displayed in a room" src="images/audrey-rhoda-artwork-08-2.jpg"/>
@@ -1013,7 +1109,7 @@
             675 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="painting" data-price="5650" data-size="large" data-title="in the garden" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="painting" data-price="5650" data-size="large" data-title="in the garden" data-year="2026" href="in-the-garden.html">
 <div class="artwork-image">
 <img alt="In the Garden by Jakey Pedro" class="active" src="images/jakey-pedro-artwork-05-1.jpg"/>
 <img alt="In the Garden displayed in a room" src="images/jakey-pedro-artwork-05-2.jpg"/>
@@ -1031,7 +1127,7 @@
             5650 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="2380" data-size="large" data-title="insight" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="2380" data-size="large" data-title="insight" data-year="2026" href="insight.html">
 <div class="artwork-image">
 <img alt="Insight by Federico Boni" class="active" src="images/federico-boni-artwork-06-1.jpg"/>
 <img alt="Insight displayed in a room" src="images/federico-boni-artwork-06-2.jpg"/>
@@ -1049,7 +1145,7 @@
             2380 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="painting" data-price="5750" data-size="large" data-title="island fever" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="painting" data-price="5750" data-size="large" data-title="island fever" data-year="2026" href="island-fever.html">
 <div class="artwork-image">
 <img alt="Island Fever by Jakey Pedro" class="active" src="images/jakey-pedro-artwork-04-01.jpg"/>
 <img alt="Island Fever displayed in a room" src="images/jakey-pedro-artwork-04-2.jpg"/>
@@ -1067,7 +1163,7 @@
             5750 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="675" data-size="small" data-title="it could have been you" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="675" data-size="small" data-title="it could have been you" data-year="2026" href="it-could-have-been-you.html">
 <div class="artwork-image">
 <img alt="It Could Have Been You by Audrey Rhoda" class="active" src="images/audrey-rhoda-artwork-06-1.jpg"/>
 <img alt="It Could Have Been You displayed in a room" src="images/audrey-rhoda-artwork-06-2.jpg"/>
@@ -1085,7 +1181,7 @@
             675 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="1250" data-size="small" data-title="it just happened!" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="1250" data-size="small" data-title="it just happened!" data-year="2026" href="it-just-happened.html">
 <div class="artwork-image">
 <img alt="It Just Happened! by Audrey Rhoda" class="active" src="images/audrey-rhoda-artwork-05-1.jpg"/>
 <img alt="It Just Happened! displayed in a room" src="images/audrey-rhoda-artwork-05-2.jpg"/>
@@ -1103,7 +1199,7 @@
             1250 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="ivy" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="ivy" data-year="2025" href="ivy.html">
 <div class="artwork-image">
 <img alt="Ivy by Tim Fry" class="active" src="images/tim-fry-artwork-17-1.jpg"/>
 <img alt="Ivy displayed in a room" src="images/tim-fry-artwork-17-2.jpg"/>
@@ -1121,7 +1217,7 @@
             475 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="kick push" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="kick push" data-year="2025" href="kick-push.html">
 <div class="artwork-image">
 <img alt="Kick Push by Tim Fry" class="active" src="images/tim-fry-artwork-22-1.jpg"/>
 <img alt="Kick Push displayed in a room" src="images/tim-fry-artwork-22-2.jpg"/>
@@ -1139,7 +1235,7 @@
             475 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="720" data-size="small" data-title="las mentalidades" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="720" data-size="small" data-title="las mentalidades" data-year="2026" href="las-mentalidades.html">
 <div class="artwork-image">
 <img alt="Las Mentalidades by Pablo Martìn" class="active" src="images/pablo-martin-artwork-03-1.jpg"/>
 <img alt="Las Mentalidades displayed in a room" src="images/pablo-martin-artwork-03-2.jpg"/>
@@ -1157,7 +1253,7 @@
             720 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="little drawing 15" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="little drawing 15" data-year="2026" href="little-drawing-fifteen.html">
 <div class="artwork-image">
 <img alt="Little Drawing 15 by Pablo Martìn" class="active" src="images/pablo-martin-artwork-15-1.jpg"/>
 <img alt="Little Drawing 15 displayed in a room" src="images/pablo-martin-artwork-15-2.jpg"/>
@@ -1175,7 +1271,7 @@
             305 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="little drawing 16" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="little drawing 16" data-year="2026" href="little-drawing-sixteen.html">
 <div class="artwork-image">
 <img alt="Little Drawing 16 by Pablo Martìn" class="active" src="images/pablo-martin-artwork-16-1.jpg"/>
 <img alt="Little Drawing 16 displayed in a room" src="images/pablo-martin-artwork-16-2.jpg"/>
@@ -1193,7 +1289,7 @@
             305 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="little drawing 17" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="little drawing 17" data-year="2026" href="little-drawing-seventeen.html">
 <div class="artwork-image">
 <img alt="Little Drawing 17 by Pablo Martìn" class="active" src="images/pablo-martin-artwork-17-1.jpg"/>
 <img alt="Little Drawing 17 displayed in a room" src="images/pablo-martin-artwork-17-2.jpg"/>
@@ -1211,7 +1307,7 @@
             305 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="little drawing 18" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="little drawing 18" data-year="2026" href="little-drawing-eighteen.html">
 <div class="artwork-image">
 <img alt="Little Drawing 18 by Pablo Martìn" class="active" src="images/pablo-martin-artwork-18-1.jpg"/>
 <img alt="Little Drawing 18 displayed in a room" src="images/pablo-martin-artwork-18-2.jpg"/>
@@ -1229,7 +1325,7 @@
             305 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="little drawing 19" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="little drawing 19" data-year="2026" href="little-drawing-nineteen.html">
 <div class="artwork-image">
 <img alt="Little Drawing 19 by Pablo Martìn" class="active" src="images/pablo-martin-artwork-19-1.jpg"/>
 <img alt="Little Drawing 19 displayed in a room" src="images/pablo-martin-artwork-19-2.jpg"/>
@@ -1247,7 +1343,7 @@
             305 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="little drawing 20" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="little drawing 20" data-year="2026" href="little-drawing-twenty.html">
 <div class="artwork-image">
 <img alt="Little Drawing 20 by Pablo Martìn" class="active" src="images/pablo-martin-artwork-20-1.jpg"/>
 <img alt="Little Drawing 20 displayed in a room" src="images/pablo-martin-artwork-20-2.jpg"/>
@@ -1265,7 +1361,8 @@
             305 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="alessandro-daquila" data-availability="available" data-medium="sculpture" data-price="4995" data-size="medium" data-title="mailied" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="alessandro-daquila" data-availability="available" data-medium="sculpture" data-price="4995" data-size="medium" data-title="mailied" data-year="2026" href="mailied.html
+">
 <div class="artwork-image">
 <img alt="Mailied by Alessandro D'Aquila" class="active" src="images/alessandro-daquila-artwork-06-1.jpg"/>
 <img alt="Mailied displayed in a room" src="images/alessandro-daquila-artwork-06-2.jpg"/>
@@ -1283,7 +1380,7 @@
             4995 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="mascara 22" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="mascara 22" data-year="2026" href="mascara-twenty-two.html">
 <div class="artwork-image">
 <img alt="Mascara 22 by Pablo Martìn" class="active" src="images/pablo-martin-artwork-10-1.jpg"/>
 <img alt="Mascara 22 displayed in a room" src="images/pablo-martin-artwork-10-2.jpg"/>
@@ -1301,7 +1398,7 @@
             305 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="mascara 23" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="mascara 23" data-year="2026" href="mascara-twenty-three.html">
 <div class="artwork-image">
 <img alt="Mascara 23 by Pablo Martìn" class="active" src="images/pablo-martin-artwork-11-1.jpg"/>
 <img alt="Mascara 23 displayed in a room" src="images/pablo-martin-artwork-11-2.jpg"/>
@@ -1319,7 +1416,7 @@
             305 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="mascara 24" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="mascara 24" data-year="2026" href="mascara-twenty-four.html">
 <div class="artwork-image">
 <img alt="Mascara 24 by Pablo Martìn" class="active" src="images/pablo-martin-artwork-12-1.jpg"/>
 <img alt="Mascara 24 displayed in a room" src="images/pablo-martin-artwork-12-2.jpg"/>
@@ -1337,7 +1434,7 @@
             305 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="mascara 25" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="mascara 25" data-year="2026" href="mascara-twenty-five.html">
 <div class="artwork-image">
 <img alt="Mascara 25 by Pablo Martìn" class="active" src="images/pablo-martin-artwork-13-1.jpg"/>
 <img alt="Mascara 25 displayed in a room" src="images/pablo-martin-artwork-13-2.jpg"/>
@@ -1355,7 +1452,7 @@
             305 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="mascara 26" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="305" data-size="small" data-title="mascara 26" data-year="2026" href="mascara-twenty-six.html">
 <div class="artwork-image">
 <img alt="Mascara 26 by Pablo Martìn" class="active" src="images/pablo-martin-artwork-14-1.jpg"/>
 <img alt="Mascara 26 displayed in a room" src="images/pablo-martin-artwork-14-2.jpg"/>
@@ -1373,7 +1470,7 @@
             305 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="2450" data-size="large" data-title="medusa 2" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="2450" data-size="large" data-title="medusa 2" data-year="2026" href="medusa-ii.html">
 <div class="artwork-image">
 <img alt="Medusa 2 by Federico Boni" class="active" src="images/federico-boni-artwork-01-1.jpg"/>
 <img alt="Medusa 2 displayed in a room" src="images/federico-boni-artwork-01-2.jpg"/>
@@ -1391,7 +1488,7 @@
                             2450 AUD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="2450" data-size="large" data-title="medusa" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="2450" data-size="large" data-title="medusa" data-year="2026" href="medusa.html">
 <div class="artwork-image">
 <img alt="Medusa by Federico Boni" class="active" src="images/federico-boni-artwork-02-1.jpg"/>
 <img alt="Medusa displayed in a room" src="images/federico-boni-artwork-02-2.jpg"/>
@@ -1409,7 +1506,7 @@
                             2450AUD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="mental as anything" data-year="2024" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="mental as anything" data-year="2024" href="mental-as-anything.html">
 <div class="artwork-image">
 <img alt="Mental as Anything by Tim Fry" class="active" src="images/tim-fry-artwork-08-1.jpg"/>
 <img alt="Mental as Anything displayed in a room" src="images/tim-fry-artwork-08-2.jpg"/>
@@ -1445,7 +1542,7 @@
             1950 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="1850" data-size="medium" data-title="monolith" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="1850" data-size="medium" data-title="monolith" data-year="2026" href="monolith.html">
 <div class="artwork-image">
 <img alt="Monolith by Federico Boni" class="active" src="images/federico-boni-artwork-08-1.jpg"/>
 <img alt="Monolith displayed in a room" src="images/federico-boni-artwork-08-2.jpg"/>
@@ -1463,7 +1560,7 @@
             1850 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="660" data-size="small" data-title="mood indigo" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="660" data-size="small" data-title="mood indigo" data-year="2026" href="mood-indigo.html">
 <div class="artwork-image">
 <img alt="Mood Indigo by Audrey Rhoda" class="active" src="images/audrey-rhoda-artwork-09-1.jpg"/>
 <img alt="Mood Indigo displayed in a room" src="images/audrey-rhoda-artwork-09-2.jpg"/>
@@ -1481,7 +1578,7 @@
             660 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="1450" data-size="large" data-title="not feeling very brave today" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="1450" data-size="large" data-title="not feeling very brave today" data-year="2026" href="not-feeling-very-brave-today.html">
 <div class="artwork-image">
 <img alt="Not Feeling Very Brave Today by Sean Loch" class="active" src="images/sean-loch-artwork-09-1.jpg"/>
 <img alt="Not Feeling Very Brave Today displayed in a room" src="images/sean-loch-artwork-09-2.jpg"/>
@@ -1499,7 +1596,7 @@
             1450 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3700" data-size="large" data-title="number one bird" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3700" data-size="large" data-title="number one bird" data-year="2026" href="number-one-bird.html">
 <div class="artwork-image">
 <img alt="Number One Bird by Sean Loch" class="active" src="images/sean-loch-artwork-03-1.jpg"/>
 <img alt="Number One Bird displayed in a room" src="images/sean-loch-artwork-03-2.jpg"/>
@@ -1517,7 +1614,7 @@
             3700 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="2500" data-size="large" data-title="ocean inside" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="2500" data-size="large" data-title="ocean inside" data-year="2025" href="ocean-inside.html ">
 <div class="artwork-image">
 <img alt="Ocean Inside by Federico Boni" class="active" src="images/federico-boni-artwork-03-1.jpg"/>
 <img alt="Ocean Inside displayed in a room" src="images/federico-boni-artwork-03-2.jpg"/>
@@ -1535,7 +1632,7 @@
             2500 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="660" data-size="small" data-title="palimpsest" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="660" data-size="small" data-title="palimpsest" data-year="2026" href="palimpsest.html">
 <div class="artwork-image">
 <img alt="Palimpsest by Audrey Rhoda" class="active" src="images/audrey-rhoda-artwork-10-1.jpg"/>
 <img alt="Palimpsest displayed in a room" src="images/audrey-rhoda-artwork-10-2.jpg"/>
@@ -1553,7 +1650,7 @@
             660 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="penguin" data-price="1800" data-size="medium" data-title="penguin" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="penguin" data-price="1800" data-size="medium" data-title="penguin" data-year="2025" href="penguin.html">
 <div class="artwork-image">
 <img alt="Penguin by Federico Boni" class="active" src="images/federico-boni-artwork-05-1.jpg"/>
 <img alt="Penguin displayed in a room" src="images/federico-boni-artwork-05-2.jpg"/>
@@ -1571,7 +1668,7 @@
             1800 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="sold" data-medium="painting" data-price="2300" data-size="large" data-title="pink george" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="sold" data-medium="painting" data-price="2300" data-size="large" data-title="pink george" data-year="2026" href="pink-george.html">
 <div class="artwork-image">
 <img alt="Pink George by Sean Loch" class="active" src="images/sean-loch-artwork-02-1.jpg"/>
 <img alt="Pink George displayed in a room" src="images/sean-loch-artwork-02-2.jpg"/>
@@ -1589,7 +1686,7 @@
                             SOLD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="2300" data-size="large" data-title="pink george 2" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="2300" data-size="large" data-title="pink george 2" data-year="2026" href="pink-george-2.html">
 <div class="artwork-image">
 <img alt="Pink George 2 by Sean Loch" class="active" src="images/sean-loch-artwork-05-1.jpg"/>
 <img alt="Pink George 2 displayed in a room" src="images/sean-loch-artwork-05-2.jpg"/>
@@ -1607,7 +1704,7 @@
             2300 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="2750" data-size="large" data-title="pleasure and pain" data-year="2023" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="2750" data-size="large" data-title="pleasure and pain" data-year="2023" href="pleasure-and-pain.html">
 <div class="artwork-image">
 <img alt="Pleasure and Pain by Tim Fry" class="active" src="images/tim-fry-artwork-02-1.jpg"/>
 <img alt="Pleasure and Pain displayed in a room" src="images/tim-fry-artwork-02-2.jpg"/>
@@ -1625,7 +1722,7 @@
                             2750 AUD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="sold" data-medium="painting" data-price="3300" data-size="large" data-title="possum" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="sold" data-medium="painting" data-price="3300" data-size="large" data-title="possum" data-year="2026" href="possum.html">
 <div class="artwork-image">
 <img alt="Possum by Sean Loch" class="active" src="images/sean-loch-artwork-04-1.jpg"/>
 <img alt="Possum displayed in a room" src="images/sean-loch-artwork-04-2.jpg"/>
@@ -1643,7 +1740,7 @@
            SOLD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="2550" data-size="medium" data-title="roots of memory" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="1950" data-size="medium" data-title="roots of memory" data-year="2026" href="roots-of-memory.html">
 <div class="artwork-image">
 <img alt="Roots of Memory by Federico Boni" class="active" src="images/federico-boni-artwork-10-1.jpg"/>
 <img alt="Roots of Memory displayed in a room" src="images/federico-boni-artwork-10-2.jpg"/>
@@ -1658,10 +1755,10 @@
             Federico Boni
         </p>
 <span>
-            2550 AUD
+            1950 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="run through the jungle" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="run through the jungle" data-year="2025" href="run-through-the-jungle.html">
 <div class="artwork-image">
 <img alt="Run Through the Jungle by Tim Fry" class="active" src="images/tim-fry-artwork-13-1.jpg"/>
 <img alt="Run Through the Jungle displayed in a room" src="images/tim-fry-artwork-13-2.jpg"/>
@@ -1679,7 +1776,7 @@
             475 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="4995" data-size="medium" data-title="solitude" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="4995" data-size="medium" data-title="solitude" data-year="2026" href="solitude.html">
 <div class="artwork-image">
 <img alt="Solitude by Audrey Rhoda" class="active" src="images/audrey-rhoda-artwork-03-1.jpg"/>
 <img alt="Solitude displayed in a room" src="images/audrey-rhoda-artwork-03-2.jpg"/>
@@ -1697,7 +1794,7 @@
             4995 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="staying alive" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="staying alive" data-year="2025" href="staying-alive.html">
 <div class="artwork-image">
 <img alt="Staying Alive by Tim Fry" class="active" src="images/tim-fry-artwork-20-1.jpg"/>
 <img alt="Staying Alive displayed in a room" src="images/tim-fry-artwork-20-2.jpg"/>
@@ -1715,7 +1812,7 @@
             475 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="alessandro-daquila" data-availability="available" data-medium="sculpture" data-price="4995" data-size="medium" data-title="stelle" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="alessandro-daquila" data-availability="available" data-medium="sculpture" data-price="4995" data-size="medium" data-title="stelle" data-year="2025" href="stelle.html">
 <div class="artwork-image">
 <img alt="STELLE by Alessandro D'Aquila" class="active" src="images/alessandro-daquila-artwork-01-1.jpg"/>
 <img alt="STELLE displayed in a room" src="images/alessandro-daquila-artwork-01-2.jpg"/>
@@ -1733,7 +1830,7 @@
                             4995 AUD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="sultans of swing" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="sultans of swing" data-year="2026" href="sultans-of-swing.html">
 <div class="artwork-image">
 <img alt="Sultans of Swing by Tim Fry" class="active" src="images/tim-fry-artwork-04-1.jpg"/>
 <img alt="Sultans of Swing displayed in a room" src="images/tim-fry-artwork-04-2.jpg"/>
@@ -1751,7 +1848,7 @@
             575 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="sold" data-medium="painting" data-price="4250" data-size="large" data-title="sunday best" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="sold" data-medium="painting" data-price="4250" data-size="large" data-title="sunday best" data-year="2026" href="sunday-best.html">
 <div class="artwork-image">
 <img alt="Sunday Best by Jakey Pedro" class="active" src="images/jakey-pedro-artwork-06-1.jpg"/>
 <img alt="Sunday Best displayed in a room" src="images/jakey-pedro-artwork-06-2.jpg"/>
@@ -1769,7 +1866,7 @@
             SOLD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3900" data-size="large" data-title="super weapon" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3900" data-size="large" data-title="super weapon" data-year="2026" href="super-weapon.html">
 <div class="artwork-image">
 <img alt="Super Weapon by Sean Loch" class="active" src="images/sean-loch-artwork-08-1.jpg"/>
 <img alt="Super Weapon displayed in a room" src="images/sean-loch-artwork-08-2.jpg"/>
@@ -1787,7 +1884,7 @@
             3900 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="720" data-size="small" data-title="superposicion" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="720" data-size="small" data-title="superposicion" data-year="2026" href="superposicion.html">
 <div class="artwork-image">
 <img alt="superposicion by Pablo Martìn" class="active" src="images/pablo-martin-artwork-09-1.jpg"/>
 <img alt="superposicion displayed in a room" src="images/pablo-martin-artwork-09-2.jpg"/>
@@ -1805,7 +1902,7 @@
             720 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3900" data-size="large" data-title="swamp puppies" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3900" data-size="large" data-title="swamp puppies" data-year="2026" href="swamp-puppies.html">
 <div class="artwork-image">
 <img alt="Swamp Puppies by Sean Loch" class="active" src="images/sean-loch-artwork-11-1.jpg"/>
 <img alt="Swamp Puppies displayed in a room" src="images/sean-loch-artwork-11-2.jpg"/>
@@ -1823,7 +1920,7 @@
             3900 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="7995" data-size="large" data-title="tapestry of my dreams" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="7995" data-size="large" data-title="tapestry of my dreams" data-year="2026" href="tapestry-of-my-dreams.html">
 <div class="artwork-image">
 <img alt="Tapestry of My Dreams by Audrey Rhoda" class="active" src="images/audrey-rhoda-artwork-01-1.jpg"/>
 <img alt="Tapestry of My Dreams displayed in a room" src="images/audrey-rhoda-artwork-01-2.jpg"/>
@@ -1841,7 +1938,7 @@
                             7995 AUD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="7750" data-size="large" data-title="tapestry of my life" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="7750" data-size="large" data-title="tapestry of my life" data-year="2026" href="tapestry-of-my-life.html">
 <div class="artwork-image">
 <img alt="Tapestry of My Life by Audrey Rhoda" class="active" src="images/audrey-rhoda-artwork-02-1.jpg"/>
 <img alt="Tapestry of My Life displayed in a room" src="images/audrey-rhoda-artwork-02-2.jpg"/>
@@ -1859,7 +1956,7 @@
                             7750 AUD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="2300" data-size="large" data-title="tennis (confirmed)" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="2300" data-size="large" data-title="tennis (confirmed)" data-year="2026" href="tennis-confirmed.html">
 <div class="artwork-image">
 <img alt="Tennis (Confirmed) by Sean Loch" class="active" src="images/sean-loch-artwork-06-1.jpg"/>
 <img alt="Tennis (Confirmed) displayed in a room" src="images/sean-loch-artwork-06-2.jpg"/>
@@ -1877,7 +1974,7 @@
             2300 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="alessandro-daquila" data-availability="available" data-medium="sculpture" data-price="4995" data-size="medium" data-title="the road not taken" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="alessandro-daquila" data-availability="available" data-medium="sculpture" data-price="4995" data-size="medium" data-title="the road not taken" data-year="2026" href="the-road-not-taken.html">
 <div class="artwork-image">
 <img alt="The Road Not Taken by Alessandro D'Aquila" class="active" src="images/alessandro-daquila-artwork-04-1.jpg"/>
 <img alt="The Road Not Taken displayed in a room" src="images/alessandro-daquila-artwork-04-2.jpg"/>
@@ -1895,7 +1992,7 @@
             4995 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="times a changing" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="times a changing" data-year="2025" href="times-a-changing.html">
 <div class="artwork-image">
 <img alt="Times a Changing by Tim Fry" class="active" src="images/tim-fry-artwork-21-1.jpg"/>
 <img alt="Times a Changing displayed in a room" src="images/tim-fry-artwork-21-2.jpg"/>
@@ -1913,7 +2010,7 @@
             475 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="painting" data-price="5750" data-size="large" data-title="trouble in paradise" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="available" data-medium="painting" data-price="5750" data-size="large" data-title="trouble in paradise" data-year="2026" href="trouble-in-paradise.html">
 <div class="artwork-image">
 <img alt="Trouble in Paradise by Jakey Pedro" class="active" src="images/jakey-pedro-artwork-01-1.jpg"/>
 <img alt="Trouble in Paradise displayed in a room" src="images/jakey-pedro-artwork-01-2.jpg"/>
@@ -1931,7 +2028,7 @@
                             5750 AUD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="675" data-size="small" data-title="until further notice" data-year="2026" href="#">
+</a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="675" data-size="small" data-title="until further notice" data-year="2026" href="until-further-notice.html">
 <div class="artwork-image">
 <img alt="Until Further Notice by Audrey Rhoda" class="active" src="images/audrey-rhoda-artwork-11-1.jpg"/>
 <img alt="Until Further Notice displayed in a room" src="images/audrey-rhoda-artwork-11-2.jpg"/>
@@ -1949,7 +2046,7 @@
             675 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="1800" data-size="medium" data-title="waiting wishing" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="1800" data-size="medium" data-title="waiting wishing" data-year="2025" href="waiting-wishing.html">
 <div class="artwork-image">
 <img alt="Penguin by Federico Boni" class="active" src="images/federico-boni-artwork-04-1.jpg"/>
 <img alt="Penguin displayed in a room" src="images/federico-boni-artwork-04-2.jpg"/>
@@ -1967,7 +2064,7 @@
             1800 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="you know how i feel" data-year="2025" href="#">
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="you know how i feel" data-year="2025" href="you-know-how-i-feel.html">
 <div class="artwork-image">
 <img alt="You Know How I Feel by Tim Fry" class="active" src="images/tim-fry-artwork-14-1.jpg"/>
 <img alt="You Know How I Feel displayed in a room" src="images/tim-fry-artwork-14-2.jpg"/>
@@ -2067,7 +2164,7 @@
 <!-- FOOTER BOTTOM -->
 <div class="footer-bottom">
 <p>
-                © 2026 KIN Contemporary. All rights reserved.
+                © 2026 Kin Contemporary. All rights reserved.
             </p>
 <div>
 <a href="privacy-policy.html">

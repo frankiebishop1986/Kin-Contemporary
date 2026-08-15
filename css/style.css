@@ -1692,7 +1692,10 @@ input {
     letter-spacing: 4px;
     text-transform: uppercase;
 }
-
+.about-page .eyebrow .keep-case {
+    text-transform: none;
+    }
+    
 
 /* ALL ABOUT HEADINGS — SAME RULES */
 
@@ -4934,4 +4937,1259 @@ input {
         display: none;
     }
 
+}/* =========================================================
+   MINIMAL CONTACT PAGE
+========================================================= */
+
+.contact-page-minimal {
+    min-height: 100vh;
+}
+
+
+.contact-minimal {
+    min-height: calc(100vh - 120px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 160px 30px 140px;
+}
+
+
+.contact-minimal-inner {
+    width: 100%;
+    max-width: 620px;
+
+    text-align: center;
+}
+
+
+/* TITLE */
+
+.contact-minimal h1 {
+    margin: 0 0 32px;
+
+    font-size: 35px;
+    font-weight: 500;
+
+    letter-spacing: 0.18em;
+
+    text-transform: uppercase;
+}
+
+
+/* INTRO */
+
+.contact-minimal-intro {
+    max-width: 470px;
+
+    margin: 0 auto 48px;
+
+    font-size: 16px;
+    font-weight: 300;
+
+    line-height: 1.7;
+
+    color: #555;
+}
+
+
+/* CONTACT DETAILS */
+
+.contact-minimal-details {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-bottom: 70px;
+}
+
+
+.contact-minimal-details a {
+    color: #111;
+
+    font-size: 15px;
+    font-weight: 300;
+
+    text-decoration: none;
+
+    transition: opacity 0.25s ease;
+}
+
+
+.contact-minimal-details a:hover {
+    opacity: 0.5;
+}
+
+
+/* FORM */
+
+.contact-minimal-form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 28px;
+}
+
+
+.contact-minimal-form input,
+.contact-minimal-form textarea {
+    width: 100%;
+
+    padding: 10px 0 14px;
+
+    border: none;
+    border-bottom: 1px solid #c9c9c9;
+
+    background: transparent;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 14px;
+    font-weight: 300;
+
+    color: #111;
+
+    outline: none;
+
+    border-radius: 0;
+}
+
+
+.contact-minimal-form input::placeholder,
+.contact-minimal-form textarea::placeholder {
+    color: #777;
+}
+
+
+.contact-minimal-form input:focus,
+.contact-minimal-form textarea:focus {
+    border-bottom-color: #111;
+}
+
+
+.contact-minimal-form textarea {
+    resize: none;
+}
+
+
+/* BUTTON */
+
+.contact-minimal-form button {
+    align-self: center;
+
+    margin-top: 18px;
+
+    padding: 15px 34px;
+
+    border: 1px solid #111;
+
+    background: #111;
+
+    color: #fff;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 0.14em;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+
+.contact-minimal-form button:hover {
+    background: transparent;
+
+    color: #111;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .contact-minimal {
+        padding: 120px 24px 100px;
+    }
+
+
+    .contact-minimal-inner {
+        max-width: 100%;
+    }
+
+
+    .contact-minimal-intro {
+        font-size: 15px;
+    }
+
+
+    .contact-minimal-details {
+        margin-bottom: 55px;
+    }
+
+}
+/* =========================================================
+   SINGLE ARTWORK PAGE
+========================================================= */
+
+.single-artwork-page {
+    width: 100%;
+}
+
+
+/* =========================================================
+   MAIN ARTWORK
+========================================================= */
+
+.single-artwork {
+    width: calc(100% - 90px);
+    max-width: 1800px;
+
+    margin: 75px auto 180px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.65fr)
+        minmax(340px, 0.65fr);
+
+    gap: 90px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   IMAGE GALLERY
+========================================================= */
+
+.single-artwork-gallery {
+    min-width: 0;
+
+    display: grid;
+    grid-template-columns: 82px minmax(0, 1fr);
+
+    gap: 22px;
+
+    align-items: start;
+}
+
+
+/* THUMBNAILS */
+
+.artwork-thumbnails {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+.artwork-thumbnail {
+    width: 82px;
+
+    padding: 0;
+
+    border: 1px solid transparent;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    opacity: 0.55;
+
+    transition:
+        opacity 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.artwork-thumbnail img {
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+}
+
+
+.artwork-thumbnail:hover {
+    opacity: 0.85;
+}
+
+
+.artwork-thumbnail.active {
+    opacity: 1;
+
+    border-color: #111;
+}
+
+
+/* =========================================================
+   MAIN IMAGE
+========================================================= */
+
+.single-artwork-main-image {
+    width: 100%;
+
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+
+    overflow: hidden;
+}
+
+
+.single-artwork-main-image img {
+    width: 100%;
+    height: auto;
+
+    max-height: 820px;
+
+    object-fit: contain;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.6s ease;
+}
+
+
+.single-artwork-main-image img.is-changing {
+    opacity: 0;
+}
+
+
+/* =========================================================
+   ARTWORK DETAILS
+========================================================= */
+
+.single-artwork-details {
+    padding-top: 20px;
+
+    position: sticky;
+    top: 150px;
+}
+
+
+.single-artwork-artist {
+    display: inline-block;
+
+    margin-bottom: 22px;
+
+    color: #111;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    letter-spacing: 0.12em;
+
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.single-artwork-artist:hover {
+    opacity: 0.55;
+}
+
+
+.single-artwork-details h1 {
+    margin: 0 0 28px;
+
+    font-size: 34px;
+    font-weight: 500;
+
+    line-height: 1.1;
+
+    letter-spacing: -0.03em;
+}
+
+
+.single-artwork-meta {
+    margin-bottom: 33px;
+}
+
+
+.single-artwork-meta p {
+    margin-bottom: 8px;
+
+    color: #444;
+
+    font-size: 15px;
+    font-weight: 300;
+
+    line-height: 1.5;
+}
+
+
+.single-artwork-price {
+    margin-bottom: 35px;
+
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   BUY BUTTON
+========================================================= */
+
+.single-artwork-purchase {
+    margin-bottom: 36px;
+}
+
+
+.single-artwork-buy-button {
+    width: 100%;
+
+    padding: 18px 25px;
+
+    border: 1px solid #111;
+
+    background: #111;
+
+    color: #fff;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 0.14em;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.single-artwork-buy-button:hover {
+    background: transparent;
+
+    color: #111;
+}
+
+
+/* =========================================================
+   ARTWORK SERVICES
+========================================================= */
+
+.single-artwork-services {
+    padding: 27px 0;
+
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.single-artwork-services p {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 13px;
+
+    color: #333;
+
+    font-size: 13px;
+    font-weight: 300;
+
+    line-height: 1.45;
+}
+
+
+.single-artwork-services p:last-child {
+    margin-bottom: 0;
+}
+
+
+.single-artwork-services i {
+    width: 16px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   ENQUIRY
+========================================================= */
+
+.single-artwork-enquiry {
+    padding-top: 30px;
+}
+
+
+.single-artwork-enquiry p {
+    display: inline;
+
+    color: #555;
+
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+.single-artwork-enquiry a {
+    margin-left: 4px;
+
+    color: #111;
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #111;
+}
+
+
+/* =========================================================
+   YOU MAY ALSO LIKE
+========================================================= */
+
+.artwork-recommendations {
+    width: calc(100% - 90px);
+    max-width: 1800px;
+
+    margin: 0 auto 190px;
+}
+
+
+.artwork-recommendations-header {
+    margin-bottom: 55px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.artwork-recommendations-header h2 {
+    font-size: 21px;
+    font-weight: 400;
+
+    letter-spacing: -0.02em;
+}
+
+
+/* =========================================================
+   CAROUSEL CONTROLS
+========================================================= */
+
+.recommendation-controls {
+    display: flex;
+
+    gap: 24px;
+}
+
+
+.recommendation-controls button {
+    padding: 8px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #111;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.recommendation-controls button:hover {
+    opacity: 0.5;
+}
+
+
+.recommendation-prev:hover {
+    transform: translateX(-3px);
+}
+
+
+.recommendation-next:hover {
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   CAROUSEL
+========================================================= */
+
+.recommendation-window {
+    overflow: hidden;
+}
+
+
+.recommendation-track {
+    display: flex;
+
+    gap: 38px;
+
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.recommendation-card {
+    flex: 0 0 calc((100% - 114px) / 4);
+
+    color: #111;
+
+    text-decoration: none;
+}
+
+
+.recommendation-image {
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    margin-bottom: 20px;
+
+    overflow: hidden;
+
+    background: #f1f1ef;
+}
+
+
+.recommendation-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+}
+
+
+.recommendation-card:hover .recommendation-image img {
+    transform: scale(1.025);
+}
+
+
+.recommendation-info h3 {
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+}
+
+
+.recommendation-info p {
+    margin-bottom: 7px;
+
+    color: #777;
+
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+.recommendation-info span {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
+/* =========================================================
+   SINGLE ARTWORK — TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .single-artwork {
+        grid-template-columns:
+            minmax(0, 1.4fr)
+            minmax(300px, 0.8fr);
+
+        gap: 50px;
+    }
+
+
+    .single-artwork-gallery {
+        grid-template-columns: 65px minmax(0, 1fr);
+
+        gap: 15px;
+    }
+
+
+    .artwork-thumbnail {
+        width: 65px;
+    }
+
+
+    .single-artwork-main-image {
+        min-height: 500px;
+    }
+
+
+    .recommendation-card {
+        flex: 0 0 calc((100% - 76px) / 3);
+    }
+
+}
+
+
+
+/* =========================================================
+   SINGLE ARTWORK — MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .single-artwork {
+        width: calc(100% - 40px);
+
+        margin: 35px auto 110px;
+
+        display: block;
+    }
+
+
+    .single-artwork-gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .single-artwork-main-image {
+        order: 1;
+
+        min-height: 0;
+    }
+
+
+    .single-artwork-main-image img {
+        max-height: none;
+    }
+
+
+    .artwork-thumbnails {
+        order: 2;
+
+        margin-top: 14px;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 9px;
+    }
+
+
+    .artwork-thumbnail {
+        width: 100%;
+    }
+
+
+    .single-artwork-details {
+        margin-top: 55px;
+
+        padding-top: 0;
+
+        position: static;
+    }
+
+
+    .single-artwork-details h1 {
+        font-size: 28px;
+    }
+
+
+    .artwork-recommendations {
+        width: calc(100% - 40px);
+
+        margin-bottom: 110px;
+    }
+
+
+    .artwork-recommendations-header {
+        margin-bottom: 35px;
+    }
+
+
+    .artwork-recommendations-header h2 {
+        font-size: 17px;
+    }
+
+
+    .recommendation-track {
+        gap: 18px;
+    }
+
+
+    .recommendation-card {
+        flex: 0 0 78%;
+    }
+
+}
+/* =========================================================
+   KIN CONTEMPORARY — SITE SEARCH
+========================================================= */
+
+.site-search {
+    position: fixed;
+
+    top: 115px;
+    left: 0;
+
+    width: 100%;
+    max-height: calc(100vh - 115px);
+
+    z-index: 1200;
+
+    background: #fff;
+
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #dddddd;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-15px);
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease,
+        visibility 0.35s ease;
+
+    overflow-y: auto;
+}
+
+
+.site-search.open {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+.site-search-inner {
+    width: calc(100% - 90px);
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    padding: 55px 0 65px;
+}
+
+
+/* =========================================================
+   SEARCH TOP
+========================================================= */
+
+.site-search-top {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    border-bottom: 1px solid #111;
+}
+
+
+.site-search-input-wrap {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.site-search-input-wrap i {
+    font-size: 20px;
+}
+
+
+#site-search-input {
+    width: 100%;
+
+    padding: 22px 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #111;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: clamp(24px, 3vw, 42px);
+    font-weight: 400;
+    letter-spacing: -1.5px;
+}
+
+
+#site-search-input::placeholder {
+    color: #aaaaaa;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.site-search-close {
+    position: relative;
+
+    width: 36px;
+    height: 36px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+
+.site-search-close span {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 24px;
+    height: 1px;
+
+    background: #111;
+}
+
+
+.site-search-close span:first-child {
+    transform:
+        translate(-50%, -50%)
+        rotate(45deg);
+}
+
+
+.site-search-close span:last-child {
+    transform:
+        translate(-50%, -50%)
+        rotate(-45deg);
+}
+
+
+/* =========================================================
+   POPULAR SEARCHES
+========================================================= */
+
+.site-search-suggestions {
+    margin-top: 25px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.site-search-suggestions > span {
+    margin-right: 8px;
+
+    color: #888;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.site-search-suggestions button {
+    padding: 8px 14px;
+
+    border: 1px solid #d8d8d8;
+
+    background: transparent;
+
+    color: #222;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.site-search-suggestions button:hover {
+    background: #111;
+    color: #fff;
+
+    border-color: #111;
+}
+
+
+/* =========================================================
+   SEARCH RESULTS
+========================================================= */
+
+.site-search-results {
+    margin-top: 42px;
+}
+
+
+.search-results-heading {
+    margin-bottom: 22px;
+
+    color: #777;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.search-result {
+    width: 100%;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #eeeeee;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(160px, 1fr)
+        180px
+        30px;
+
+    gap: 25px;
+
+    align-items: center;
+
+    color: #111;
+
+    text-decoration: none;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.search-result:hover {
+    opacity: 0.55;
+
+    transform: translateX(4px);
+}
+
+
+.search-result-title {
+    font-size: 17px;
+    font-weight: 500;
+
+    line-height: 1.3;
+}
+
+
+.search-result-meta {
+    color: #888;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    letter-spacing: 1.2px;
+
+    text-transform: uppercase;
+}
+
+
+.search-result-arrow {
+    font-size: 13px;
+
+    text-align: right;
+}
+
+
+.search-no-results {
+    padding: 15px 0;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   BACKDROP
+========================================================= */
+
+.site-search-backdrop {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1100;
+
+    background: rgba(0, 0, 0, 0.28);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease;
+}
+
+
+.site-search-backdrop.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* =========================================================
+   MOBILE SEARCH
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .site-search {
+        top: 0;
+
+        max-height: 100vh;
+
+        z-index: 2000;
+    }
+
+
+    .site-search-inner {
+        width: calc(100% - 40px);
+
+        padding: 30px 0 50px;
+    }
+
+
+    #site-search-input {
+        font-size: 24px;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .site-search-top {
+        gap: 15px;
+    }
+
+
+    .site-search-input-wrap {
+        gap: 13px;
+    }
+
+
+    .site-search-input-wrap i {
+        font-size: 16px;
+    }
+
+
+    .site-search-suggestions {
+        margin-top: 22px;
+    }
+
+
+    .site-search-suggestions > span {
+        width: 100%;
+
+        margin-bottom: 5px;
+    }
+
+
+    .search-result {
+        grid-template-columns:
+            minmax(0, 1fr)
+            24px;
+
+        gap: 15px;
+
+        padding: 17px 0;
+    }
+
+
+    .search-result-meta {
+        grid-column: 1;
+
+        margin-top: -8px;
+    }
+
+
+    .search-result-arrow {
+        grid-column: 2;
+        grid-row: 1 / 3;
+
+        align-self: center;
+    }
+
+}
+/* JAKEY PEDRO LINK */
+
+.exhibition-text h3 .exhibition-artist-name {
+    display: inline;
+    margin: 0;
+    padding: 0;
+
+    background: transparent;
+    color: #000;
+
+    font-size: inherit;
+    font-weight: 700;
+    line-height: inherit;
+    letter-spacing: inherit;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    box-shadow: none;
+}
+
+.exhibition-text h3 .exhibition-artist-name:hover {
+    background: transparent;
+    color: #000;
+    box-shadow: none;
+    opacity: 0.55;
+    transform: none;
 }

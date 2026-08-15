@@ -116,14 +116,14 @@
                 <li>
 
                     <a
-                        href="#"
-                        class="icon-link"
-                        aria-label="Search"
-                    >
+    href="#"
+    class="icon-link search-toggle"
+    aria-label="Search"
+    aria-expanded="false"
+>
+    <i class="fa-solid fa-magnifying-glass"></i>
+</a>
 
-                        <i class="fa-solid fa-magnifying-glass"></i>
-
-                    </a>
 
                 </li>
 
@@ -146,6 +146,97 @@
         </nav>
 
     </header>
+<!-- =====================================================
+     KIN SEARCH
+====================================================== -->
+
+<div
+    class="site-search"
+    id="site-search"
+    aria-hidden="true"
+>
+
+    <div class="site-search-inner">
+
+        <div class="site-search-top">
+
+            <div class="site-search-input-wrap">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="search"
+                    id="site-search-input"
+                    placeholder="Search artists, artworks, paintings, sculptures..."
+                    autocomplete="off"
+                    aria-label="Search KIN Contemporary"
+                >
+
+            </div>
+
+            <button
+                type="button"
+                class="site-search-close"
+                aria-label="Close search"
+            >
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+
+        <div class="site-search-suggestions">
+
+            <span>
+                Popular searches
+            </span>
+
+            <button
+                type="button"
+                data-search-term="painting"
+            >
+                Painting
+            </button>
+
+            <button
+                type="button"
+                data-search-term="sculpture"
+            >
+                Sculpture
+            </button>
+
+            <button
+                type="button"
+                data-search-term="prints"
+            >
+                Prints
+            </button>
+
+            <button
+                type="button"
+                data-search-term="limited edition"
+            >
+                Limited Edition
+            </button>
+
+        </div>
+
+
+        <div
+            class="site-search-results"
+            id="site-search-results"
+        ></div>
+
+    </div>
+
+</div>
+
+
+<div
+    class="site-search-backdrop"
+    aria-hidden="true"
+></div>
 
     <!-- =====================================================
          ARTIST PAGE
@@ -234,14 +325,14 @@ Braille became the answer
                 </p>
 
                 <p>
-Although it is a language created to be read through touch rather than vision, I discovered within it an extraordinary visual power. Its rhythm, repetition and structure offered me a new artistic language—one capable of communicating far beyond words while inviting viewers to question the limits of perception itself.
+Although it is a language created to be read through touch rather than vision, I discovered within it an extraordinary visual power. Its rhythm, repetition and structure offered me a new artistic language one capable of communicating far beyond words while inviting viewers to question the limits of perception itself.
                 </p>
  <p>
 My practice is deeply personal. As a child, I experienced a moment that left me with a profound fear of losing my sight. Rather than allowing that fear to define me, I transformed it into the foundation of my artistic research. Through Braille, I found a way to confront that experience while exploring broader ideas of empathy, accessibility and the ways we relate to one another.
                 </p>
-                <p>I am interested in synthesis—reducing complexity to its essential form. With only a few lines, carefully considered details and the presence of Braille, I seek to create works that encourage contemplation rather than explanation. The simplicity of the image asks viewers to slow down, look beyond the obvious and discover meanings that reveal themselves through patience and reflection.
+                <p>I am interested in synthesis reducing complexity to its essential form. With only a few lines, carefully considered details and the presence of Braille, I seek to create works that encourage contemplation rather than explanation. The simplicity of the image asks viewers to slow down, look beyond the obvious and discover meanings that reveal themselves through patience and reflection.
 </p>
-<p>My work also questions the way society perceives disability. By placing the viewer in an unfamiliar position—able to see but unable to read—I reverse conventional expectations. In that moment, certainty disappears, curiosity emerges and the experience becomes one of greater awareness rather than limitation.</p>
+<p>My work also questions the way society perceives disability. By placing the viewer in an unfamiliar position able to see but unable to read I reverse conventional expectations. In that moment, certainty disappears, curiosity emerges and the experience becomes one of greater awareness rather than limitation.</p>
 <p>Ultimately, my works are invitations to look beyond what is immediately visible. They remind us that some of the most meaningful forms of communication cannot be seen at all. Sometimes, by closing our eyes, we begin to understand what truly matters.
 </p>            
 </div>
@@ -638,7 +729,7 @@ My practice is deeply personal. As a child, I experienced a moment that left me 
                 <!-- ARTWORK 1 -->
 
                 <a
-    href="#"
+    href="stelle.html"
     class="artwork-card"
     data-title="stelle"
     data-artist="alessandro-daquila"
@@ -664,13 +755,13 @@ My practice is deeply personal. As a child, I experienced a moment that left me 
                         >
 
                         <img
-                            src="images/tim-fry-artwork-01-3.jpg"
-                            alt="Detail of Hit Me with Music"
+                            src="images/alessandro-daquila-artwork-01-3.jpg"
+                            alt="Detail of STELLE"
                         >
 
                         <img
-                            src="images/tim-fry-artwork-01-4.jpg"
-                            alt="Side view of Hit Me with Music"
+                            src="images/alessandro-daquila-artwork-01-4.jpg"
+                            alt="Side view of STELLE"
                         >
 
                     </div>
@@ -696,7 +787,7 @@ My practice is deeply personal. As a child, I experienced a moment that left me 
                 <!-- ARTWORK 2 -->
 
                <a
-    href="#"
+    href="ignavi.html"
     class="artwork-card"
     data-title="ignavi"
     data-artist="alessandro-daquila"
@@ -752,7 +843,7 @@ My practice is deeply personal. As a child, I experienced a moment that left me 
 <!-- ARTWORK 3 -->
 
 <a
-    href="#"
+    href="dolce-rumore-verde.html"
     class="artwork-card"
     data-title="dolce rumore verde"
     data-artist="alessandro-daquila"
@@ -810,7 +901,7 @@ My practice is deeply personal. As a child, I experienced a moment that left me 
 <!-- ARTWORK 4 -->
 
 <a
-    href="#"
+    href="the-road-not-taken.html"
     class="artwork-card"
     data-title="the road not taken"
     data-artist="alessandro-daquila"
@@ -867,7 +958,7 @@ My practice is deeply personal. As a child, I experienced a moment that left me 
 <!-- ARTWORK 5 -->
 
 <a
-    href="#"
+    href="el-mar.html"
     class="artwork-card"
     data-title="El Mar"
     data-artist="alessandro-daquila"
@@ -892,13 +983,13 @@ My practice is deeply personal. As a child, I experienced a moment that left me 
         >
 
         <img
-            src="images/tim-fry-artwork-05-3.jpg"
-            alt="Detail of Hotel California"
+            src="images/alessandro-daquila-artwork-05-3.jpg"
+            alt="Detail of El Mar"
         >
 
         <img
-            src="images/tim-fry-artwork-05-4.jpg"
-            alt="Side view of Hotel California"
+            src="images/alessandro-daquila-artwork-05-4.jpg"
+            alt="Side view of El Mar"
         >
 
     </div>
@@ -925,7 +1016,7 @@ My practice is deeply personal. As a child, I experienced a moment that left me 
 <!-- ARTWORK 6 -->
 
 <a
-    href="#"
+    href="mailied.html"
     class="artwork-card"
     data-title="mailied"
     data-artist="alessandro-daquila"
@@ -1122,7 +1213,7 @@ My practice is deeply personal. As a child, I experienced a moment that left me 
         <div class="footer-bottom">
 
             <p>
-                © 2026 KIN Contemporary. All rights reserved.
+                © 2026 Kin Contemporary. All rights reserved.
             </p>
 
             <div>
@@ -1141,7 +1232,7 @@ My practice is deeply personal. As a child, I experienced a moment that left me 
 
     </footer>
 
-    <script src="js/script.js?v=2"></script>
+    <script src="js/script.js?v=3"></script>
 
 </body>
 

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -10,7 +11,15 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>KIN Contemporary</title>
+    <meta
+        name="description"
+        content="Contact KIN Contemporary for artwork enquiries, exhibitions, collectors and collaborations."
+    >
+
+    <title>Contact | KIN Contemporary</title>
+
+
+    <!-- FAVICON -->
 
     <link
         rel="icon"
@@ -19,7 +28,7 @@
     >
 
 
-    <!-- Google Fonts -->
+    <!-- GOOGLE FONTS -->
 
     <link
         rel="preconnect"
@@ -38,7 +47,7 @@
     >
 
 
-    <!-- Main stylesheet -->
+    <!-- MAIN STYLESHEET -->
 
     <link
         rel="stylesheet"
@@ -46,12 +55,12 @@
     >
 
 
-    <!-- Font Awesome -->
+    <!-- FONT AWESOME -->
 
     <script
         src="https://kit.fontawesome.com/b94eebf806.js"
-        crossorigin="anonymous">
-    </script>
+        crossorigin="anonymous"
+    ></script>
 
 </head>
 
@@ -117,11 +126,11 @@
 
                 <li>
                     <a
-    href="contact.html"
-    class="active"
->
-    Contact
-</a>
+                        href="contact.html"
+                        class="active"
+                    >
+                        Contact
+                    </a>
                 </li>
 
 
@@ -163,14 +172,80 @@
 
 
     <!-- =====================================================
-         PAGE CONTENT
+         CONTACT PAGE
     ====================================================== -->
 
-    <main>
+    <main class="contact-page-minimal">
 
-        <!-- ADD NEW PAGE CONTENT HERE -->
+    <section class="contact-minimal">
 
-    </main>
+        <div class="contact-minimal-inner">
+
+            <h1>CONTACT</h1>
+
+            <p class="contact-minimal-intro">
+                For artwork enquiries, exhibitions, collaborations
+                or further information, please get in touch.
+            </p>
+
+            <div class="contact-minimal-details">
+
+                <a href="mailto:info@kincontemporary.com">
+                    info@kincontemporary.com
+                </a>
+
+                <a href="tel:+61405691076">
+                    +61 405 691 076
+                </a>
+
+            </div>
+
+
+            <form
+    class="contact-minimal-form"
+    action="https://formspree.io/f/xzeprewj"
+    method="POST"
+>
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                >
+
+                <input
+                id="contact-subject"    
+                type="text"
+                    name="subject"
+                    placeholder="Subject"
+                >
+
+                <textarea
+                    name="message"
+                    placeholder="Message"
+                    rows="5"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    SEND ENQUIRY
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
 
 
 
@@ -335,7 +410,7 @@
         <div class="footer-bottom">
 
             <p>
-                © 2026 KIN Contemporary. All rights reserved.
+                © 2026 Kin Contemporary. All rights reserved.
             </p>
 
 
@@ -354,6 +429,13 @@
         </div>
 
     </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/script.js?v=2"></script>
 
 
 </body>

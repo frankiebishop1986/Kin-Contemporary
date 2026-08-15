@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Cowboy Juice (Yellow), 2026, by Jakey Pedro. Acrylic, enamel and charcoal on 310gsm archival paper. Available through KIN Contemporary."
+    >
+
+    <title>Cowboy Juice (Yellow) | Jakey Pedro | KIN Contemporary</title>
+
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/favicon2.png"
+    >
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- MAIN STYLESHEET -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css?v=41"
+    >
+
+
+    <!-- FONT AWESOME -->
+
+    <script
+        src="https://kit.fontawesome.com/b94eebf806.js"
+        crossorigin="anonymous"
+    ></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <nav class="main-navigation">
+
+            <div class="brand">
+
+                <a
+                    href="index.html"
+                    aria-label="KIN Contemporary home"
+                >
+
+                    <img
+                        src="images/kinlogo.png"
+                        alt="KIN Contemporary logo"
+                        class="logo"
+                    >
+
+                </a>
+
+            </div>
+
+
+            <ul class="navigation-links">
+
+                <li>
+                    <a href="artists.html">
+                        Artists
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="exhibitions.html">
+                        Exhibitions
+                    </a>
+                </li>
+
+
+                <li>
+                    <a
+                        href="available-works.html"
+                        class="active"
+                    >
+                        Available Works
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+
+                <li>
+
+                    <a
+    href="#"
+    class="icon-link search-toggle"
+    aria-label="Search"
+    aria-expanded="false"
+>
+    <i class="fa-solid fa-magnifying-glass"></i>
+</a>
+
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="#"
+                        class="icon-link"
+                        aria-label="Shopping bag"
+                    >
+
+                        <i class="fa-solid fa-bag-shopping"></i>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+<!-- =====================================================
+     KIN SEARCH
+====================================================== -->
+
+<div
+    class="site-search"
+    id="site-search"
+    aria-hidden="true"
+>
+
+    <div class="site-search-inner">
+
+        <div class="site-search-top">
+
+            <div class="site-search-input-wrap">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="search"
+                    id="site-search-input"
+                    placeholder="Search artists, artworks, paintings, sculptures..."
+                    autocomplete="off"
+                    aria-label="Search KIN Contemporary"
+                >
+
+            </div>
+
+            <button
+                type="button"
+                class="site-search-close"
+                aria-label="Close search"
+            >
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+
+        <div class="site-search-suggestions">
+
+            <span>
+                Popular searches
+            </span>
+
+            <button
+                type="button"
+                data-search-term="painting"
+            >
+                Painting
+            </button>
+
+            <button
+                type="button"
+                data-search-term="sculpture"
+            >
+                Sculpture
+            </button>
+
+            <button
+                type="button"
+                data-search-term="prints"
+            >
+                Prints
+            </button>
+
+            <button
+                type="button"
+                data-search-term="limited edition"
+            >
+                Limited Edition
+            </button>
+
+        </div>
+
+
+        <div
+            class="site-search-results"
+            id="site-search-results"
+        ></div>
+
+    </div>
+
+</div>
+
+
+<div
+    class="site-search-backdrop"
+    aria-hidden="true"
+></div>
+
+
+    <!-- =====================================================
+         SINGLE ARTWORK PAGE
+    ====================================================== -->
+
+    <main class="single-artwork-page">
+
+
+        <!-- =====================================================
+             ARTWORK
+        ====================================================== -->
+
+        <div
+            class="single-artwork"
+            data-current-artwork="cowboy-juice-yellow"
+        >
+
+
+            <!-- =====================================================
+                 IMAGE GALLERY
+            ====================================================== -->
+
+            <div class="single-artwork-gallery">
+
+
+                <!-- THUMBNAILS -->
+
+                <div class="artwork-thumbnails">
+
+
+                    <!-- IMAGE 1 -->
+
+                    <button
+                        class="artwork-thumbnail active"
+                        type="button"
+                        data-image="images/jakey-pedro-artwork-07-1.jpg"
+                        aria-label="View Cowboy Juice (Yellow) front view"
+                    >
+
+                        <img
+                            src="images/jakey-pedro-artwork-07-1.jpg"
+                            alt=""
+                        >
+
+                    </button>
+
+
+
+                    <!-- IMAGE 2 -->
+
+                    <button
+                        class="artwork-thumbnail"
+                        type="button"
+                        data-image="images/jakey-pedro-artwork-07-2.jpg"
+                        aria-label="View Cowboy Juice (Yellow) installed in a room"
+                    >
+
+                        <img
+                            src="images/jakey-pedro-artwork-07-2.jpg"
+                            alt=""
+                        >
+
+                    </button>
+
+
+
+                    <!-- IMAGE 3 -->
+
+                    <button
+                        class="artwork-thumbnail"
+                        type="button"
+                        data-image="images/jakey-pedro-artwork-07-3.jpg"
+                        aria-label="View Cowboy Juice (Yellow) detail"
+                    >
+
+                        <img
+                            src="images/jakey-pedro-artwork-07-3.jpg"
+                            alt=""
+                        >
+
+                    </button>
+
+
+
+                    <!-- IMAGE 4 -->
+
+                    <button
+                        class="artwork-thumbnail"
+                        type="button"
+                        data-image="images/jakey-pedro-artwork-07-4.jpg"
+                        aria-label="View Cowboy Juice (Yellow) side view"
+                    >
+
+                        <img
+                            src="images/jakey-pedro-artwork-07-4.jpg"
+                            alt=""
+                        >
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- =====================================================
+                     MAIN IMAGE
+                ====================================================== -->
+
+                <div class="single-artwork-main-image">
+
+                    <img
+                        id="single-artwork-main-image"
+                        src="images/jakey-pedro-artwork-07-1.jpg"
+                        alt="Cowboy Juice (Yellow) by Jakey Pedro"
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =====================================================
+                 ARTWORK INFORMATION
+            ====================================================== -->
+
+            <div class="single-artwork-details">
+
+
+                <!-- ARTIST -->
+
+                <a
+                    href="jakey-pedro.html"
+                    class="single-artwork-artist"
+                >
+                    JAKEY PEDRO
+                </a>
+
+
+
+                <!-- TITLE -->
+
+                <h1>
+                    COWBOY JUICE (YELLOW)
+                </h1>
+
+
+
+                <!-- ARTWORK DETAILS -->
+
+                <div class="single-artwork-meta">
+
+                    <p>
+                        2026
+                    </p>
+
+                    <p>
+                        Acrylic, enamel and charcoal on 310gsm archival paper
+                    </p>
+
+                    <p>
+                        78 × 54 cm
+                    </p>
+
+                </div>
+
+
+
+                <!-- PRICE -->
+
+                <p class="single-artwork-price">
+                    1800 AUD
+                </p>
+
+
+
+                <!-- =====================================================
+                     PURCHASE
+                ====================================================== -->
+
+                <div class="single-artwork-purchase">
+
+                    <button
+                        type="button"
+                        class="single-artwork-buy-button"
+                        onclick="window.location.href='https://kin-contemporary.myshopify.com/products/cowboy-juice'"
+                    >
+                        PURCHASE
+                    </button>
+                </div>
+
+
+
+                <!-- =====================================================
+                     SERVICES
+                ====================================================== -->
+
+                <div class="single-artwork-services">
+
+                    <p>
+
+                        <i class="fa-regular fa-circle-check"></i>
+
+                        Certificate of authenticity
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="fa-solid fa-truck"></i>
+
+                        Shipping arranged separately after purchase
+                    </p>
+
+
+                    <p>
+
+                        <i class="fa-solid fa-earth-americas"></i>
+
+                        International shipping available
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- =====================================================
+                     ENQUIRY
+                ====================================================== -->
+
+                <div class="single-artwork-enquiry">
+
+                    <p>
+                        For further information about this work,
+                    </p>
+
+                    <a
+                        href="contact.html?artwork=Sunday-Best&artist=Jakey-Pedro"
+                    >
+                        enquire here
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =====================================================
+             YOU MAY ALSO LIKE
+        ====================================================== -->
+
+        <section class="artwork-recommendations">
+
+
+            <div class="artwork-recommendations-header">
+
+                <h2>
+                    YOU MAY ALSO LIKE
+                </h2>
+
+
+                <div class="recommendation-controls">
+
+
+                    <button
+                        type="button"
+                        class="recommendation-prev"
+                        aria-label="Previous artworks"
+                    >
+
+                        <i class="fa-solid fa-arrow-left-long"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="recommendation-next"
+                        aria-label="Next artworks"
+                    >
+
+                        <i class="fa-solid fa-arrow-right-long"></i>
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================================
+                 RECOMMENDATION CAROUSEL
+            ====================================================== -->
+
+            <div class="recommendation-window">
+
+                <div
+                    class="recommendation-track"
+                    id="recommendation-track"
+                >
+
+                    <!-- JS WILL ADD RECOMMENDATIONS HERE -->
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+
+        <h3 class="visually-hidden">Footer information</h3>
+
+
+        <div class="footer-grid">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    aria-label="KIN Contemporary home"
+                >
+
+                    <img
+                        src="images/kinlogo.png"
+                        alt="KIN Contemporary logo"
+                    >
+
+                </a>
+
+
+                <p>
+                    A digital frontier for contemporary fine art.
+                </p>
+
+            </div>
+
+
+
+            <!-- NAVIGATION -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Navigation
+                </h4>
+
+
+                <a href="artists.html">
+                    Artists
+                </a>
+
+
+                <a href="exhibitions.html">
+                    Exhibitions
+                </a>
+
+
+                <a href="available-works.html">
+                    Curated Collections
+                </a>
+
+
+                <a href="press.html">
+                    Press
+                </a>
+
+            </div>
+
+
+
+            <!-- SUPPORT -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Support
+                </h4>
+
+
+                <a href="shipping-return.html">
+                    Shipping &amp; Returns
+                </a>
+
+
+                <a href="certificate-of-authenticity.html">
+                    Certificates of Authenticity
+                </a>
+
+
+                <a href="payment-options.html">
+                    Payment options
+                </a>
+
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+
+            <!-- CONNECT -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Connect
+                </h4>
+
+
+                <div class="socials">
+
+
+                    <a
+                        href="https://www.instagram.com/kin_contemporary/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="KIN Contemporary on Instagram"
+                    >
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="artsy-link"
+                    >
+                        Artsy
+                    </a>
+
+
+                </div>
+
+
+
+                <h4>
+                    Newsletter
+                </h4>
+
+
+                <form class="newsletter">
+
+                    <label
+                        class="visually-hidden"
+                        for="artwork-newsletter-email"
+                    >
+                        Email address
+                    </label>
+
+
+                    <input
+                        id="artwork-newsletter-email"
+                        type="email"
+                        placeholder="Email Address"
+                        required
+                    >
+
+
+                    <button type="submit">
+                        Join
+                    </button>
+
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =====================================================
+             FOOTER BOTTOM
+        ====================================================== -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Kin Contemporary. All rights reserved.
+            </p>
+
+
+            <div>
+
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+
+
+                <a href="terms-of-service.html">
+                    Terms of Service
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/script.js?v=3"></script>
+
+
+</body>
+
+</html>

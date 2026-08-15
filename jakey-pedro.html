@@ -116,14 +116,14 @@
                 <li>
 
                     <a
-                        href="#"
-                        class="icon-link"
-                        aria-label="Search"
-                    >
+    href="#"
+    class="icon-link search-toggle"
+    aria-label="Search"
+    aria-expanded="false"
+>
+    <i class="fa-solid fa-magnifying-glass"></i>
+</a>
 
-                        <i class="fa-solid fa-magnifying-glass"></i>
-
-                    </a>
 
                 </li>
 
@@ -146,6 +146,97 @@
         </nav>
 
     </header>
+<!-- =====================================================
+     KIN SEARCH
+====================================================== -->
+
+<div
+    class="site-search"
+    id="site-search"
+    aria-hidden="true"
+>
+
+    <div class="site-search-inner">
+
+        <div class="site-search-top">
+
+            <div class="site-search-input-wrap">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="search"
+                    id="site-search-input"
+                    placeholder="Search artists, artworks, paintings, sculptures..."
+                    autocomplete="off"
+                    aria-label="Search KIN Contemporary"
+                >
+
+            </div>
+
+            <button
+                type="button"
+                class="site-search-close"
+                aria-label="Close search"
+            >
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+
+        <div class="site-search-suggestions">
+
+            <span>
+                Popular searches
+            </span>
+
+            <button
+                type="button"
+                data-search-term="painting"
+            >
+                Painting
+            </button>
+
+            <button
+                type="button"
+                data-search-term="sculpture"
+            >
+                Sculpture
+            </button>
+
+            <button
+                type="button"
+                data-search-term="prints"
+            >
+                Prints
+            </button>
+
+            <button
+                type="button"
+                data-search-term="limited edition"
+            >
+                Limited Edition
+            </button>
+
+        </div>
+
+
+        <div
+            class="site-search-results"
+            id="site-search-results"
+        ></div>
+
+    </div>
+
+</div>
+
+
+<div
+    class="site-search-backdrop"
+    aria-hidden="true"
+></div>
 
     <!-- =====================================================
          ARTIST PAGE
@@ -682,7 +773,7 @@
                 <!-- ARTWORK 1 -->
 
                 <a
-    href="#"
+    href="trouble-in-paradise.html"
     class="artwork-card"
     data-title="trouble in paradise"
     data-artist="jakey-pedro"
@@ -740,7 +831,7 @@
                 <!-- ARTWORK 2 -->
 
                <a
-    href="#"
+    href="flower-lover.html"
     class="artwork-card"
     data-title="flower lover"
     data-artist="jakey-pedro"
@@ -796,7 +887,7 @@
 <!-- ARTWORK 3 -->
 
 <a
-    href="#"
+    href="high-fashion-cow-girl.html"
     class="artwork-card"
     data-title="high fashion cow-girl"
     data-artist="jakey-pedro"
@@ -835,7 +926,7 @@
     <div class="artwork-info">
 
         <h3>
-            HIGH FASHION COW-GIRL
+            HIGH FASHION COWGIRL
         </h3>
 
         <p>
@@ -854,7 +945,7 @@
 <!-- ARTWORK 4 -->
 
 <a
-    href="#"
+    href="island-fever.html"
     class="artwork-card"
     data-title="island fever"
     data-artist="jakey-pedro"
@@ -911,7 +1002,7 @@
 <!-- ARTWORK 5 -->
 
 <a
-    href="#"
+    href="in-the-garden.html"
     class="artwork-card"
     data-title="in the garden"
     data-artist="jakey-pedro"
@@ -969,7 +1060,7 @@
 <!-- ARTWORK 6 -->
 
 <a
-    href="#"
+    href="sunday-best.html"
     class="artwork-card"
     data-title="sunday best"
     data-artist="jakey-pedro"
@@ -1027,7 +1118,7 @@
 <!-- ARTWORK 7 -->
 
 <a
-    href="#"
+    href="cowboy-juice-yellow.html"
     class="artwork-card"
     data-title="cowboy juice(yellow)"
     data-artist="jakey-pedro"
@@ -1083,7 +1174,7 @@
 <!-- ARTWORK 8 -->
 
 <a
-    href="#"
+    href="big-rodeo.html"
     class="artwork-card"
     data-title="big rodeo"
     data-artist="jakey-pedro"
@@ -1169,13 +1260,13 @@
                 <!-- LIMITED EDITION PRINT 1 -->
 
 <a
-    href="#"
+    href="big-rodeo-limited.html"
     class="artwork-card"
     data-title="big rodeo (print)"
     data-artist="jakey-pedro"
     data-medium="print"
     data-size="large"
-    data-price="1625"
+    data-price="1650"
     data-year="2026"
     data-availability="available"
 >
@@ -1216,7 +1307,7 @@
         </p>
 
         <span>
-            1625 AUD
+            1650 AUD
         </span>
 
     </div>
@@ -1228,7 +1319,7 @@
                  <!-- LIMITED EDITION PRINT 2 -->
 
 <a
-    href="#"
+    href="high-fashion-cowgirl-limited.html"
     class="artwork-card"
     data-title="high fashion cow girl (print)"
     data-artist="jakey-pedro"
@@ -1267,7 +1358,7 @@
     <div class="artwork-info">
 
         <h3>
-            HIGH FASHION COW GIRL
+            HIGH FASHION COWGIRL
         </h3>
 
         <p>
@@ -1286,13 +1377,13 @@
                  <!-- LIMITED EDITION PRINT 3 -->
 
 <a
-    href="#"
+    href="flower-lover-limited.html"
     class="artwork-card"
     data-title="flower lover (print)"
     data-artist="jakey-pedro"
     data-medium="print"
     data-size="large"
-    data-price="1525"
+    data-price="1495"
     data-year="2026"
     data-availability="available"
 >
@@ -1333,7 +1424,7 @@
         </p>
 
         <span>
-            1525 AUD
+            1495 AUD
         </span>
 
     </div>
@@ -1485,7 +1576,7 @@
         <div class="footer-bottom">
 
             <p>
-                © 2026 KIN Contemporary. All rights reserved.
+                © 2026 Kin Contemporary. All rights reserved.
             </p>
 
             <div>
@@ -1504,7 +1595,7 @@
 
     </footer>
 
-    <script src="js/script.js?v=2"></script>
+    <script src="js/script.js?v=3"></script>
 
 </body>
 

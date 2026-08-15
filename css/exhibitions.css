@@ -1,0 +1,339 @@
+/* =========================================================
+   DRIFT — TEMPORARY EXHIBITION PAGE
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+    font-family: "Inter", sans-serif;
+
+    background: #fafafa;
+    color: #111;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.drift-landing {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 70px 30px 110px;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.drift-content {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.drift-logo-link {
+    display: inline-block;
+
+    margin-bottom: 75px;
+
+    text-decoration: none;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.drift-logo-link:hover {
+    opacity: 0.65;
+
+    transform: translateY(-2px);
+}
+
+
+.drift-logo {
+    display: block;
+
+    width: 95px;
+    height: auto;
+}
+
+
+/* =========================================================
+   EXHIBITION IMAGE
+========================================================= */
+
+.drift-image {
+    width: 100%;
+    max-width: 820px;
+
+    margin-bottom: 85px;
+
+    overflow: hidden;
+}
+
+
+.drift-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================================================
+   DRIFT TITLE
+========================================================= */
+
+.drift-title {
+    margin: 0 0 34px;
+
+    font-size: clamp(72px, 10vw, 145px);
+    font-weight: 600;
+
+    line-height: 0.85;
+
+    letter-spacing: -0.07em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   ARTIST
+========================================================= */
+
+.drift-artist {
+    margin-bottom: 22px;
+
+    color: #111;
+
+    font-size: 17px;
+    font-weight: 400;
+
+    letter-spacing: 0.32em;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.drift-artist:hover {
+    opacity: 0.5;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   DATE
+========================================================= */
+
+.drift-date {
+    margin-bottom: 24px;
+
+    color: #555;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    letter-spacing: 0.22em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.drift-status {
+    margin-bottom: 48px;
+
+    color: #999;
+
+    font-size: 11px;
+    font-weight: 400;
+
+    letter-spacing: 0.28em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.drift-button {
+    min-width: 235px;
+
+    padding: 17px 30px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #111;
+
+    border: 1px solid #111;
+
+    color: #fff;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 0.22em;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.drift-button:hover {
+    background: transparent;
+    color: #111;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .drift-landing {
+        padding: 55px 30px 90px;
+    }
+
+
+    .drift-logo-link {
+        margin-bottom: 60px;
+    }
+
+
+    .drift-image {
+        max-width: 700px;
+
+        margin-bottom: 70px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .drift-landing {
+        padding: 40px 22px 70px;
+    }
+
+
+    .drift-logo-link {
+        margin-bottom: 45px;
+    }
+
+
+    .drift-logo {
+        width: 78px;
+    }
+
+
+    .drift-image {
+        width: 100%;
+
+        margin-bottom: 55px;
+    }
+
+
+    .drift-title {
+        margin-bottom: 28px;
+
+        font-size: clamp(62px, 22vw, 95px);
+    }
+
+
+    .drift-artist {
+        margin-bottom: 20px;
+
+        font-size: 14px;
+
+        letter-spacing: 0.25em;
+    }
+
+
+    .drift-date {
+        max-width: 300px;
+
+        margin-bottom: 22px;
+
+        font-size: 11px;
+        line-height: 1.7;
+
+        letter-spacing: 0.16em;
+    }
+
+
+    .drift-status {
+        margin-bottom: 40px;
+
+        font-size: 9px;
+        line-height: 1.7;
+    }
+
+
+    .drift-button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+}
