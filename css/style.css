@@ -6510,64 +6510,12 @@ input {
     }
 
 
-    /* Plus / minus */
+    /* Plus / minus - hidden */
 
     .artist-mobile-toggle-icon {
-    position: relative;
-
-    width: 11px;
-    height: 11px;
-
-    flex: 0 0 11px;
-
-    margin-left: 20px;
+    display: none;
 }
-
-    .artist-mobile-toggle-icon::before,
-    .artist-mobile-toggle-icon::after {
-        content: "";
-
-        position: absolute;
-
-        top: 50%;
-        left: 50%;
-
-        background: #000;
-
-        transform:
-            translate(-50%, -50%);
-
-        transition:
-            transform 0.3s ease,
-            opacity 0.3s ease;
-    }
-
-    .artist-mobile-toggle-icon::before {
-    width: 11px;
-    height: 1px;
-}
-
-.artist-mobile-toggle-icon::after {
-    width: 1px;
-    height: 11px;
-}
-
-    .artist-mobile-toggle[aria-expanded="true"]
-    .artist-mobile-toggle-icon::after {
-        opacity: 0;
-    }
-
-
-    /* Closed by default */
-
-    .artist-mobile-panel {
-        display: none;
-    }
-
-    .artist-mobile-panel.is-open {
-        display: block;
-    }
-
+   
 
     /* =====================================================
        BIO CONTENT
