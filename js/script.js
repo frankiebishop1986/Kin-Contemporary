@@ -2264,3 +2264,224 @@ document.addEventListener("DOMContentLoaded", function () {
     buildDynamicSearchIndex();
 
 });
+/* =========================================================
+   KIN — ARTIST PAGE MOBILE ACCORDIONS
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const biography =
+        document.querySelector(".artist-page-biography");
+
+    const statement =
+        document.querySelector(".artist-statement");
+
+
+    /*
+       Only run on individual artist pages
+    */
+
+    if (!biography && !statement) {
+        return;
+    }
+
+
+    function createMobileAccordion(
+        section,
+        label
+    ) {
+
+        if (!section) return;
+
+
+        /*
+           Prevent duplicate setup
+        */
+
+        if (
+            section.classList.contains(
+                "artist-mobile-accordion"
+            )
+        ) {
+            return;
+        }
+
+
+        /*
+           Keep the visually-hidden H2
+           for accessibility
+        */
+
+        const hiddenHeading =
+            section.querySelector(
+                ":scope > .visually-hidden"
+            );
+
+
+        /*
+           Collect everything except
+           the hidden heading
+        */
+
+        const elements =
+            Array.from(
+                section.children
+            ).filter(
+                function (element) {
+
+                    return (
+                        element !== hiddenHeading
+                    );
+
+                }
+            );
+
+
+        /*
+           Create accordion button
+        */
+
+        const button =
+            document.createElement("button");
+
+        button.type = "button";
+
+        button.className =
+            "artist-mobile-toggle";
+
+        button.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+
+        button.innerHTML = `
+
+            <span>
+                ${label}
+            </span>
+
+            <span
+                class="artist-mobile-toggle-icon"
+                aria-hidden="true"
+            ></span>
+
+        `;
+
+
+        /*
+           Create collapsible content
+        */
+
+        const panel =
+            document.createElement("div");
+
+        panel.className =
+            "artist-mobile-panel";
+
+
+        elements.forEach(
+            function (element) {
+
+                panel.appendChild(
+                    element
+                );
+
+            }
+        );
+
+
+        /*
+           Add new structure
+        */
+
+        if (hiddenHeading) {
+
+            hiddenHeading.insertAdjacentElement(
+                "afterend",
+                button
+            );
+
+            button.insertAdjacentElement(
+                "afterend",
+                panel
+            );
+
+        } else {
+
+            section.prepend(button);
+
+            button.insertAdjacentElement(
+                "afterend",
+                panel
+            );
+
+        }
+
+
+        /*
+           Add global accordion class
+        */
+
+        section.classList.add(
+            "artist-mobile-accordion"
+        );
+
+
+        /*
+           Open / close
+        */
+
+        button.addEventListener(
+            "click",
+            function () {
+
+                /*
+                   Accordion behaviour is
+                   ONLY active on phones
+                */
+
+                if (
+                    !window.matchMedia(
+                        "(max-width: 600px)"
+                    ).matches
+                ) {
+                    return;
+                }
+
+
+                const isOpen =
+                    button.getAttribute(
+                        "aria-expanded"
+                    ) === "true";
+
+
+                button.setAttribute(
+                    "aria-expanded",
+                    String(!isOpen)
+                );
+
+
+                panel.classList.toggle(
+                    "is-open",
+                    !isOpen
+                );
+
+            }
+        );
+
+    }
+
+
+    createMobileAccordion(
+        biography,
+        "Bio"
+    );
+
+
+    createMobileAccordion(
+        statement,
+        "Artist Statement"
+    );
+
+});

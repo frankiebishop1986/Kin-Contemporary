@@ -6193,3 +6193,269 @@ input {
     opacity: 0.55;
     transform: none;
 }
+/* =========================================================
+   KIN — ARTIST PAGES MOBILE IMPROVEMENT
+   Phones only
+========================================================= */
+
+@media (max-width: 600px) {
+
+    /* =====================================================
+       MOBILE BIO + STATEMENT ACCORDIONS
+    ===================================================== */
+
+    .artist-mobile-accordion {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        border-top: 1px solid #d8d8d8;
+    }
+
+    .artist-mobile-accordion:last-of-type {
+        border-bottom: 1px solid #d8d8d8;
+    }
+
+    .artist-mobile-toggle {
+        width: 100%;
+        padding: 22px 0;
+
+        border: 0;
+        background: transparent;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        color: #000;
+
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+
+        cursor: pointer;
+    }
+
+    .artist-mobile-toggle-icon {
+        position: relative;
+
+        width: 14px;
+        height: 14px;
+
+        flex: 0 0 14px;
+    }
+
+    .artist-mobile-toggle-icon::before,
+    .artist-mobile-toggle-icon::after {
+        content: "";
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        background: #000;
+
+        transform: translate(-50%, -50%);
+
+        transition: transform 0.3s ease,
+                    opacity 0.3s ease;
+    }
+
+    .artist-mobile-toggle-icon::before {
+        width: 14px;
+        height: 1px;
+    }
+
+    .artist-mobile-toggle-icon::after {
+        width: 1px;
+        height: 14px;
+    }
+
+    .artist-mobile-toggle[aria-expanded="true"]
+    .artist-mobile-toggle-icon::after {
+        opacity: 0;
+        transform:
+            translate(-50%, -50%)
+            rotate(90deg);
+    }
+
+
+    /* Hidden by default */
+
+    .artist-mobile-panel {
+        display: none;
+    }
+
+    .artist-mobile-panel.is-open {
+        display: block;
+    }
+
+
+    /* =====================================================
+       REMOVE OLD MOBILE BIO SPACING
+    ===================================================== */
+
+    .artist-page-biography {
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .artist-page-biography .artist-mobile-panel {
+        padding: 15px 0 35px;
+    }
+
+    .artist-page-biography p {
+        margin-bottom: 20px;
+
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       MOBILE STATEMENT
+    ===================================================== */
+
+    .artist-statement {
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        display: block;
+    }
+
+    .artist-statement .artist-mobile-panel {
+        padding: 15px 0 40px;
+    }
+
+    .artist-statement-image {
+        width: 100%;
+
+        margin-bottom: 35px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .artist-statement-image img {
+        width: 100%;
+        height: auto;
+
+        display: block;
+
+        object-fit: contain;
+    }
+
+    .artist-statement-text {
+        width: 100%;
+    }
+
+    .artist-statement-text p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       SELECTED WORKS
+    ===================================================== */
+
+    .selected-works {
+        width: calc(100% - 40px);
+
+        margin: 55px auto 0;
+
+        padding-top: 0;
+    }
+
+    .selected-works-header {
+        margin-bottom: 35px;
+    }
+
+
+    /* =====================================================
+       TWO ARTWORKS PER ROW
+    ===================================================== */
+
+    .artwork-grid {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        column-gap: 14px;
+        row-gap: 45px;
+
+        margin-top: 0;
+    }
+
+
+    /* Reset desktop staggered positioning */
+
+    .artwork-card,
+    .artwork-card:nth-child(odd),
+    .artwork-card:nth-child(even),
+    .artwork-card:nth-child(odd):nth-child(n+3),
+    .artwork-card:nth-child(even):nth-child(n+4) {
+
+        width: 100%;
+
+        margin: 0;
+
+        justify-self: stretch;
+    }
+
+
+    /* Consistent artwork thumbnail */
+
+    .artwork-image {
+        width: 100%;
+
+        aspect-ratio: 4 / 5;
+
+        overflow: hidden;
+
+        background: #f1f1f1;
+    }
+
+    .artwork-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    /* Smaller information for 2-column layout */
+
+    .artwork-info {
+        margin-top: 13px;
+
+        text-align: center;
+    }
+
+    .artwork-info h3 {
+        margin-bottom: 5px;
+
+        font-size: 12px;
+        line-height: 1.25;
+    }
+
+    .artwork-info p {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    .artwork-info span {
+        margin-top: 6px;
+
+        font-size: 11px;
+    }
+
+}
