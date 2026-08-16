@@ -6459,3 +6459,324 @@ input {
     }
 
 }
+/* =========================================================
+   KIN — ARTIST PAGE MOBILE FINAL
+   Phones only
+========================================================= */
+
+@media (max-width: 600px) {
+
+    /* =====================================================
+       BIO + STATEMENT ACCORDION
+    ===================================================== */
+
+    .artist-mobile-accordion {
+        width: 100%;
+        margin: 0;
+
+        border-top: 1px solid #d8d8d8;
+    }
+
+    .artist-mobile-accordion:last-of-type {
+        border-bottom: 1px solid #d8d8d8;
+    }
+
+
+    /* Give BIO / STATEMENT proper breathing room */
+
+    .artist-mobile-toggle {
+        width: 100%;
+
+        padding:
+            24px
+            24px;
+
+        border: 0;
+
+        background: transparent;
+        color: #000;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+
+        text-transform: uppercase;
+
+        cursor: pointer;
+    }
+
+
+    /* Plus / minus */
+
+    .artist-mobile-toggle-icon {
+        position: relative;
+
+        width: 15px;
+        height: 15px;
+
+        flex: 0 0 15px;
+
+        margin-left: 20px;
+    }
+
+    .artist-mobile-toggle-icon::before,
+    .artist-mobile-toggle-icon::after {
+        content: "";
+
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+
+        background: #000;
+
+        transform:
+            translate(-50%, -50%);
+
+        transition:
+            transform 0.3s ease,
+            opacity 0.3s ease;
+    }
+
+    .artist-mobile-toggle-icon::before {
+        width: 15px;
+        height: 1px;
+    }
+
+    .artist-mobile-toggle-icon::after {
+        width: 1px;
+        height: 15px;
+    }
+
+    .artist-mobile-toggle[aria-expanded="true"]
+    .artist-mobile-toggle-icon::after {
+        opacity: 0;
+    }
+
+
+    /* Closed by default */
+
+    .artist-mobile-panel {
+        display: none;
+    }
+
+    .artist-mobile-panel.is-open {
+        display: block;
+    }
+
+
+    /* =====================================================
+       BIO CONTENT
+    ===================================================== */
+
+    .artist-page-biography {
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .artist-page-biography
+    .artist-mobile-panel {
+        padding:
+            8px
+            24px
+            40px;
+    }
+
+    .artist-page-biography p {
+        margin-bottom: 20px;
+
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       ARTIST STATEMENT CONTENT
+    ===================================================== */
+
+    .artist-statement {
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        display: block;
+    }
+
+    .artist-statement
+    .artist-mobile-panel {
+        padding:
+            8px
+            24px
+            45px;
+    }
+
+    .artist-statement-image {
+        width: 100%;
+
+        margin-bottom: 35px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .artist-statement-image img {
+        width: 100%;
+        height: auto;
+
+        display: block;
+
+        object-fit: contain;
+    }
+
+    .artist-statement-text {
+        width: 100%;
+        max-width: none;
+
+        padding-top: 0;
+    }
+
+    .artist-statement-text p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       ORIGINAL ARTWORKS
+    ===================================================== */
+
+    .selected-works {
+        width: 100%;
+
+        margin: 70px auto 0;
+
+        padding:
+            0
+            24px;
+    }
+
+    .selected-works-header {
+        margin-bottom: 55px;
+
+        align-items: center;
+    }
+
+    .selected-works-header h2 {
+        font-size: 18px;
+    }
+
+    .artwork-filter-button {
+        top: 0;
+
+        margin-top: 0;
+    }
+
+
+    /* =====================================================
+       MOBILE ZIG-ZAG ARTWORK GRID
+    ===================================================== */
+
+    .artwork-grid {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 70px;
+
+        margin-top: 0;
+    }
+
+
+    /* Reset all desktop positioning */
+
+    .artwork-card,
+    .artwork-card:nth-child(odd),
+    .artwork-card:nth-child(even),
+    .artwork-card:nth-child(odd):nth-child(n+3),
+    .artwork-card:nth-child(even):nth-child(n+4) {
+
+        width: 82%;
+
+        margin: 0;
+
+        justify-self: auto;
+    }
+
+
+    /* Odd artworks align LEFT */
+
+    .artwork-card:nth-child(odd) {
+        align-self: flex-start;
+    }
+
+
+    /* Even artworks align RIGHT */
+
+    .artwork-card:nth-child(even) {
+        align-self: flex-end;
+    }
+
+
+    /* =====================================================
+       PRESERVE REAL ARTWORK RATIO
+       NO CROPPING
+    ===================================================== */
+
+    .artwork-image {
+        width: 100%;
+
+        aspect-ratio: auto;
+
+        overflow: visible;
+
+        background: transparent;
+    }
+
+    .artwork-image img,
+    .artwork-image img.active {
+        width: 100%;
+        height: auto;
+
+        object-fit: contain;
+    }
+
+
+    /* =====================================================
+       ARTWORK INFORMATION
+    ===================================================== */
+
+    .artwork-info {
+        margin-top: 16px;
+
+        text-align: center;
+    }
+
+    .artwork-info h3 {
+        margin-bottom: 6px;
+
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .artwork-info p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .artwork-info span {
+        margin-top: 7px;
+
+        font-size: 13px;
+    }
+
+}
