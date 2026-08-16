@@ -6513,15 +6513,15 @@ input {
     /* Plus / minus */
 
     .artist-mobile-toggle-icon {
-        position: relative;
+    position: relative;
 
-        width: 15px;
-        height: 15px;
+    width: 11px;
+    height: 11px;
 
-        flex: 0 0 15px;
+    flex: 0 0 11px;
 
-        margin-left: 20px;
-    }
+    margin-left: 20px;
+}
 
     .artist-mobile-toggle-icon::before,
     .artist-mobile-toggle-icon::after {
@@ -6543,14 +6543,14 @@ input {
     }
 
     .artist-mobile-toggle-icon::before {
-        width: 15px;
-        height: 1px;
-    }
+    width: 11px;
+    height: 1px;
+}
 
-    .artist-mobile-toggle-icon::after {
-        width: 1px;
-        height: 15px;
-    }
+.artist-mobile-toggle-icon::after {
+    width: 1px;
+    height: 11px;
+}
 
     .artist-mobile-toggle[aria-expanded="true"]
     .artist-mobile-toggle-icon::after {
