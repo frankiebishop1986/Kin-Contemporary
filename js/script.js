@@ -2266,15 +2266,34 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 /* =========================================================
    KIN — ARTIST PAGE MOBILE ACCORDIONS
+   MOBILE ONLY — DESKTOP HTML REMAINS UNTOUCHED
 ========================================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    /*
+       IMPORTANT:
+       Do absolutely nothing on desktop/tablet.
+    */
+
+    if (
+        !window.matchMedia(
+            "(max-width: 600px)"
+        ).matches
+    ) {
+        return;
+    }
+
+
     const biography =
-        document.querySelector(".artist-page-biography");
+        document.querySelector(
+            ".artist-page-biography"
+        );
 
     const statement =
-        document.querySelector(".artist-statement");
+        document.querySelector(
+            ".artist-statement"
+        );
 
 
     /*
@@ -2308,8 +2327,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         /*
-           Keep the visually-hidden H2
-           for accessibility
+           Keep hidden semantic heading
         */
 
         const hiddenHeading =
@@ -2319,8 +2337,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         /*
-           Collect everything except
-           the hidden heading
+           Collect section content
+           without the hidden heading
         */
 
         const elements =
@@ -2338,13 +2356,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         /*
-           Create accordion button
+           Create button
         */
 
         const button =
-            document.createElement("button");
+            document.createElement(
+                "button"
+            );
 
-        button.type = "button";
+        button.type =
+            "button";
 
         button.className =
             "artist-mobile-toggle";
@@ -2370,15 +2391,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         /*
-           Create collapsible content
+           Create collapsible panel
         */
 
         const panel =
-            document.createElement("div");
+            document.createElement(
+                "div"
+            );
 
         panel.className =
             "artist-mobile-panel";
 
+
+        /*
+           Move existing content
+           inside panel
+        */
 
         elements.forEach(
             function (element) {
@@ -2392,36 +2420,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         /*
-           Add new structure
+           Insert accordion
         */
 
         if (hiddenHeading) {
 
-            hiddenHeading.insertAdjacentElement(
-                "afterend",
-                button
-            );
+            hiddenHeading
+                .insertAdjacentElement(
+                    "afterend",
+                    button
+                );
 
-            button.insertAdjacentElement(
-                "afterend",
-                panel
-            );
+            button
+                .insertAdjacentElement(
+                    "afterend",
+                    panel
+                );
 
         } else {
 
-            section.prepend(button);
-
-            button.insertAdjacentElement(
-                "afterend",
-                panel
+            section.prepend(
+                button
             );
+
+            button
+                .insertAdjacentElement(
+                    "afterend",
+                    panel
+                );
 
         }
 
-
-        /*
-           Add global accordion class
-        */
 
         section.classList.add(
             "artist-mobile-accordion"
@@ -2435,20 +2464,6 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener(
             "click",
             function () {
-
-                /*
-                   Accordion behaviour is
-                   ONLY active on phones
-                */
-
-                if (
-                    !window.matchMedia(
-                        "(max-width: 600px)"
-                    ).matches
-                ) {
-                    return;
-                }
-
 
                 const isOpen =
                     button.getAttribute(
