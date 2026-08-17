@@ -6728,3 +6728,23 @@ input {
     }
 
 }
+/* =========================================================
+   HOMEPAGE EXHIBITION IMAGE — MOBILE FULL IMAGE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .exhibition-image {
+        width: 100%;
+        overflow: visible;
+    }
+
+    .exhibition-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        object-position: center;
+        display: block;
+    }
+
+}
