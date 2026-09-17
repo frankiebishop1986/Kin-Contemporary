@@ -1051,53 +1051,307 @@ input {
     transform: translateY(-2px);
 }
 
-.newsletter {
-    display: flex;
+/* =========================================================
+   NEWSLETTER POPUP
+========================================================= */
 
-    max-width: 250px;
+/* Footer button */
 
-    border-bottom: 1px solid #aaa;
+.newsletter-trigger {
+    margin-top: 8px;
 }
 
-.newsletter input {
-    min-width: 0;
-    flex: 1;
+.newsletter-open {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 
     padding: 10px 0;
 
     border: none;
-    outline: none;
+    border-bottom: 1px solid #000;
 
     background: transparent;
-
     color: #000;
 
     font-family: "Inter", sans-serif;
-}
-
-.newsletter input::placeholder {
-    color: #888;
-}
-
-.newsletter button {
-    border: none;
-
-    background: transparent;
-
-    color: #000;
-
-    text-transform: uppercase;
-
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 
     cursor: pointer;
 
     transition: opacity 0.3s ease;
 }
 
-.newsletter button:hover {
+.newsletter-open span {
+    font-size: 17px;
+    transition: transform 0.3s ease;
+}
+
+.newsletter-open:hover {
     opacity: 0.55;
+}
+
+.newsletter-open:hover span {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   POPUP
+========================================================= */
+
+.newsletter-modal {
+    position: fixed;
+    inset: 0;
+
+    z-index: 5000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease;
+}
+
+
+/* Makes popup visible */
+
+.newsletter-modal.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* Dark background */
+
+.newsletter-modal-backdrop {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    backdrop-filter: blur(2px);
+}
+
+
+/* White popup box */
+
+.newsletter-modal-content {
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+    max-width: 520px;
+
+    padding: 65px 60px 60px;
+
+    background: #fafafa;
+    color: #000;
+
+    transform: translateY(15px);
+
+    transition:
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.newsletter-modal.is-open .newsletter-modal-content {
+    transform: translateY(0);
+}
+
+
+/* X close button */
+
+.newsletter-close {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    color: #000;
+
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition: opacity 0.3s ease;
+}
+
+.newsletter-close:hover {
+    opacity: 0.45;
+}
+
+
+/* Small KIN CONTEMPORARY text */
+
+.newsletter-eyebrow {
+    margin-bottom: 22px;
+
+    color: #777;
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+
+/* Main title */
+
+.newsletter-modal-content h2 {
+    max-width: 390px;
+
+    margin: 0 0 20px;
+
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+}
+
+
+/* Description */
+
+.newsletter-description {
+    max-width: 380px;
+
+    margin-bottom: 45px;
+
+    color: #666;
+
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.newsletter-popup-form {
+    width: 100%;
+}
+
+.newsletter-field {
+    margin-bottom: 28px;
+}
+
+
+/* Labels */
+
+.newsletter-field label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #555;
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+/* Input fields */
+
+.newsletter-field input {
+    width: 100%;
+
+    padding: 7px 0 11px;
+
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    border-radius: 0;
+
+    background: transparent;
+    color: #000;
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    transition: border-color 0.3s ease;
+}
+
+.newsletter-field input:focus {
+    border-bottom-color: #000;
+}
+
+
+/* Subscribe button */
+
+.newsletter-submit {
+    width: 100%;
+
+    margin-top: 15px;
+    padding: 17px 25px;
+
+    border: 1px solid #000;
+
+    background: #000;
+    color: #fff;
+
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.newsletter-submit:hover {
+    background: transparent;
+    color: #000;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .newsletter-modal {
+        padding: 18px;
+    }
+
+    .newsletter-modal-content {
+        padding: 55px 30px 40px;
+    }
+
+    .newsletter-modal-content h2 {
+        font-size: 31px;
+    }
+
+    .newsletter-description {
+        margin-bottom: 35px;
+    }
 }
 
 .footer-bottom {

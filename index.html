@@ -812,50 +812,150 @@
                     Newsletter
                 </h4>
 
-                <form
-    class="newsletter"
-    action="https://kincontemporary.us19.list-manage.com/subscribe/post?u=e8e7fefe661fa37f057c606b0&amp;id=331e16b8a6&amp;f_id=00aac2e1f0"
-    method="post"
-    target="_blank"
+                <!-- NEWSLETTER TRIGGER -->
+
+<div class="newsletter-trigger">
+    <button
+        type="button"
+        class="newsletter-open"
+        id="newsletter-open"
+    >
+        Join our newsletter
+        <span>→</span>
+    </button>
+</div>
+
+
+<!-- NEWSLETTER POPUP -->
+
+<div
+    class="newsletter-modal"
+    id="newsletter-modal"
+    aria-hidden="true"
 >
-
-    <label
-        class="visually-hidden"
-        for="newsletter-email"
-    >
-        Email address
-    </label>
-
-    <input
-        id="newsletter-email"
-        type="email"
-        name="EMAIL"
-        placeholder="Email Address"
-        required
-    >
-
-    <!-- Mailchimp anti-spam field -->
+    <div class="newsletter-modal-backdrop"></div>
 
     <div
-        aria-hidden="true"
-        style="position:absolute; left:-5000px;"
+        class="newsletter-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="newsletter-title"
     >
-        <input
-            type="text"
-            name="b_e8e7fefe661fa37f057c606b0_331e16b8a6"
-            tabindex="-1"
-            value=""
+
+        <!-- CLOSE BUTTON -->
+        <button
+            type="button"
+            class="newsletter-close"
+            id="newsletter-close"
+            aria-label="Close newsletter form"
         >
+            ×
+        </button>
+
+
+        <p class="newsletter-eyebrow">
+            KIN CONTEMPORARY
+        </p>
+
+        <h2 id="newsletter-title">
+            Join the KIN community.
+        </h2>
+
+        <p class="newsletter-description">
+            Receive exhibition previews, new releases,
+            artist stories and gallery news.
+        </p>
+
+
+        <!-- MAILCHIMP FORM -->
+
+        <form
+            class="newsletter-popup-form"
+            action="https://kincontemporary.us19.list-manage.com/subscribe/post?u=e8e7fefe661fa37f057c606b0&amp;id=331e16b8a6&amp;f_id=00aac2e1f0"
+            method="post"
+            target="_blank"
+        >
+
+            <!-- FIRST NAME -->
+
+            <div class="newsletter-field">
+                <label for="newsletter-first-name">
+                    First Name
+                </label>
+
+                <input
+                    id="newsletter-first-name"
+                    type="text"
+                    name="FNAME"
+                    autocomplete="given-name"
+                    required
+                >
+            </div>
+
+
+            <!-- LAST NAME -->
+
+            <div class="newsletter-field">
+                <label for="newsletter-last-name">
+                    Last Name
+                </label>
+
+                <input
+                    id="newsletter-last-name"
+                    type="text"
+                    name="LNAME"
+                    autocomplete="family-name"
+                    required
+                >
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="newsletter-field">
+                <label for="newsletter-popup-email">
+                    Email Address
+                </label>
+
+                <input
+                    id="newsletter-popup-email"
+                    type="email"
+                    name="EMAIL"
+                    autocomplete="email"
+                    required
+                >
+            </div>
+
+
+            <!-- MAILCHIMP ANTI-SPAM FIELD -->
+
+            <div
+                aria-hidden="true"
+                style="position:absolute; left:-5000px;"
+            >
+                <input
+                    type="text"
+                    name="b_e8e7fefe661fa37f057c606b0_331e16b8a6"
+                    tabindex="-1"
+                    value=""
+                >
+            </div>
+
+
+            <!-- SUBMIT -->
+
+            <button
+                type="submit"
+                name="subscribe"
+                class="newsletter-submit"
+            >
+                Subscribe
+            </button>
+
+        </form>
+
     </div>
-
-    <button
-        type="submit"
-        name="subscribe"
-    >
-        Join
-    </button>
-
-</form>
+</div>
             </div>
 
         </div>
@@ -919,7 +1019,47 @@
         });
 
     </script>
+<script>
+    const newsletterModal =
+        document.getElementById("newsletter-modal");
 
+    const newsletterOpen =
+        document.getElementById("newsletter-open");
+
+    const newsletterClose =
+        document.getElementById("newsletter-close");
+
+    const newsletterBackdrop =
+        document.querySelector(".newsletter-modal-backdrop");
+
+
+    function openNewsletter() {
+        newsletterModal.classList.add("is-open");
+        newsletterModal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+    }
+
+
+    function closeNewsletter() {
+        newsletterModal.classList.remove("is-open");
+        newsletterModal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+    }
+
+
+    newsletterOpen.addEventListener("click", openNewsletter);
+
+    newsletterClose.addEventListener("click", closeNewsletter);
+
+    newsletterBackdrop.addEventListener("click", closeNewsletter);
+
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            closeNewsletter();
+        }
+    });
+</script>
     <script src="js/script.js?v=3"></script>
 
 </body>
