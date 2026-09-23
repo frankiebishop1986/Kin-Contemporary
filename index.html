@@ -55,6 +55,48 @@
         crossorigin="anonymous">
     </script>
 
+    <!-- Give the embedded form room for its horizontal desktop layout. -->
+    <style>
+      #fd-form-6ab345b1c94bc8b0f1ee938d { width: 100%; max-width: none; }
+      @media (min-width: 1100px) {
+        .newsletter-modal-content {
+          box-sizing: border-box;
+          width: min(1320px, calc(100vw - 64px));
+          max-width: none;
+          max-height: calc(100vh - 48px);
+          overflow-y: auto;
+        }
+        #fd-form-6ab345b1c94bc8b0f1ee938d > div {
+          box-sizing: border-box;
+          width: 100% !important;
+          max-width: none !important;
+        }
+      }
+    </style>
+
+    <!-- Flodesk form loader: include once per page -->
+    <script>
+      (function(w, d, t, h, s, n) {
+        w.FlodeskObject = n;
+        var fn = function() {
+          (w[n].q = w[n].q || []).push(arguments);
+        };
+        w[n] = w[n] || fn;
+        var f = d.getElementsByTagName(t)[0];
+        var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+        var sm = d.createElement(t);
+        sm.async = true;
+        sm.type = 'module';
+        sm.src = h + s + '.mjs' + v;
+        f.parentNode.insertBefore(sm, f);
+        var sn = d.createElement(t);
+        sn.async = true;
+        sn.noModule = true;
+        sn.src = h + s + '.js' + v;
+        f.parentNode.insertBefore(sn, f);
+      })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+    </script>
+
 </head>
 
 <body>
@@ -857,106 +899,24 @@
         </button>
 
 
-        <p class="newsletter-eyebrow">
-            KIN CONTEMPORARY
-        </p>
-
-        <h2 id="newsletter-title">
-            Join the KIN community.
-        </h2>
-
-        <p class="newsletter-description">
-            Receive exhibition previews, new releases,
-            artist stories and gallery news.
-        </p>
-
-
-        <!-- MAILCHIMP FORM -->
-
-        <form
-            class="newsletter-popup-form"
-            action="https://kincontemporary.us19.list-manage.com/subscribe/post?u=e8e7fefe661fa37f057c606b0&amp;id=331e16b8a6&amp;f_id=00aac2e1f0"
-            method="post"
-            target="_blank"
+        <img
+            src="images/kinlogo.png"
+            alt="KIN Contemporary"
+            style="display:block; width:140px; max-width:45%; height:auto; margin:0 auto 18px;"
         >
 
-            <!-- FIRST NAME -->
+        <h2 id="newsletter-title" style="position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;">
+            Join the KIN community
+        </h2>
 
-            <div class="newsletter-field">
-                <label for="newsletter-first-name">
-                    First Name
-                </label>
-
-                <input
-                    id="newsletter-first-name"
-                    type="text"
-                    name="FNAME"
-                    autocomplete="given-name"
-                    required
-                >
-            </div>
-
-
-            <!-- LAST NAME -->
-
-            <div class="newsletter-field">
-                <label for="newsletter-last-name">
-                    Last Name
-                </label>
-
-                <input
-                    id="newsletter-last-name"
-                    type="text"
-                    name="LNAME"
-                    autocomplete="family-name"
-                    required
-                >
-            </div>
-
-
-            <!-- EMAIL -->
-
-            <div class="newsletter-field">
-                <label for="newsletter-popup-email">
-                    Email Address
-                </label>
-
-                <input
-                    id="newsletter-popup-email"
-                    type="email"
-                    name="EMAIL"
-                    autocomplete="email"
-                    required
-                >
-            </div>
-
-
-            <!-- MAILCHIMP ANTI-SPAM FIELD -->
-
-            <div
-                aria-hidden="true"
-                style="position:absolute; left:-5000px;"
-            >
-                <input
-                    type="text"
-                    name="b_e8e7fefe661fa37f057c606b0_331e16b8a6"
-                    tabindex="-1"
-                    value=""
-                >
-            </div>
-
-
-            <!-- SUBMIT -->
-
-            <button
-                type="submit"
-                name="subscribe"
-                class="newsletter-submit"
-            >
-                Subscribe
-            </button>
-
-        </form>
+        <!-- Flodesk inline form replaces the former Mailchimp signup -->
+        <div id="fd-form-6ab345b1c94bc8b0f1ee938d"></div>
+        <script>
+          window.fd('form', {
+            formId: '6ab345b1c94bc8b0f1ee938d',
+            containerEl: '#fd-form-6ab345b1c94bc8b0f1ee938d'
+          });
+        </script>
 
     </div>
 </div>
