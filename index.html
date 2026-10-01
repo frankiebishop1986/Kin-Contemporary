@@ -1,2057 +1,758 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-
-
 <head>
-
-
-
     <meta charset="UTF-8">
-
-
-
     <meta
-
         name="viewport"
-
         content="width=device-width, initial-scale=1.0"
-
     >
-
-
-
     <meta
-
         name="description"
-
         content="Kin Contemporary is a Sydney-based fine art gallery representing distinctive emerging and established contemporary artists from Australia and around the world."
-
     >
-
-
-
     <title>KIN Contemporary</title>
-
-
-
     <link
-
         rel="icon"
-
         type="image/png"
-
         href="images/favicon2.png"
-
     >
-
-
-
     <!-- Google Fonts -->
-
-
-
     <link
-
         rel="preconnect"
-
-        href="https\://fonts.googleapis.com"
-
+        href="https://fonts.googleapis.com"
     >
-
-
-
     <link
-
         rel="preconnect"
-
-        href="https\://fonts.gstatic.com"
-
+        href="https://fonts.gstatic.com"
         crossorigin
-
     >
-
-
-
     <link
-
-        href="https\://fonts.googleapis.com/css2?family=Inter:wght\@100;200;300;400;500;600;700;800;900&display=swap"
-
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet"
-
     >
-
-
-
     <!-- Main stylesheet -->
-
-
-
     <link
-
         rel="stylesheet"
-
         href="css/style.css?v=38"
-
     >
-
-
-
     <!-- Font Awesome -->
-
-
-
     <script
-
-        src="https\://kit.fontawesome.com/b94eebf806.js"
-
+        src="https://kit.fontawesome.com/b94eebf806.js"
         crossorigin="anonymous">
-
     </script>
-
-
-
     <!-- Give the embedded form room for its horizontal desktop layout. -->
-
     <style>
-
-      \#fd-form-6ab345b1c94bc8b0f1ee938d { width: 100%; max-width: none; }
-
+      #fd-form-6ab345b1c94bc8b0f1ee938d { width: 100%; max-width: none; }
       @media (min-width: 1100px) {
-
         .newsletter-modal-content {
-
           box-sizing: border-box;
-
           width: min(1320px, calc(100vw - 64px));
-
           max-width: none;
-
           max-height: calc(100vh - 48px);
-
           overflow-y: auto;
-
         }
-
-        \#fd-form-6ab345b1c94bc8b0f1ee938d > div {
-
+        #fd-form-6ab345b1c94bc8b0f1ee938d > div {
           box-sizing: border-box;
-
           width: 100% !important;
-
           max-width: none !important;
-
         }
-
       }
-
     </style>
-
-
-
     <!-- Flodesk form loader: include once per page -->
-
     <script>
-
       (function(w, d, t, h, s, n) {
-
-        w\.FlodeskObject = n;
-
+        w.FlodeskObject = n;
         var fn = function() {
-
           (w[n].q = w[n].q || []).push(arguments);
-
         };
-
         w[n] = w[n] || fn;
-
         var f = d.getElementsByTagName(t)[0];
-
-        var v = '?v=' + Math.floor(new Date().getTime() / (120 \* 1000)) \* 60;
-
+        var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
         var sm = d.createElement(t);
-
         sm.async = true;
-
         sm.type = 'module';
-
         sm.src = h + s + '.mjs' + v;
-
         f.parentNode.insertBefore(sm, f);
-
         var sn = d.createElement(t);
-
         sn.async = true;
-
         sn.noModule = true;
-
         sn.src = h + s + '.js' + v;
-
         f.parentNode.insertBefore(sn, f);
-
-      })(window, document, 'script', 'https\://assets.flodesk.com', '/universal', 'fd');
-
+      })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
     </script>
-
-
-
 </head>
-
-
-
 <body>
-
-
-
     <!-- =====================================================
-
          HEADER
-
     ====================================================== -->
-
-
-
     <header class="site-header">
-
-
-
         <nav class="main-navigation">
-
-
-
             <div class="brand">
-
-
-
                 <a
-
                     href="index.html"
-
                     aria-label="KIN Contemporary home"
-
                 >
-
-
-
                     <img
-
                         src="images/kinlogo.png"
-
                         alt="KIN Contemporary logo"
-
                         class="logo"
-
                     >
-
-
-
                 </a>
-
-
-
             </div>
-
-
-
             <ul class="navigation-links">
-
-
-
                 <li>
-
                     <a href="artists.html">
-
                         Artists
-
                     </a>
-
                 </li>
-
-
-
                 <li>
-
                     <a href="exhibitions.html">
-
                         Exhibitions
-
                     </a>
-
                 </li>
-
-
-
                 <li>
-
                     <a href="available-works.html">
-
                         Available Works
-
                     </a>
-
                 </li>
-
-
-
                 <li>
-
                     <a href="about.html">
-
                         About
-
                     </a>
-
                 </li>
-
-
-
                 <li>
-
                     <a href="contact.html">
-
                         Contact
-
                     </a>
-
                 </li>
-
-
-
                 <li>
-
-
-
                    <a
-
     href="#"
-
     class="icon-link search-toggle"
-
     aria-label="Search"
-
     aria-expanded="false"
-
 >
-
     <i class="fa-solid fa-magnifying-glass"></i>
-
 </a>
-
                 </li>
-
-
-
                 <li>
-
-
-
                     <a
-
                         href="#"
-
                         class="icon-link"
-
                         aria-label="Shopping bag"
-
                     >
-
-
-
                         <i class="fa-solid fa-bag-shopping"></i>
-
-
-
                     </a>
-
-
-
                 </li>
-
-
-
             </ul>
-
-
-
         </nav>
-
-
-
     </header>
-
-
-
-
-
     <!-- =====================================================
-
          KIN SEARCH
-
     ====================================================== -->
-
-
-
     <div
-
         class="site-search"
-
         id="site-search"
-
         aria-hidden="true"
-
     >
-
-
-
         <div class="site-search-inner">
-
-
-
             <div class="site-search-top">
-
-
-
                 <div class="site-search-input-wrap">
-
-
-
                     <i class="fa-solid fa-magnifying-glass"></i>
-
-
-
                     <input
-
                         type="search"
-
                         id="site-search-input"
-
                         placeholder="Search artists, artworks, paintings, sculptures..."
-
                         autocomplete="off"
-
                         aria-label="Search KIN Contemporary"
-
                     >
-
-
-
                 </div>
-
-
-
                 <button
-
                     type="button"
-
                     class="site-search-close"
-
                     aria-label="Close search"
-
                 >
-
                     <span></span>
-
                     <span></span>
-
                 </button>
-
-
-
             </div>
-
-
-
-
-
             <div class="site-search-suggestions">
-
-
-
                 <span>Popular searches</span>
-
-
-
                 <button
-
                     type="button"
-
                     data-search-term="painting"
-
                 >
-
                     Painting
-
                 </button>
-
-
-
                 <button
-
                     type="button"
-
                     data-search-term="sculpture"
-
                 >
-
                     Sculpture
-
                 </button>
-
-
-
                 <button
-
                     type="button"
-
                     data-search-term="prints"
-
                 >
-
                     Prints
-
                 </button>
-
-
-
                 <button
-
                     type="button"
-
                     data-search-term="limited edition"
-
                 >
-
                     Limited Edition
-
                 </button>
-
-
-
             </div>
-
-
-
-
-
             <div
-
                 class="site-search-results"
-
                 id="site-search-results"
-
             ></div>
-
-
-
         </div>
-
-
-
     </div>
-
-
-
-
-
     <div
-
         class="site-search-backdrop"
-
         aria-hidden="true"
-
     ></div>
-
-
-
-
-
-
-
     <!-- =====================================================
-
          MAIN CONTENT
-
     ====================================================== -->
-
-
-
     <main>
-
-
-
        <!-- =================================================
-
      HOMEPAGE HERO — FEATURED ARTIST
-
 ================================================== -->
-
-
-
 <section class="hero">
-
-
-
     <div class="hero-image">
-
-
-
         <img
-
             src="images/alessandro-daquila-heading2.jpg"
-
             alt="Alessandro D'Aquila — Featured Artist"
-
         >
-
-
-
     </div>
-
-
-
-
-
     <div class="hero-text">
-
-
-
         <p class="hero-artist">
-
             FEATURED ARTIST
-
         </p>
-
-
-
         <h1 style="font-size: clamp(1.9rem, 3.4vw, 3.5rem); line-height: 1.1;">
-
             ALESSANDRO D'AQUILA
-
         </h1>
-
-
-
         <p class="hero-date">
-
             Exploring perception through Braille.<br>
-
             Reducing complexity to its essential form.
-
         </p>
-
-
-
         <a
-
             href="alessandro-daquila.html"
-
             class="hero-button"
-
         >
-
             DISCOVER THE WORK
-
         </a>
-
-
-
     </div>
-
-
-
 </section>
-
-
-
-
-
         <!-- =================================================
-
              FEATURED ARTISTS
-
         ================================================== -->
-
-
-
         <section class="featured-artists editorial-artists">
-
-
-
             <div class="artists-intro">
-
-
-
                 <h2>
-
                     Our Artists
-
                 </h2>
-
-
-
                 <p>
-
                     Kin Contemporary represents a carefully curated selection
-
                     of Australian and international artists, each chosen for a
-
                     distinctive visual language and a compelling contemporary
-
                     practice.
-
                 </p>
-
-
-
                 <a
-
                     href="artists.html"
-
                     class="text-link"
-
                 >
-
                     View Our Artists
-
                 </a>
-
-
-
             </div>
-
-
-
-
-
             <div class="editorial-artist-grid">
-
-
-
                 <!-- Artist 1 -->
-
-
-
                 <a
-
                     href="tim-fry.html"
-
                     class="editorial-artist-card"
-
                     aria-label="View Tim Fry"
-
                 >
-
-
-
                     <div class="editorial-image">
-
-
-
                         <img
-
                             src="images/tim-fry2.jpg"
-
                             alt="Artist Tim Fry"
-
                         >
-
-
-
                     </div>
-
-
-
                     <h3>
-
                         Tim Fry
-
                     </h3>
-
-
-
                 </a>
-
-
-
-
-
                 <!-- Artist 2 -->
-
-
-
                 <a
-
                     href="audrey-rhoda.html"
-
                     class="editorial-artist-card"
-
                     aria-label="View Audrey Rhoda"
-
                 >
-
-
-
                     <div class="editorial-image">
-
-
-
                         <img
-
                             src="images/audrey-rhoda2.jpg"
-
                             alt="Artist Audrey Rhoda"
-
                         >
-
-
-
                     </div>
-
-
-
                     <h3>
-
                         Audrey Rhoda
-
                     </h3>
-
-
-
                 </a>
-
-
-
-
-
                 <!-- Artist 3 -->
-
-
-
                 <a
-
                     href="jakey-pedro.html"
-
                     class="editorial-artist-card"
-
                     aria-label="View Jakey Pedro"
-
                 >
-
-
-
                     <div class="editorial-image">
-
-
-
                         <img
-
                             src="images/jakey-pedro2.jpg"
-
                             alt="Artist Jakey Pedro"
-
                         >
-
-
-
                     </div>
-
-
-
                     <h3>
-
                         Jakey Pedro
-
                     </h3>
-
-
-
                 </a>
-
-
-
-
-
                 <!-- Artist 4 -->
-
-
-
                 <a
-
                     href="alessandro-daquila.html"
-
                     class="editorial-artist-card"
-
                     aria-label="View Alessandro D'Aquila"
-
                 >
-
-
-
                     <div class="editorial-image">
-
-
-
                         <img
-
                             src="images/alessandro-daquila2.jpg"
-
                             alt="Artist Alessandro D'Aquila"
-
                         >
-
-
-
                     </div>
-
-
-
                     <h3>
-
                         Alessandro D'Aquila
-
                     </h3>
-
-
-
                 </a>
-
-
-
-
-
                 <!-- Artist 5 -->
-
-
-
                 <a
-
                     href="federico-boni.html"
-
                     class="editorial-artist-card"
-
                     aria-label="View Federico Boni"
-
                 >
-
-
-
                     <div class="editorial-image">
-
-
-
                         <img
-
                             src="images/federico-boni2.jpg"
-
                             alt="Artist Federico Boni"
-
                         >
-
-
-
                     </div>
-
-
-
                     <h3>
-
                         Federico Boni
-
                     </h3>
-
-
-
                 </a>
-
-
-
-
-
                 <!-- Artist 6 -->
-
-
-
                 <a
-
                     href="sean-loch.html"
-
                     class="editorial-artist-card"
-
                     aria-label="View Sean Loch"
-
                 >
-
-
-
                     <div class="editorial-image">
-
-
-
                         <img
-
                             src="images/sean-loch2.jpg"
-
                             alt="Artist Sean Loch"
-
                         >
-
-
-
                     </div>
-
-
-
                     <h3>
-
                         Sean Loch
-
                     </h3>
-
-
-
                 </a>
-
  <!-- Artist 7 -->
-
-
-
                 <a
-
                     href="pablo-martin.html"
-
                     class="editorial-artist-card"
-
                     aria-label="View Pablo Martín"
-
                 >
-
-
-
                     <div class="editorial-image">
-
-
-
                         <img
-
                             src="images/pablo-martin2.jpg"
-
                             alt="Artist Pablo Martín"
-
                         >
-
-
-
                     </div>
-
-
-
                     <h3>Pablo Martín
-
                     </h3>
-
-
-
                 </a>
-
             </div>
-
-
-
         </section>
-
-
-
-
-
         <!-- =================================================
-
              CURRENT EXHIBITION
-
         ================================================== -->
-
-
-
         <section class="exhibition">
-
-
-
             <div class="exhibition-image">
-
-
-
     <a href="jakey-pedro.html" aria-label="View Jakey Pedro">
-
-
-
         <img
-
             src="images/colour-wonder-4.jpg"
-
             alt="Colour Therapy exhibition by Jakey Pedro"
-
         >
-
-
-
     </a>
-
-
-
 </div>
-
-
-
             <div class="exhibition-text">
-
-
-
     <p class="eyebrow">
-
         PAST EXHIBITION
-
     </p>
-
-
-
     <h2>
-
         COLOUR THERAPY
-
     </h2>
-
-
-
     <h3>
-
         <a
-
             href="jakey-pedro.html"
-
             class="exhibition-artist-name"
-
         >
-
             JAKEY PEDRO
-
         </a>
-
     </h3>
-
-
-
     <h3>
-
         a two finger salute to winter
-
     </h3>
-
-
-
     <a
-
-        href="https\://drive.google.com/file/d/1X3P8ULk07Cmik8jbFay2qLSnY36TPwZC/view?usp=sharing"
-
+        href="https://drive.google.com/file/d/1X3P8ULk07Cmik8jbFay2qLSnY36TPwZC/view?usp=sharing"
         class="exhibition-catalogue-button"
-
-        target="\_blank"
-
+        target="_blank"
         rel="noopener noreferrer"
-
     >
-
         VIEW CATALOGUE
-
     </a>
-
-
-
 </div>
-
-
-
         </section>
-
-
-
-
-
         <!-- =================================================
-
              AVAILABLE WORKS
-
         ================================================== -->
-
-
-
         <section class="available-works">
-
-
-
             <div class="section-header">
-
-
-
                 <h2>
-
                     Available Works
-
                 </h2>
-
-
-
                 <a href="#">
-
                     2 New Releases
-
                 </a>
-
-
-
             </div>
-
-
-
-
-
             <div class="works-grid">
-
-
-
                 <!-- Artwork 1 -->
-
-
-
                 <article class="work-card">
-
-
-
                     <a
-
                         href="monolith.html"
-
                         class="work-image-link"
-
                     >
-
-
-
                         <img
-
                             src="images/monolith.jpg"
-
                             alt="Monolith by Federico Boni"
-
                         >
-
-
-
                     </a>
-
-
-
                     <h3>
-
                         Monolith
-
                     </h3>
-
-
-
                     <p>
-
                         Federico Boni
-
                     </p>
-
-
-
                     <span>
-
                         1750 AUD
-
                     </span>
-
-
-
                 </article>
-
-
-
-
-
                 <!-- Artwork 2 -->
-
-
-
                 <article class="work-card">
-
-
-
                     <a
-
                         href="criss-cross-applesauce.html"
-
                         class="work-image-link"
-
                     >
-
-
-
                         <img
-
                             src="images/crisscrossapplesauce.jpg"
-
-                            alt="Possum by Sean Loch"
-
+                            alt="Criss, Cross, Applesauce by Sean Loch"
                         >
-
-
-
                     </a>
-
-
-
                     <h3>
-
                         CRISS,CROSS,APPLESAUCE
-
                     </h3>
-
-
-
                     <p>
-
                         Sean Loch
-
                     </p>
-
-
-
                     <span>
-
                         3700 AUD
-
                     </span>
-
-
-
                 </article>
-
-
-
-
-
                 <!-- Artwork 3 -->
-
-
-
                 <article class="work-card">
-
-
-
                     <a
-
                         href="trouble-in-paradise.html"
-
                         class="work-image-link"
-
                     >
-
-
-
                         <img
-
                             src="images/trouble-In-paradise.jpg"
-
                             alt="Trouble In Paradise by Jakey Pedro"
-
                         >
-
-
-
                     </a>
-
-
-
                     <h3>
-
                         Trouble In Paradise
-
                     </h3>
-
-
-
                     <p>
-
                         Jakey Pedro
-
                     </p>
-
-
-
                     <span>
-
                         5550 AUD
-
                     </span>
-
-
-
                 </article>
-
-
-
-
-
                 <!-- Browse collection -->
-
-
-
                 <a
-
                     href="available-works.html"
-
                     class="browse-card"
-
                 >
-
-
-
                     <i class="fa-regular fa-image"></i>
-
-
-
                     <p>
-
                         Browse Full
-
                         <br>
-
                         Collection
-
                     </p>
-
-
-
                 </a>
-
-
-
             </div>
-
-
-
         </section>
-
-
-
-
-
         <!-- =================================================
-
              PHILOSOPHY
-
         ================================================== -->
-
-
-
         <section class="philosophy">
-
-
-
             <p class="eyebrow">
-
                 Our Philosophy
-
             </p>
-
-
-
             <h2>
-
                 Kin Contemporary is shaped by curiosity, intention and a commitment to distinctive artistic voices.
-
             </h2>
-
-
-
             <div class="line"></div>
-
-
-
             <h3>
-
                 We champion artists and ideas that resonate, challenge and endure. Working across exhibitions and evolving spaces, our approach is artwork first. Creating meaningful connections between artists, collectors and the spaces in which art lives. 
-
             </h3>
-
-
-
         </section>
-
-
-
     </main>
-
-
-
-
-
     <!-- =====================================================
-
          FOOTER
-
     ====================================================== -->
-
-
-
     <footer class="site-footer">
-
-
-
         <div class="footer-grid">
-
-
-
             <div class="footer-brand">
-
-
-
                 <a href="index.html">
-
-
-
                     <img
-
                         src="images/kinlogo.png"
-
                         alt="KIN Contemporary logo"
-
                     >
-
-
-
                 </a>
-
-
-
                 <p>
-
                     A digital frontier for contemporary fine art.
-
                 </p>
-
-
-
             </div>
-
-
-
-
-
             <div class="footer-column">
-
-
-
                 <h4>
-
                     Navigation
-
                 </h4>
-
-
-
                 <a href="artists.html">
-
                     Artists
-
                 </a>
-
-
-
                 <a href="exhibitions.html">
-
                     Exhibitions
-
                 </a>
-
-
-
                 <a href="available-works.html">
-
                     Curated Collections
-
                 </a>
-
-
-
                 <a href="press.html">
-
                     Press
-
                 </a>
-
-
-
             </div>
-
-
-
-
-
             <div class="footer-column">
-
-
-
                 <h4>
-
                     Support
-
                 </h4>
-
-
-
                 <a href="shipping-return.html">
-
                     Shipping &amp; Returns
-
                 </a>
-
-
-
                 <a href="certificate-of-authenticity.html">
-
                     Certificates of Authenticity
-
                 </a>
-
-
-
                 <a href="payment-options.html">
-
                     Payment options
-
                 </a>
-
-
-
                 <a href="contact.html">
-
                     Contact
-
                 </a>
-
-
-
             </div>
-
-
-
-
-
             <div class="footer-column">
-
-
-
                 <h4>
-
                     Connect
-
                 </h4>
-
-
-
                 <div class="socials">
-
-
-
                     <a
-
-                        href="https\://www\.instagram.com/kin_contemporary/"
-
-                        target="\_blank"
-
+                        href="https://www.instagram.com/kin_contemporary/"
+                        target="_blank"
                         rel="noopener noreferrer"
-
                         aria-label="KIN Contemporary on Instagram"
-
                     >
-
-
-
                         <i class="fa-brands fa-instagram"></i>
-
-
-
                     </a>
-
-
-
                     <a
-
                         href="#"
-
                         class="artsy-link"
-
                     >
-
                         Artsy
-
                     </a>
-
-
-
                 </div>
-
-
-
                 <h4>
-
                     Newsletter
-
                 </h4>
-
-
-
                 <!-- NEWSLETTER TRIGGER -->
-
-
-
 <div class="newsletter-trigger">
-
     <button
-
         type="button"
-
         class="newsletter-open"
-
         id="newsletter-open"
-
+        aria-controls="newsletter-modal"
+        aria-expanded="false"
+        aria-haspopup="dialog"
     >
-
         Join our newsletter
-
         <span>→</span>
-
     </button>
-
 </div>
-
-
-
-
-
 <!-- NEWSLETTER POPUP -->
-
-
-
 <div
-
     class="newsletter-modal"
-
     id="newsletter-modal"
-
     aria-hidden="true"
-
 >
-
     <div class="newsletter-modal-backdrop"></div>
-
-
-
     <div
-
         class="newsletter-modal-content"
-
         role="dialog"
-
         aria-modal="true"
-
         aria-labelledby="newsletter-title"
-
     >
-
-
-
         <!-- CLOSE BUTTON -->
-
         <button
-
             type="button"
-
             class="newsletter-close"
-
             id="newsletter-close"
-
             aria-label="Close newsletter form"
-
         >
-
             ×
-
         </button>
-
-
-
-
-
         <img
-
             src="images/kinlogo.png"
-
             alt="KIN Contemporary"
-
             style="display:block; width:140px; max-width:45%; height:auto; margin:0 auto 18px;"
-
         >
-
-
-
         <h2 id="newsletter-title" style="position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;">
-
             Join the KIN community
-
         </h2>
-
-
-
-        <!-- Flodesk inline form replaces the former Mailchimp signup -->
-
-        <div id="fd-form-6ab345b1c94bc8b0f1ee938d"></div>
-
+       <!-- FLODESK NEWSLETTER FORM -->
+<div id="fd-form-6ab345b1c94bc8b0f1ee938d"></div>
         <script>
-
-          window\.fd('form', {
-
+          window.fd('form', {
             formId: '6ab345b1c94bc8b0f1ee938d',
-
             containerEl: '#fd-form-6ab345b1c94bc8b0f1ee938d'
-
           });
-
         </script>
-
-
-
     </div>
-
 </div>
-
             </div>
-
-
-
         </div>
-
-
-
-
-
         <div class="footer-bottom">
-
-
-
             <p>
-
                 © 2026 Kin Contemporary. All rights reserved.
-
             </p>
-
-
-
             <div>
-
-
-
                 <a href="privacy-policy.html">
-
                     Privacy Policy
-
                 </a>
-
-
-
                 <a href="terms-of-service.html">
-
                     Terms of Service
-
                 </a>
-
-
-
             </div>
-
-
-
         </div>
-
-
-
     </footer>
-
-
-
-
-
     <!-- =====================================================
-
          ARTIST CARD INTERACTION
-
     ====================================================== -->
-
-
-
     <script>
-
-
-
         const artistCards = document.querySelectorAll(
-
             ".editorial-artist-card"
-
         );
-
-
-
         artistCards.forEach((card) => {
-
-
-
             card.addEventListener("click", (event) => {
-
-
-
                 const destination = card.getAttribute("href");
-
-
-
                 if (!destination || destination === "#") {
-
                     event.preventDefault();
-
                 }
-
-
-
                 artistCards.forEach((otherCard) => {
-
-
-
                     if (otherCard !== card) {
-
                         otherCard.classList.remove("is-selected");
-
                     }
-
-
-
                 });
-
-
-
                 card.classList.toggle("is-selected");
-
-
-
             });
-
-
-
         });
-
-
-
     </script>
+    <!-- NEWSLETTER POPUP CONTROLS -->
+    <script>
+    (function () {
+        const modal = document.getElementById("newsletter-modal");
+        const openButton = document.getElementById("newsletter-open");
+        const closeButton = document.getElementById("newsletter-close");
+        if (!modal || !openButton || !closeButton) return;
 
-<script>
+        const backdrop = modal.querySelector(".newsletter-modal-backdrop");
+        let previousOverflow = "";
+        let previousFocus = null;
 
-    const newsletterModal =
-
-        document.getElementById("newsletter-modal");
-
-
-
-    const newsletterOpen =
-
-        document.getElementById("newsletter-open");
-
-
-
-    const newsletterClose =
-
-        document.getElementById("newsletter-close");
-
-
-
-    const newsletterBackdrop =
-
-        document.querySelector(".newsletter-modal-backdrop");
-
-
-
-
-
-    function openNewsletter() {
-
-        newsletterModal.classList.add("is-open");
-
-        newsletterModal.setAttribute("aria-hidden", "false");
-
-        document.body.style.overflow = "hidden";
-
-    }
-
-
-
-
-
-    function closeNewsletter() {
-
-        newsletterModal.classList.remove("is-open");
-
-        newsletterModal.setAttribute("aria-hidden", "true");
-
-        document.body.style.overflow = "";
-
-    }
-
-
-
-
-
-    newsletterOpen.addEventListener("click", openNewsletter);
-
-
-
-    newsletterClose.addEventListener("click", closeNewsletter);
-
-
-
-    newsletterBackdrop.addEventListener("click", closeNewsletter);
-
-
-
-
-
-    document.addEventListener("keydown", (event) => {
-
-        if (event.key === "Escape") {
-
-            closeNewsletter();
-
+        function openNewsletter() {
+            if (modal.classList.contains("is-open")) return;
+            previousFocus = document.activeElement;
+            previousOverflow = document.body.style.overflow;
+            modal.classList.add("is-open");
+            modal.setAttribute("aria-hidden", "false");
+            openButton.setAttribute("aria-expanded", "true");
+            document.body.style.overflow = "hidden";
+            closeButton.focus();
         }
 
-    });
+        function closeNewsletter() {
+            if (!modal.classList.contains("is-open")) return;
+            modal.classList.remove("is-open");
+            modal.setAttribute("aria-hidden", "true");
+            openButton.setAttribute("aria-expanded", "false");
+            document.body.style.overflow = previousOverflow;
+            if (previousFocus) previousFocus.focus();
+        }
 
-</script>
-
+        openButton.addEventListener("click", openNewsletter);
+        closeButton.addEventListener("click", closeNewsletter);
+        if (backdrop) backdrop.addEventListener("click", closeNewsletter);
+        document.addEventListener("keydown", function (event) {
+            if (!modal.classList.contains("is-open")) return;
+            if (event.key === "Escape") {
+                event.preventDefault();
+                closeNewsletter();
+            }
+            if (event.key === "Tab") {
+                const items = Array.from(modal.querySelectorAll(
+                    'a[href], button, input, select, textarea, iframe, [tabindex]'
+                )).filter(function (element) {
+                    return !element.disabled && element.tabIndex >= 0 &&
+                        element.getClientRects().length > 0;
+                });
+                const first = items[0];
+                const last = items[items.length - 1];
+                if (event.shiftKey && document.activeElement === first) {
+                    event.preventDefault();
+                    last.focus();
+                } else if (!event.shiftKey && document.activeElement === last) {
+                    event.preventDefault();
+                    first.focus();
+                }
+            }
+        });
+    })();
+    </script>
     <script src="js/script.js?v=3"></script>
-
-
-
 </body>
-
-
-
 </html>
