@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Explore original artworks in the KIN Contemporary stockroom." name="description"/>
+<title>Stockroom | KIN Contemporary</title>
+<link href="images/favicon2.png" rel="icon" type="image/png"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<!-- Main stylesheet -->
+<link href="css/style.css?v=43" rel="stylesheet"/>
+<!-- Font Awesome -->
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/b94eebf806.js">
+</script>
+<style>
+.stockroom-intro{margin:0 0 2rem;padding:0 2rem;font-size:.95rem;}
+</style>
+<!-- Give the embedded form room for its horizontal desktop layout. -->
+
+    <style>
+
+      #fd-form-6ab345b1c94bc8b0f1ee938d { width: 100%; max-width: none; }
+
+      @media (min-width: 1100px) {
+
+        .newsletter-modal-content {
+
+          box-sizing: border-box;
+
+          width: min(1320px, calc(100vw - 64px));
+
+          max-width: none;
+
+          max-height: calc(100vh - 48px);
+
+          overflow-y: auto;
+
+        }
+
+        #fd-form-6ab345b1c94bc8b0f1ee938d > div {
+
+          box-sizing: border-box;
+
+          width: 100% !important;
+
+          max-width: none !important;
+
+        }
+
+      }
+
+    </style>
+
+    <!-- Flodesk form loader: include once per page -->
+
+    <script>
+
+      (function(w, d, t, h, s, n) {
+
+        w.FlodeskObject = n;
+
+        var fn = function() {
+
+          (w[n].q = w[n].q || []).push(arguments);
+
+        };
+
+        w[n] = w[n] || fn;
+
+        var f = d.getElementsByTagName(t)[0];
+
+        var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+
+        var sm = d.createElement(t);
+
+        sm.async = true;
+
+        sm.type = 'module';
+
+        sm.src = h + s + '.mjs' + v;
+
+        f.parentNode.insertBefore(sm, f);
+
+        var sn = d.createElement(t);
+
+        sn.async = true;
+
+        sn.noModule = true;
+
+        sn.src = h + s + '.js' + v;
+
+        f.parentNode.insertBefore(sn, f);
+
+      })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+
+    </script>
+
+</head>
+<body>
+<!-- =====================================================
+         HEADER
+    ====================================================== -->
+<header class="site-header">
+<nav class="main-navigation">
+<div class="brand">
+<a aria-label="KIN Contemporary home" href="index.html">
+<img alt="KIN Contemporary logo" class="logo" src="images/kinlogo.png"/>
+</a>
+</div>
+<ul class="navigation-links">
+<li>
+<a href="artists.html">
+                        Artists
+                    </a>
+</li>
+<li>
+<a href="exhibitions.html">
+                        Exhibitions
+                    </a>
+</li>
+<li>
+<a href="available-works.html">
+                        Available Works
+                    </a>
+</li>
+<li>
+<a class="active" href="stockroom.html">
+                        Stockroom
+                    </a>
+</li>
+<li>
+<a href="about.html">
+                        About
+                    </a>
+</li>
+<li>
+<a href="contact.html">
+                        Contact
+                    </a>
+</li>
+<li>
+<a aria-expanded="false" aria-label="Search" class="icon-link search-toggle" href="#">
+<i class="fa-solid fa-magnifying-glass"></i>
+</a>
+</li>
+<li>
+<a aria-label="Shopping bag" class="icon-link" href="#">
+<i class="fa-solid fa-bag-shopping"></i>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<!-- =====================================================
+     KIN SEARCH
+====================================================== -->
+<div aria-hidden="true" class="site-search" id="site-search">
+<div class="site-search-inner">
+<div class="site-search-top">
+<div class="site-search-input-wrap">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input aria-label="Search KIN Contemporary" autocomplete="off" id="site-search-input" placeholder="Search artists, artworks, paintings, sculptures..." type="search"/>
+</div>
+<button aria-label="Close search" class="site-search-close" type="button">
+<span></span>
+<span></span>
+</button>
+</div>
+<div class="site-search-suggestions">
+<span>
+                Popular searches
+            </span>
+<button data-search-term="painting" type="button">
+                Painting
+            </button>
+<button data-search-term="sculpture" type="button">
+                Sculpture
+            </button>
+<button data-search-term="prints" type="button">
+                Prints
+            </button>
+<button data-search-term="limited edition" type="button">
+                Limited Edition
+            </button>
+</div>
+<div class="site-search-results" id="site-search-results"></div>
+</div>
+</div>
+<div aria-hidden="true" class="site-search-backdrop"></div>
+<!-- =====================================================
+         ORIGINAL ARTWORKS PAGE
+    ====================================================== -->
+<main class="shop-works-page">
+<!-- =================================================
+             PAGE HEADER
+        ================================================== -->
+<section class="shop-works-header">
+<div class="shop-works-heading">
+<h1>Stockroom</h1>
+<!-- VIEW OPTIONS -->
+<div class="shop-view-controls">
+<span class="shop-view-label">
+                        View as
+                    </span>
+<!-- 3 COLUMNS -->
+<button aria-label="View artworks in 3 columns" class="shop-view-button" data-columns="3" type="button">
+<span class="view-icon view-icon-3">
+<span></span>
+<span></span>
+<span></span>
+</span>
+</button>
+<!-- 4 COLUMNS -->
+<button aria-label="View artworks in 4 columns" class="shop-view-button active" data-columns="4" type="button">
+<span class="view-icon view-icon-4">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</span>
+</button>
+<!-- 5 COLUMNS -->
+<button aria-label="View artworks in 5 columns" class="shop-view-button" data-columns="5" type="button">
+<span class="view-icon view-icon-5">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</span>
+</button>
+</div>
+</div>
+<!-- FILTER BUTTON -->
+<button aria-controls="artwork-filter-panel" aria-expanded="false" class="artwork-filter-button shop-filter-button" type="button">
+<i class="fa-solid fa-sliders"></i>
+
+                Filter and sort
+
+            </button>
+</section><p class="stockroom-intro">Original artworks held in the KIN Contemporary stockroom.</p>
+<!-- =================================================
+             FILTER OVERLAY
+        ================================================== -->
+<div aria-hidden="true" class="filter-overlay"></div>
+<!-- =================================================
+             FILTER PANEL
+        ================================================== -->
+<div class="artwork-filter-panel" id="artwork-filter-panel">
+<!-- CLOSE -->
+<button aria-label="Close filters" class="filter-close" type="button">
+<span></span>
+<span></span>
+</button>
+<!-- SORT -->
+<div class="filter-group">
+<h3>Sort</h3>
+<label>
+<input name="sort" type="radio" value="most-relevant"/>
+        Most Relevant
+    </label>
+<label>
+<input name="sort" type="radio" value="price-low-high"/>
+        Price: Low to High
+    </label>
+<label>
+<input name="sort" type="radio" value="price-high-low"/>
+        Price: High to Low
+    </label>
+<label>
+<input name="sort" type="radio" value="date-old-new"/>
+        Date: Old to New
+    </label>
+<label>
+<input name="sort" type="radio" value="date-new-old"/>
+        Date: New to Old
+    </label>
+</div>
+<!-- MEDIUM / TYPE -->
+<div class="filter-group">
+<h3>
+                    Medium / Type
+                </h3>
+<label>
+<input name="medium" type="checkbox" value="painting"/>
+
+                    Painting
+
+                </label>
+<label>
+<input name="medium" type="checkbox" value="sculpture"/>
+
+                    Sculpture
+
+                </label>
+<label>
+<input name="medium" type="checkbox" value="drawing"/>
+
+                    Drawing
+
+                </label>
+<label>
+<input name="medium" type="checkbox" value="mixed-media"/>
+
+                    Mixed Media
+
+                </label>
+</div>
+<!-- SIZE -->
+<div class="filter-group">
+<h3>
+                    Size
+                </h3>
+<label>
+<input name="size" type="checkbox" value="small"/>
+
+                    Small
+
+                </label>
+<label>
+<input name="size" type="checkbox" value="medium"/>
+
+                    Medium
+
+                </label>
+<label>
+<input name="size" type="checkbox" value="large"/>
+
+                    Large
+
+                </label>
+</div>
+<!-- AVAILABILITY -->
+<div class="filter-group">
+<h3>
+                    Availability
+                </h3>
+<label>
+<input name="availability" type="checkbox" value="available"/>
+
+                    Available
+
+                </label>
+<label>
+<input name="availability" type="checkbox" value="sold"/>
+
+                    Sold
+
+                </label>
+<label>
+<input name="availability" type="checkbox" value="reserved"/>
+
+                    Reserved
+
+                </label>
+</div>
+<!-- ARTIST -->
+<div class="filter-group">
+<h3>
+                    Artist
+                </h3>
+<label>
+<input name="artist" type="checkbox" value="sean-loch"/>
+
+                    Sean Loch
+
+                </label>
+</div>
+<!-- FILTER ACTIONS -->
+<div class="filter-actions">
+<button class="filter-clear" type="button">
+                    Clear
+                </button>
+<button class="filter-apply" type="button">
+                    Apply
+                </button>
+</div>
+</div>
+<!-- =================================================
+             ORIGINAL ARTWORK GRID
+        ================================================== -->
+<section aria-label="Sean Loch original artworks in the KIN Contemporary stockroom" class="shop-artwork-grid columns-4"><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3400" data-size="large" data-title="butterfly drunk" data-year="2026" href="butterfly-drunk.html">
+<div class="artwork-image">
+<img alt="Butterfly Drunk by Sean Loch" class="active" src="images/sean-loch-artwork-07-1.jpg"/>
+<img alt="Butterfly Drunk displayed in a room" src="images/sean-loch-artwork-07-2.jpg"/>
+<img alt="Detail of Butterfly Drunk" src="images/sean-loch-artwork-07-3.jpg"/>
+<img alt="Side view of Butterfly Drunk" src="images/sean-loch-artwork-07-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            BUTTERFLY DRUNK
+        </h3>
+<p>
+            Sean Loch
+        </p>
+<span>
+            3400 AUD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3900" data-size="large" data-title="chubby bunny" data-year="2026" href="chubby-bunny.html">
+<div class="artwork-image">
+<img alt="Chubby Bunny by Sean Loch" class="active" src="images/sean-loch-artwork-01-1.jpg"/>
+<img alt="Chubby Bunny displayed in a room" src="images/sean-loch-artwork-01-2.jpg"/>
+<img alt="Detail of Chubby Bunny" src="images/sean-loch-artwork-01-3.jpg"/>
+<img alt="Side view of Chubby Bunny\" src="images/sean-loch-artwork-01-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+                            CHUBBY BUNNY
+                        </h3>
+<p>
+                            Sean Loch
+                        </p>
+<span>
+                            3900 AUD
+                        </span>
+</div>
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3700" data-size="large" data-title="criss cross, applesauce" data-year="2026" href="criss-cross-applesauce.html">
+<div class="artwork-image">
+<img alt="Criss Cross, Applesauce by Sean Loch" class="active" src="images/sean-loch-artwork-12-1.jpg"/>
+<img alt="Criss Cross, Applesauce displayed in a room" src="images/sean-loch-artwork-12-2.jpg"/>
+<img alt="Detail of Criss Cross, Applesauce" src="images/sean-loch-artwork-12-3.jpg"/>
+<img alt="Side view of Criss Cross, Applesauce" src="images/sean-loch-artwork-12-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            CRISS CROSS, APPLESAUCE
+        </h3>
+<p>
+            Sean Loch
+        </p>
+<span>
+            3700 AUD
+        </span>
+</div>
+</a>
+<a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="4200" data-size="large" data-title="folks we know" data-year="2026" href="folks-we-know.html">
+<div class="artwork-image">
+<img alt="Folks We Know by Sean Loch" class="active" src="images/sean-loch-artwork-10-1.jpg"/>
+<img alt="Folks We Know displayed in a room" src="images/sean-loch-artwork-10-2.jpg"/>
+<img alt="Detail of Folks We Know" src="images/sean-loch-artwork-10-3.jpg"/>
+<img alt="Side view of Folks We Know" src="images/sean-loch-artwork-10-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            FOLKS WE KNOW
+        </h3>
+<p>
+            Sean Loch
+        </p>
+<span>
+            4200 AUD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="1450" data-size="large" data-title="not feeling very brave today" data-year="2026" href="not-feeling-very-brave-today.html">
+<div class="artwork-image">
+<img alt="Not Feeling Very Brave Today by Sean Loch" class="active" src="images/sean-loch-artwork-09-1.jpg"/>
+<img alt="Not Feeling Very Brave Today displayed in a room" src="images/sean-loch-artwork-09-2.jpg"/>
+<img alt="Detail of Not Feeling Very Brave Today" src="images/sean-loch-artwork-09-3.jpg"/>
+<img alt="Side view of Not Feeling Very Brave Today" src="images/sean-loch-artwork-09-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            NOT FEELING VERY BRAVE TODAY
+        </h3>
+<p>
+            Sean Loch
+        </p>
+<span>
+            1450 AUD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3700" data-size="large" data-title="number one bird" data-year="2026" href="number-one-bird.html">
+<div class="artwork-image">
+<img alt="Number One Bird by Sean Loch" class="active" src="images/sean-loch-artwork-03-1.jpg"/>
+<img alt="Number One Bird displayed in a room" src="images/sean-loch-artwork-03-2.jpg"/>
+<img alt="Detail of Number One Bird" src="images/sean-loch-artwork-03-3.jpg"/>
+<img alt="Side view of Number One Bird" src="images/sean-loch-artwork-03-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            NUMBER ONE BIRD
+        </h3>
+<p>
+            Sean Loch
+        </p>
+<span>
+            3700 AUD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="sold" data-medium="painting" data-price="2300" data-size="large" data-title="pink george" data-year="2026" href="pink-george.html">
+<div class="artwork-image">
+<img alt="Pink George by Sean Loch" class="active" src="images/sean-loch-artwork-02-1.jpg"/>
+<img alt="Pink George displayed in a room" src="images/sean-loch-artwork-02-2.jpg"/>
+<img alt="Detail of Pink George" src="images/sean-loch-artwork-02-3.jpg"/>
+<img alt="Side view of Pink George" src="images/sean-loch-artwork-02-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+                            PINK GEORGE
+                        </h3>
+<p>
+                            Sean Loch
+                        </p>
+<span>
+                            SOLD
+                        </span>
+</div>
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="2300" data-size="large" data-title="pink george 2" data-year="2026" href="pink-george-2.html">
+<div class="artwork-image">
+<img alt="Pink George 2 by Sean Loch" class="active" src="images/sean-loch-artwork-05-1.jpg"/>
+<img alt="Pink George 2 displayed in a room" src="images/sean-loch-artwork-05-2.jpg"/>
+<img alt="Detail of Pink George 2" src="images/sean-loch-artwork-05-3.jpg"/>
+<img alt="Side view of Pink George 2" src="images/sean-loch-artwork-05-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            PINK GEORGE II
+        </h3>
+<p>
+            Sean Loch
+        </p>
+<span>
+            2300 AUD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="sold" data-medium="painting" data-price="3300" data-size="large" data-title="possum" data-year="2026" href="possum.html">
+<div class="artwork-image">
+<img alt="Possum by Sean Loch" class="active" src="images/sean-loch-artwork-04-1.jpg"/>
+<img alt="Possum displayed in a room" src="images/sean-loch-artwork-04-2.jpg"/>
+<img alt="Detail of Possum" src="images/sean-loch-artwork-04-3.jpg"/>
+<img alt="Side view of Possum" src="images/sean-loch-artwork-04-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            POSSUM
+        </h3>
+<p>
+            Sean Loch
+        </p>
+<span>
+           SOLD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3900" data-size="large" data-title="super weapon" data-year="2026" href="super-weapon.html">
+<div class="artwork-image">
+<img alt="Super Weapon by Sean Loch" class="active" src="images/sean-loch-artwork-08-1.jpg"/>
+<img alt="Super Weapon displayed in a room" src="images/sean-loch-artwork-08-2.jpg"/>
+<img alt="Detail of Super Weapon" src="images/sean-loch-artwork-08-3.jpg"/>
+<img alt="Side view of Super Weapon" src="images/sean-loch-artwork-08-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            SUPER WEAPON
+        </h3>
+<p>
+            Sean Loch
+        </p>
+<span>
+            3900 AUD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3900" data-size="large" data-title="swamp puppies" data-year="2026" href="swamp-puppies.html">
+<div class="artwork-image">
+<img alt="Swamp Puppies by Sean Loch" class="active" src="images/sean-loch-artwork-11-1.jpg"/>
+<img alt="Swamp Puppies displayed in a room" src="images/sean-loch-artwork-11-2.jpg"/>
+<img alt="Detail of Swamp Puppies" src="images/sean-loch-artwork-11-3.jpg"/>
+<img alt="Side view of Swamp Puppies " src="images/sean-loch-artwork-11-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            SWAMP PUPPIES
+        </h3>
+<p>
+            Sean Loch
+        </p>
+<span>
+            3900 AUD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="2300" data-size="large" data-title="tennis (confirmed)" data-year="2026" href="tennis-confirmed.html">
+<div class="artwork-image">
+<img alt="Tennis (Confirmed) by Sean Loch" class="active" src="images/sean-loch-artwork-06-1.jpg"/>
+<img alt="Tennis (Confirmed) displayed in a room" src="images/sean-loch-artwork-06-2.jpg"/>
+<img alt="Detail of Tennis (Confirmed)" src="images/sean-loch-artwork-06-3.jpg"/>
+<img alt="Side view of Tennis (Confirmed)" src="images/sean-loch-artwork-06-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            TENNIS (CONFIRMED)  
+        </h3>
+<p>
+            Sean Loch
+        </p>
+<span>
+            2300 AUD
+        </span>
+</div>
+</a></section>
+</main>
+<!-- =====================================================
+         FOOTER
+    ====================================================== -->
+<footer class="site-footer">
+<div class="footer-grid">
+<!-- BRAND -->
+<div class="footer-brand">
+<a aria-label="KIN Contemporary home" href="index.html">
+<img alt="KIN Contemporary logo" src="images/kinlogo.png"/>
+</a>
+<p>
+                    A digital frontier for contemporary fine art.
+                </p>
+</div>
+<!-- NAVIGATION -->
+<div class="footer-column">
+<h3>
+                    Navigation
+                </h3>
+<a href="artists.html">
+                    Artists
+                </a>
+<a href="exhibitions.html">
+                    Exhibitions
+                </a>
+<a href="available-works.html">
+                    Curated Collections
+                </a>
+<a href="press.html">
+                    Press
+                </a>
+</div>
+<!-- SUPPORT -->
+<div class="footer-column">
+<h3>
+                    Support
+                </h3>
+<a href="shipping-return.html">
+                    Shipping &amp; Returns
+                </a>
+<a href="certificate-of-authenticity.html">
+                    Certificates of Authenticity
+                </a>
+<a href="payment-options.html">
+                    Payment options
+                </a>
+<a href="contact.html">
+                    Contact
+                </a>
+</div>
+<!-- CONNECT -->
+<div class="footer-column">
+<h3>
+                    Connect
+                </h3>
+<div class="socials">
+<a aria-label="KIN Contemporary on Instagram" href="https://www.instagram.com/kin_contemporary/" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+<a class="artsy-link" href="#">
+                        Artsy
+                    </a>
+</div>
+<h3>
+                    Newsletter
+                </h3>
+<!-- NEWSLETTER TRIGGER -->
+
+<div class="newsletter-trigger">
+
+    <button
+
+        type="button"
+
+        class="newsletter-open"
+
+        id="newsletter-open"
+
+        aria-controls="newsletter-modal"
+
+        aria-expanded="false"
+
+        aria-haspopup="dialog"
+
+    >
+
+        Join our newsletter
+
+        <span>→</span>
+
+    </button>
+
+</div>
+
+<!-- NEWSLETTER POPUP -->
+
+<div
+
+    class="newsletter-modal"
+
+    id="newsletter-modal"
+
+    aria-hidden="true"
+
+>
+
+    <div class="newsletter-modal-backdrop"></div>
+
+    <div
+
+        class="newsletter-modal-content"
+
+        role="dialog"
+
+        aria-modal="true"
+
+        aria-labelledby="newsletter-title"
+
+    >
+
+        <!-- CLOSE BUTTON -->
+
+        <button
+
+            type="button"
+
+            class="newsletter-close"
+
+            id="newsletter-close"
+
+            aria-label="Close newsletter form"
+
+        >
+
+            ×
+
+        </button>
+
+        <img
+
+            src="images/kinlogo.png"
+
+            alt="KIN Contemporary"
+
+            style="display:block; width:140px; max-width:45%; height:auto; margin:0 auto 18px;"
+
+        >
+
+        <h2 id="newsletter-title" style="position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;">
+
+            Join the KIN community
+
+        </h2>
+
+       <!-- FLODESK NEWSLETTER FORM -->
+
+<div id="fd-form-6ab345b1c94bc8b0f1ee938d"></div>
+
+        <script>
+
+          window.fd('form', {
+
+            formId: '6ab345b1c94bc8b0f1ee938d',
+
+            containerEl: '#fd-form-6ab345b1c94bc8b0f1ee938d'
+
+          });
+
+        </script>
+
+    </div>
+
+</div>
+
+
+</div>
+</div>
+<!-- FOOTER BOTTOM -->
+<div class="footer-bottom">
+<p>
+                © 2026 Kin Contemporary. All rights reserved.
+            </p>
+<div>
+<a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+<a href="terms-of-service.html">
+                    Terms of Service
+                </a>
+</div>
+</div>
+</footer>
+<!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+<!-- NEWSLETTER POPUP CONTROLS -->
+
+    <script>
+
+    (function () {
+
+        const modal = document.getElementById("newsletter-modal");
+
+        const openButton = document.getElementById("newsletter-open");
+
+        const closeButton = document.getElementById("newsletter-close");
+
+        if (!modal || !openButton || !closeButton) return;
+
+
+
+        const backdrop = modal.querySelector(".newsletter-modal-backdrop");
+
+        let previousOverflow = "";
+
+        let previousFocus = null;
+
+
+
+        function openNewsletter() {
+
+            if (modal.classList.contains("is-open")) return;
+
+            previousFocus = document.activeElement;
+
+            previousOverflow = document.body.style.overflow;
+
+            modal.classList.add("is-open");
+
+            modal.setAttribute("aria-hidden", "false");
+
+            openButton.setAttribute("aria-expanded", "true");
+
+            document.body.style.overflow = "hidden";
+
+            closeButton.focus();
+
+        }
+
+
+
+        function closeNewsletter() {
+
+            if (!modal.classList.contains("is-open")) return;
+
+            modal.classList.remove("is-open");
+
+            modal.setAttribute("aria-hidden", "true");
+
+            openButton.setAttribute("aria-expanded", "false");
+
+            document.body.style.overflow = previousOverflow;
+
+            if (previousFocus) previousFocus.focus();
+
+        }
+
+
+
+        openButton.addEventListener("click", openNewsletter);
+
+        closeButton.addEventListener("click", closeNewsletter);
+
+        if (backdrop) backdrop.addEventListener("click", closeNewsletter);
+
+        document.addEventListener("keydown", function (event) {
+
+            if (!modal.classList.contains("is-open")) return;
+
+            if (event.key === "Escape") {
+
+                event.preventDefault();
+
+                closeNewsletter();
+
+            }
+
+            if (event.key === "Tab") {
+
+                const items = Array.from(modal.querySelectorAll(
+
+                    'a[href], button, input, select, textarea, iframe, [tabindex]'
+
+                )).filter(function (element) {
+
+                    return !element.disabled && element.tabIndex >= 0 &&
+
+                        element.getClientRects().length > 0;
+
+                });
+
+                const first = items[0];
+
+                const last = items[items.length - 1];
+
+                if (event.shiftKey && document.activeElement === first) {
+
+                    event.preventDefault();
+
+                    last.focus();
+
+                } else if (!event.shiftKey && document.activeElement === last) {
+
+                    event.preventDefault();
+
+                    first.focus();
+
+                }
+
+            }
+
+        });
+
+    })();
+
+    </script>
+
+    <script src="js/script.js?v=3"></script>
+
+
+</body>
+</html>
