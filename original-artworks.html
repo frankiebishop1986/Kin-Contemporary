@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -16,7 +15,79 @@
 <!-- Font Awesome -->
 <script crossorigin="anonymous" src="https://kit.fontawesome.com/b94eebf806.js">
 </script>
-</head>
+<style>
+
+      #fd-form-6ab345b1c94bc8b0f1ee938d { width: 100%; max-width: none; }
+
+      @media (min-width: 1100px) {
+
+        .newsletter-modal-content {
+
+          box-sizing: border-box;
+
+          width: min(1320px, calc(100vw - 64px));
+
+          max-width: none;
+
+          max-height: calc(100vh - 48px);
+
+          overflow-y: auto;
+
+        }
+
+        #fd-form-6ab345b1c94bc8b0f1ee938d > div {
+
+          box-sizing: border-box;
+
+          width: 100% !important;
+
+          max-width: none !important;
+
+        }
+
+      }
+
+    </style><script>
+
+      (function(w, d, t, h, s, n) {
+
+        w.FlodeskObject = n;
+
+        var fn = function() {
+
+          (w[n].q = w[n].q || []).push(arguments);
+
+        };
+
+        w[n] = w[n] || fn;
+
+        var f = d.getElementsByTagName(t)[0];
+
+        var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+
+        var sm = d.createElement(t);
+
+        sm.async = true;
+
+        sm.type = 'module';
+
+        sm.src = h + s + '.mjs' + v;
+
+        f.parentNode.insertBefore(sm, f);
+
+        var sn = d.createElement(t);
+
+        sn.async = true;
+
+        sn.noModule = true;
+
+        sn.src = h + s + '.js' + v;
+
+        f.parentNode.insertBefore(sn, f);
+
+      })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+
+    </script></head>
 <body>
 <!-- =====================================================
          HEADER
@@ -48,9 +119,9 @@
 <a href="stockroom.html">
                         Stockroom
                     </a>
-                </li>
-                <li>
-                    <a href="about.html">
+</li>
+<li>
+<a href="about.html">
                         About
                     </a>
 </li>
@@ -60,13 +131,8 @@
                     </a>
 </li>
 <li>
-<a
-    href="#"
-    class="icon-link search-toggle"
-    aria-label="Search"
-    aria-expanded="false"
->
-    <i class="fa-solid fa-magnifying-glass"></i>
+<a aria-expanded="false" aria-label="Search" class="icon-link search-toggle" href="#">
+<i class="fa-solid fa-magnifying-glass"></i>
 </a>
 </li>
 <li>
@@ -80,94 +146,39 @@
 <!-- =====================================================
      KIN SEARCH
 ====================================================== -->
-
-<div
-    class="site-search"
-    id="site-search"
-    aria-hidden="true"
->
-
-    <div class="site-search-inner">
-
-        <div class="site-search-top">
-
-            <div class="site-search-input-wrap">
-
-                <i class="fa-solid fa-magnifying-glass"></i>
-
-                <input
-                    type="search"
-                    id="site-search-input"
-                    placeholder="Search artists, artworks, paintings, sculptures..."
-                    autocomplete="off"
-                    aria-label="Search KIN Contemporary"
-                >
-
-            </div>
-
-            <button
-                type="button"
-                class="site-search-close"
-                aria-label="Close search"
-            >
-                <span></span>
-                <span></span>
-            </button>
-
-        </div>
-
-
-        <div class="site-search-suggestions">
-
-            <span>
+<div aria-hidden="true" class="site-search" id="site-search">
+<div class="site-search-inner">
+<div class="site-search-top">
+<div class="site-search-input-wrap">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input aria-label="Search KIN Contemporary" autocomplete="off" id="site-search-input" placeholder="Search artists, artworks, paintings, sculptures..." type="search"/>
+</div>
+<button aria-label="Close search" class="site-search-close" type="button">
+<span></span>
+<span></span>
+</button>
+</div>
+<div class="site-search-suggestions">
+<span>
                 Popular searches
             </span>
-
-            <button
-                type="button"
-                data-search-term="painting"
-            >
+<button data-search-term="painting" type="button">
                 Painting
             </button>
-
-            <button
-                type="button"
-                data-search-term="sculpture"
-            >
+<button data-search-term="sculpture" type="button">
                 Sculpture
             </button>
-
-            <button
-                type="button"
-                data-search-term="prints"
-            >
+<button data-search-term="prints" type="button">
                 Prints
             </button>
-
-            <button
-                type="button"
-                data-search-term="limited edition"
-            >
+<button data-search-term="limited edition" type="button">
                 Limited Edition
             </button>
-
-        </div>
-
-
-        <div
-            class="site-search-results"
-            id="site-search-results"
-        ></div>
-
-    </div>
-
 </div>
-
-
-<div
-    class="site-search-backdrop"
-    aria-hidden="true"
-></div>
+<div class="site-search-results" id="site-search-results"></div>
+</div>
+</div>
+<div aria-hidden="true" class="site-search-backdrop"></div>
 <!-- =====================================================
          ORIGINAL ARTWORKS PAGE
     ====================================================== -->
@@ -236,56 +247,28 @@
 <span></span>
 </button>
 <!-- SORT -->
-
 <div class="filter-group">
-
-    <h3>Sort</h3>
-
-    <label>
-        <input
-            type="radio"
-            name="sort"
-            value="most-relevant"
-        >
+<h3>Sort</h3>
+<label>
+<input name="sort" type="radio" value="most-relevant"/>
         Most Relevant
     </label>
-
-    <label>
-        <input
-            type="radio"
-            name="sort"
-            value="price-low-high"
-        >
+<label>
+<input name="sort" type="radio" value="price-low-high"/>
         Price: Low to High
     </label>
-
-    <label>
-        <input
-            type="radio"
-            name="sort"
-            value="price-high-low"
-        >
+<label>
+<input name="sort" type="radio" value="price-high-low"/>
         Price: High to Low
     </label>
-
-    <label>
-        <input
-            type="radio"
-            name="sort"
-            value="date-old-new"
-        >
+<label>
+<input name="sort" type="radio" value="date-old-new"/>
         Date: Old to New
     </label>
-
-    <label>
-        <input
-            type="radio"
-            name="sort"
-            value="date-new-old"
-        >
+<label>
+<input name="sort" type="radio" value="date-new-old"/>
         Date: New to Old
     </label>
-
 </div>
 <!-- MEDIUM / TYPE -->
 <div class="filter-group">
@@ -293,29 +276,29 @@
                     Medium / Type
                 </h3>
 <label>
-<input name="medium" type="checkbox" value="painting"/>
+<input name="medium" type="checkbox" value="painting">
 
                     Painting
 
-                </label>
+                </input></label>
 <label>
-<input name="medium" type="checkbox" value="sculpture"/>
+<input name="medium" type="checkbox" value="sculpture">
 
                     Sculpture
 
-                </label>
+                </input></label>
 <label>
-<input name="medium" type="checkbox" value="drawing"/>
+<input name="medium" type="checkbox" value="drawing">
 
                     Drawing
 
-                </label>
+                </input></label>
 <label>
-<input name="medium" type="checkbox" value="mixed-media"/>
+<input name="medium" type="checkbox" value="mixed-media">
 
                     Mixed Media
 
-                </label>
+                </input></label>
 </div>
 <!-- SIZE -->
 <div class="filter-group">
@@ -323,17 +306,17 @@
                     Size
                 </h3>
 <label>
-<input name="size" type="checkbox" value="small"/>
+<input name="size" type="checkbox" value="small">
 
                     Small
 
-                </label>
+                </input></label>
 <label>
-<input name="size" type="checkbox" value="medium"/>
+<input name="size" type="checkbox" value="medium">
 
                     Medium
 
-                </label>
+                </input></label>
 <label>
 <input name="size" type="checkbox" value="large"/>
 
@@ -552,7 +535,7 @@
             475 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3400" data-size="large" data-title="butterfly drunk" data-year="2026" href="butterfly-drunk.html">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="2380" data-size="large" data-title="butterfly drunk" data-year="2026" href="butterfly-drunk.html">
 <div class="artwork-image">
 <img alt="Butterfly Drunk by Sean Loch" class="active" src="images/sean-loch-artwork-07-1.jpg"/>
 <img alt="Butterfly Drunk displayed in a room" src="images/sean-loch-artwork-07-2.jpg"/>
@@ -567,10 +550,10 @@
             Sean Loch
         </p>
 <span>
-            3400 AUD
+            <del>3400 AUD</del> 2380 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3900" data-size="large" data-title="chubby bunny" data-year="2026" href="chubby-bunny.html">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="2730" data-size="large" data-title="chubby bunny" data-year="2026" href="chubby-bunny.html">
 <div class="artwork-image">
 <img alt="Chubby Bunny by Sean Loch" class="active" src="images/sean-loch-artwork-01-1.jpg"/>
 <img alt="Chubby Bunny displayed in a room" src="images/sean-loch-artwork-01-2.jpg"/>
@@ -585,7 +568,7 @@
                             Sean Loch
                         </p>
 <span>
-                            3900 AUD
+                           <del>3900 AUD</del> 2730 AUD
                         </span>
 </div>
 </a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="720" data-size="small" data-title="codex" data-year="2026" href="codex.html">
@@ -624,26 +607,7 @@
             575 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3700" data-size="large" data-title="criss cross, applesauce" data-year="2026" href="criss-cross-applesauce.html">
-<div class="artwork-image">
-<img alt="Criss Cross, Applesauce by Sean Loch" class="active" src="images/sean-loch-artwork-12-1.jpg"/>
-<img alt="Criss Cross, Applesauce displayed in a room" src="images/sean-loch-artwork-12-2.jpg"/>
-<img alt="Detail of Criss Cross, Applesauce" src="images/sean-loch-artwork-12-3.jpg"/>
-<img alt="Side view of Criss Cross, Applesauce" src="images/sean-loch-artwork-12-4.jpg"/>
-</div>
-<div class="artwork-info">
-<h3>
-            CRISS CROSS, APPLESAUCE
-        </h3>
-<p>
-            Sean Loch
-        </p>
-<span>
-            3700 AUD
-        </span>
-</div>
-</a>
-<a class="artwork-card" data-artist="jakey-pedro" data-availability="sold" data-medium="painting" data-price="1800" data-size="medium" data-title="cowboy juice(yellow)" data-year="2026" href="cowboy-juice-yellow.html">
+</a><a class="artwork-card" data-artist="jakey-pedro" data-availability="sold" data-medium="painting" data-price="1800" data-size="medium" data-title="cowboy juice(yellow)" data-year="2026" href="cowboy-juice-yellow.html">
 <div class="artwork-image">
 <img alt="Cowboy Juice (Yellow) by Jakey Pedro" class="active" src="images/jakey-pedro-artwork-07-1.jpg"/>
 <img alt="Cowboy Juice (Yellow) displayed in a room" src="images/jakey-pedro-artwork-07-2.jpg"/>
@@ -661,10 +625,25 @@
             SOLD
         </span>
 </div>
-
-</a>
-
-<a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="deep forest" data-year="2024" href="deep-forest.html">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="2590" data-size="large" data-title="criss cross, applesauce" data-year="2026" href="criss-cross-applesauce.html">
+<div class="artwork-image">
+<img alt="Criss Cross, Applesauce by Sean Loch" class="active" src="images/sean-loch-artwork-12-1.jpg"/>
+<img alt="Criss Cross, Applesauce displayed in a room" src="images/sean-loch-artwork-12-2.jpg"/>
+<img alt="Detail of Criss Cross, Applesauce" src="images/sean-loch-artwork-12-3.jpg"/>
+<img alt="Side view of Criss Cross, Applesauce" src="images/sean-loch-artwork-12-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            CRISS CROSS, APPLESAUCE
+        </h3>
+<p>
+            Sean Loch
+        </p>
+<span>
+            <del>3700 AUD</del> 2590 AUD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="deep forest" data-year="2024" href="deep-forest.html">
 <div class="artwork-image">
 <img alt="Deep Forest by Tim Fry" class="active" src="images/tim-fry-artwork-09-1.jpg"/>
 <img alt="Deep Forest displayed in a room" src="images/tim-fry-artwork-09-2.jpg"/>
@@ -736,6 +715,14 @@
             6550 AUD
         </span>
 </div>
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3600" data-size="large" data-title="double dare" data-year="2026" href="double-dare.html">
+<div class="artwork-image">
+<img alt="Double Dare by Sean Loch" class="active" src="images/sean-loch-artwork-16-1.jpg"/>
+<img alt="Double Dare displayed in a room" src="images/sean-loch-artwork-16-2.jpg"/>
+<img alt="Detail of Double Dare" src="images/sean-loch-artwork-16-3.jpg"/>
+<img alt="Side view of Double Dare" src="images/sean-loch-artwork-16-4.jpg"/>
+</div>
+<div class="artwork-info"><h3>DOUBLE DARE</h3><p>Sean Loch</p><span>3600 AUD</span></div>
 </a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="720" data-size="small" data-title="el dibujo de figura en todo su valor" data-year="2026" href="el-dibujo-de-figura-en-todo-su-valor.html">
 <div class="artwork-image">
 <img alt="El Dibujo de Figura en Todo su Valor by Pablo Martìn" class="active" src="images/pablo-martin-artwork-04-1.jpg"/>
@@ -844,7 +831,7 @@
                           SOLD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="4200" data-size="large" data-title="folks we know" data-year="2026" href="folks-we-know.html">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="2940" data-size="large" data-title="folks we know" data-year="2026" href="folks-we-know.html">
 <div class="artwork-image">
 <img alt="Folks We Know by Sean Loch" class="active" src="images/sean-loch-artwork-10-1.jpg"/>
 <img alt="Folks We Know displayed in a room" src="images/sean-loch-artwork-10-2.jpg"/>
@@ -859,7 +846,7 @@
             Sean Loch
         </p>
 <span>
-            4200 AUD
+            <del>4200 AUD</del> 2940 AUD
         </span>
 </div>
 </a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="560" data-size="small" data-title="future" data-year="2026" href="future.html">
@@ -988,42 +975,6 @@
             575 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="im addicted to you" data-year="2025" href="im-addicted-to-you.html">
-<div class="artwork-image">
-<img alt="I'm Addicted to You by Tim Fry" class="active" src="images/tim-fry-artwork-12-1.jpg"/>
-<img alt="I'm Addicted to You displayed in a room" src="images/tim-fry-artwork-12-2.jpg"/>
-<img alt="Detail of I'm Addicted to You" src="images/tim-fry-artwork-12-3.jpg"/>
-<img alt="Side view of I'm Addicted to You" src="images/tim-fry-artwork-12-4.jpg"/>
-</div>
-<div class="artwork-info">
-<h3>
-            I'M ADDICTED TO YOU
-        </h3>
-<p>
-            Tim Fry
-        </p>
-<span>
-            475 AUD
-        </span>
-</div>
-</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="im so fancy" data-year="2026" href="im-so-fancy.html">
-<div class="artwork-image">
-<img alt="I'm So Fancy by Tim Fry" class="active" src="images/tim-fry-artwork-06-1.jpg"/>
-<img alt="I'm So Fancy displayed in a room" src="images/tim-fry-artwork-06-2.jpg"/>
-<img alt="Detail of I'm So Fancy" src="images/tim-fry-artwork-06-3.jpg"/>
-<img alt="Side view of I'm So Fancy" src="images/tim-fry-artwork-06-4.jpg"/>
-</div>
-<div class="artwork-info">
-<h3>
-            I'M SO FANCY
-        </h3>
-<p>
-            Tim Fry
-        </p>
-<span>
-            575 AUD
-        </span>
-</div>
 </a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="1950" data-size="medium" data-title="icarus" data-year="2026" href="icarus.html">
 <div class="artwork-image">
 <img alt="Icarus by Federico Boni" class="active" src="images/federico-boni-artwork-07-1.jpg"/>
@@ -1095,6 +1046,42 @@
 <span>
                             4995 AUD
                         </span>
+</div>
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="im addicted to you" data-year="2025" href="im-addicted-to-you.html">
+<div class="artwork-image">
+<img alt="I'm Addicted to You by Tim Fry" class="active" src="images/tim-fry-artwork-12-1.jpg"/>
+<img alt="I'm Addicted to You displayed in a room" src="images/tim-fry-artwork-12-2.jpg"/>
+<img alt="Detail of I'm Addicted to You" src="images/tim-fry-artwork-12-3.jpg"/>
+<img alt="Side view of I'm Addicted to You" src="images/tim-fry-artwork-12-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            I'M ADDICTED TO YOU
+        </h3>
+<p>
+            Tim Fry
+        </p>
+<span>
+            475 AUD
+        </span>
+</div>
+</a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="im so fancy" data-year="2026" href="im-so-fancy.html">
+<div class="artwork-image">
+<img alt="I'm So Fancy by Tim Fry" class="active" src="images/tim-fry-artwork-06-1.jpg"/>
+<img alt="I'm So Fancy displayed in a room" src="images/tim-fry-artwork-06-2.jpg"/>
+<img alt="Detail of I'm So Fancy" src="images/tim-fry-artwork-06-3.jpg"/>
+<img alt="Side view of I'm So Fancy" src="images/tim-fry-artwork-06-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+            I'M SO FANCY
+        </h3>
+<p>
+            Tim Fry
+        </p>
+<span>
+            575 AUD
+        </span>
 </div>
 </a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="675" data-size="small" data-title="in a reliably unpredictable state of mind" data-year="2026" href="in-a-reliably-unpredictable-state-of-mind.html">
 <div class="artwork-image">
@@ -1475,24 +1462,6 @@
             305 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="2450" data-size="large" data-title="medusa 2" data-year="2026" href="medusa-ii.html">
-<div class="artwork-image">
-<img alt="Medusa 2 by Federico Boni" class="active" src="images/federico-boni-artwork-01-1.jpg"/>
-<img alt="Medusa 2 displayed in a room" src="images/federico-boni-artwork-01-2.jpg"/>
-<img alt="Detail of Medusa 2" src="images/federico-boni-artwork-01-3.jpg"/>
-<img alt="Side view of Medusa 2" src="images/federico-boni-artwork-01-4.jpg"/>
-</div>
-<div class="artwork-info">
-<h3>
-                            MEDUSA II
-                        </h3>
-<p>
-                            Federico Boni
-                        </p>
-<span>
-                            2450 AUD
-                        </span>
-</div>
 </a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="2450" data-size="large" data-title="medusa" data-year="2026" href="medusa.html">
 <div class="artwork-image">
 <img alt="Medusa by Federico Boni" class="active" src="images/federico-boni-artwork-02-1.jpg"/>
@@ -1509,6 +1478,24 @@
                         </p>
 <span>
                             2450AUD
+                        </span>
+</div>
+</a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="2450" data-size="large" data-title="medusa 2" data-year="2026" href="medusa-ii.html">
+<div class="artwork-image">
+<img alt="Medusa 2 by Federico Boni" class="active" src="images/federico-boni-artwork-01-1.jpg"/>
+<img alt="Medusa 2 displayed in a room" src="images/federico-boni-artwork-01-2.jpg"/>
+<img alt="Detail of Medusa 2" src="images/federico-boni-artwork-01-3.jpg"/>
+<img alt="Side view of Medusa 2" src="images/federico-boni-artwork-01-4.jpg"/>
+</div>
+<div class="artwork-info">
+<h3>
+                            MEDUSA II
+                        </h3>
+<p>
+                            Federico Boni
+                        </p>
+<span>
+                            2450 AUD
                         </span>
 </div>
 </a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="575" data-size="small" data-title="mental as anything" data-year="2024" href="mental-as-anything.html">
@@ -1583,7 +1570,7 @@
             660 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="1450" data-size="large" data-title="not feeling very brave today" data-year="2026" href="not-feeling-very-brave-today.html">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="1015" data-size="large" data-title="not feeling very brave today" data-year="2026" href="not-feeling-very-brave-today.html">
 <div class="artwork-image">
 <img alt="Not Feeling Very Brave Today by Sean Loch" class="active" src="images/sean-loch-artwork-09-1.jpg"/>
 <img alt="Not Feeling Very Brave Today displayed in a room" src="images/sean-loch-artwork-09-2.jpg"/>
@@ -1598,10 +1585,10 @@
             Sean Loch
         </p>
 <span>
-            1450 AUD
+            <del>1450 AUD</del> 1015 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3700" data-size="large" data-title="number one bird" data-year="2026" href="number-one-bird.html">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="2590" data-size="large" data-title="number one bird" data-year="2026" href="number-one-bird.html">
 <div class="artwork-image">
 <img alt="Number One Bird by Sean Loch" class="active" src="images/sean-loch-artwork-03-1.jpg"/>
 <img alt="Number One Bird displayed in a room" src="images/sean-loch-artwork-03-2.jpg"/>
@@ -1616,7 +1603,7 @@
             Sean Loch
         </p>
 <span>
-            3700 AUD
+            <del>3700 AUD</del> 2590 AUD
         </span>
 </div>
 </a><a class="artwork-card" data-artist="federico-boni" data-availability="available" data-medium="painting" data-price="2500" data-size="large" data-title="ocean inside" data-year="2025" href="ocean-inside.html ">
@@ -1691,7 +1678,7 @@
                             SOLD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="2300" data-size="large" data-title="pink george 2" data-year="2026" href="pink-george-2.html">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="1610" data-size="large" data-title="pink george 2" data-year="2026" href="pink-george-2.html">
 <div class="artwork-image">
 <img alt="Pink George 2 by Sean Loch" class="active" src="images/sean-loch-artwork-05-1.jpg"/>
 <img alt="Pink George 2 displayed in a room" src="images/sean-loch-artwork-05-2.jpg"/>
@@ -1706,7 +1693,7 @@
             Sean Loch
         </p>
 <span>
-            2300 AUD
+           <del>2300 AUD</del> 1610 AUD
         </span>
 </div>
 </a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="2750" data-size="large" data-title="pleasure and pain" data-year="2023" href="pleasure-and-pain.html">
@@ -1799,6 +1786,22 @@
             4995 AUD
         </span>
 </div>
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3500" data-size="large" data-title="solo voyage" data-year="2026" href="solo-voyage.html">
+<div class="artwork-image">
+<img alt="Solo Voyage by Sean Loch" class="active" src="images/sean-loch-artwork-13-1.jpg"/>
+<img alt="Solo Voyage displayed in a room" src="images/sean-loch-artwork-13-2.jpg"/>
+<img alt="Detail of Solo Voyage" src="images/sean-loch-artwork-13-3.jpg"/>
+<img alt="Side view of Solo Voyage" src="images/sean-loch-artwork-13-4.jpg"/>
+</div>
+<div class="artwork-info"><h3>SOLO VOYAGE</h3><p>Sean Loch</p><span>3500 AUD</span></div>
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3600" data-size="large" data-title="stay a little longer" data-year="2026" href="stay-a-little-longer.html">
+<div class="artwork-image">
+<img alt="Stay a Little Longer by Sean Loch" class="active" src="images/sean-loch-artwork-14-1.jpg"/>
+<img alt="Stay a Little Longer displayed in a room" src="images/sean-loch-artwork-14-2.jpg"/>
+<img alt="Detail of Stay a Little Longer" src="images/sean-loch-artwork-14-3.jpg"/>
+<img alt="Side view of Stay a Little Longer" src="images/sean-loch-artwork-14-4.jpg"/>
+</div>
+<div class="artwork-info"><h3>STAY A LITTLE LONGER</h3><p>Sean Loch</p><span>3600 AUD</span></div>
 </a><a class="artwork-card" data-artist="tim-fry" data-availability="available" data-medium="sculpture" data-price="475" data-size="small" data-title="staying alive" data-year="2025" href="staying-alive.html">
 <div class="artwork-image">
 <img alt="Staying Alive by Tim Fry" class="active" src="images/tim-fry-artwork-20-1.jpg"/>
@@ -1871,7 +1874,7 @@
             SOLD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3900" data-size="large" data-title="super weapon" data-year="2026" href="super-weapon.html">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="2730" data-size="large" data-title="super weapon" data-year="2026" href="super-weapon.html">
 <div class="artwork-image">
 <img alt="Super Weapon by Sean Loch" class="active" src="images/sean-loch-artwork-08-1.jpg"/>
 <img alt="Super Weapon displayed in a room" src="images/sean-loch-artwork-08-2.jpg"/>
@@ -1886,7 +1889,7 @@
             Sean Loch
         </p>
 <span>
-            3900 AUD
+            <del>3900 AUD</del> 2730 AUD
         </span>
 </div>
 </a><a class="artwork-card" data-artist="pablo-martin" data-availability="available" data-medium="painting" data-price="720" data-size="small" data-title="superposicion" data-year="2026" href="superposicion.html">
@@ -1907,7 +1910,7 @@
             720 AUD
         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="3900" data-size="large" data-title="swamp puppies" data-year="2026" href="swamp-puppies.html">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="2730" data-size="large" data-title="swamp puppies" data-year="2026" href="swamp-puppies.html">
 <div class="artwork-image">
 <img alt="Swamp Puppies by Sean Loch" class="active" src="images/sean-loch-artwork-11-1.jpg"/>
 <img alt="Swamp Puppies displayed in a room" src="images/sean-loch-artwork-11-2.jpg"/>
@@ -1922,7 +1925,7 @@
             Sean Loch
         </p>
 <span>
-            3900 AUD
+            <del>3900 AUD</del> 2730 AUD
         </span>
 </div>
 </a><a class="artwork-card" data-artist="audrey-rhoda" data-availability="available" data-medium="painting" data-price="7995" data-size="large" data-title="tapestry of my dreams" data-year="2026" href="tapestry-of-my-dreams.html">
@@ -1961,7 +1964,7 @@
                             7750 AUD
                         </span>
 </div>
-</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="2300" data-size="large" data-title="tennis (confirmed)" data-year="2026" href="tennis-confirmed.html">
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="1610" data-size="large" data-title="tennis (confirmed)" data-year="2026" href="tennis-confirmed.html">
 <div class="artwork-image">
 <img alt="Tennis (Confirmed) by Sean Loch" class="active" src="images/sean-loch-artwork-06-1.jpg"/>
 <img alt="Tennis (Confirmed) displayed in a room" src="images/sean-loch-artwork-06-2.jpg"/>
@@ -1976,9 +1979,17 @@
             Sean Loch
         </p>
 <span>
-            2300 AUD
+            <del>2300 AUD</del> 1610 AUD
         </span>
 </div>
+</a><a class="artwork-card" data-artist="sean-loch" data-availability="available" data-medium="painting" data-price="2800" data-size="large" data-title="the devil tripped and we laughed" data-year="2026" href="the-devil-tripped-and-we-laughed.html">
+<div class="artwork-image">
+<img alt="The Devil Tripped and We Laughed by Sean Loch" class="active" src="images/sean-loch-artwork-15-1.jpg"/>
+<img alt="The Devil Tripped and We Laughed displayed in a room" src="images/sean-loch-artwork-15-2.jpg"/>
+<img alt="Detail of The Devil Tripped and We Laughed" src="images/sean-loch-artwork-15-3.jpg"/>
+<img alt="Side view of The Devil Tripped and We Laughed" src="images/sean-loch-artwork-15-4.jpg"/>
+</div>
+<div class="artwork-info"><h3>THE DEVIL TRIPPED AND WE LAUGHED</h3><p>Sean Loch</p><span>2800 AUD</span></div>
 </a><a class="artwork-card" data-artist="alessandro-daquila" data-availability="available" data-medium="sculpture" data-price="4995" data-size="medium" data-title="the road not taken" data-year="2026" href="the-road-not-taken.html">
 <div class="artwork-image">
 <img alt="The Road Not Taken by Alessandro D'Aquila" class="active" src="images/alessandro-daquila-artwork-04-1.jpg"/>
@@ -2094,89 +2105,149 @@
     ====================================================== -->
 <footer class="site-footer">
 <div class="footer-grid">
-<!-- BRAND -->
 <div class="footer-brand">
-<a aria-label="KIN Contemporary home" href="index.html">
+<a href="index.html">
 <img alt="KIN Contemporary logo" src="images/kinlogo.png"/>
 </a>
 <p>
+
                     A digital frontier for contemporary fine art.
+
                 </p>
 </div>
-<!-- NAVIGATION -->
 <div class="footer-column">
-<h3>
+<h4>
+
                     Navigation
-                </h3>
+
+                </h4>
 <a href="artists.html">
+
                     Artists
+
                 </a>
 <a href="exhibitions.html">
+
                     Exhibitions
+
                 </a>
 <a href="available-works.html">
+
                     Curated Collections
+
                 </a>
 <a href="press.html">
+
                     Press
+
                 </a>
 </div>
-<!-- SUPPORT -->
 <div class="footer-column">
-<h3>
+<h4>
+
                     Support
-                </h3>
+
+                </h4>
 <a href="shipping-return.html">
+
                     Shipping &amp; Returns
+
                 </a>
 <a href="certificate-of-authenticity.html">
+
                     Certificates of Authenticity
+
                 </a>
 <a href="payment-options.html">
+
                     Payment options
+
                 </a>
 <a href="contact.html">
+
                     Contact
+
                 </a>
 </div>
-<!-- CONNECT -->
 <div class="footer-column">
-<h3>
+<h4>
+
                     Connect
-                </h3>
+
+                </h4>
 <div class="socials">
 <a aria-label="KIN Contemporary on Instagram" href="https://www.instagram.com/kin_contemporary/" rel="noopener noreferrer" target="_blank">
 <i class="fa-brands fa-instagram"></i>
 </a>
 <a class="artsy-link" href="#">
+
                         Artsy
+
                     </a>
 </div>
-<h3>
+<h4>
+
                     Newsletter
-                </h3>
-<form class="newsletter">
-<label class="visually-hidden" for="original-artworks-newsletter-email">
-                        Email address
-                    </label>
-<input id="original-artworks-newsletter-email" placeholder="Email Address" required="" type="email"/>
-<button type="submit">
-                        Join
-                    </button>
-</form>
+
+                </h4>
+<!-- NEWSLETTER TRIGGER -->
+<div class="newsletter-trigger">
+<button aria-controls="newsletter-modal" aria-expanded="false" aria-haspopup="dialog" class="newsletter-open" id="newsletter-open" type="button">
+
+        Join our newsletter
+
+        <span>→</span>
+</button>
+</div>
+<!-- NEWSLETTER POPUP -->
+<div aria-hidden="true" class="newsletter-modal" id="newsletter-modal">
+<div class="newsletter-modal-backdrop"></div>
+<div aria-labelledby="newsletter-title" aria-modal="true" class="newsletter-modal-content" role="dialog">
+<!-- CLOSE BUTTON -->
+<button aria-label="Close newsletter form" class="newsletter-close" id="newsletter-close" type="button">
+
+            ×
+
+        </button>
+<img alt="KIN Contemporary" src="images/kinlogo.png" style="display:block; width:140px; max-width:45%; height:auto; margin:0 auto 18px;"/>
+<h2 id="newsletter-title" style="position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;">
+
+            Join the KIN community
+
+        </h2>
+<!-- FLODESK NEWSLETTER FORM -->
+<div id="fd-form-6ab345b1c94bc8b0f1ee938d"></div>
+<script>
+
+          window.fd('form', {
+
+            formId: '6ab345b1c94bc8b0f1ee938d',
+
+            containerEl: '#fd-form-6ab345b1c94bc8b0f1ee938d'
+
+          });
+
+        </script>
 </div>
 </div>
-<!-- FOOTER BOTTOM -->
+</div>
+</div>
 <div class="footer-bottom">
 <p>
+
                 © 2026 Kin Contemporary. All rights reserved.
+
             </p>
 <div>
 <a href="privacy-policy.html">
+
                     Privacy Policy
+
                 </a>
 <a href="terms-of-service.html">
+
                     Terms of Service
+
                 </a>
 </div>
 </div>
@@ -2184,6 +2255,124 @@
 <!-- =====================================================
          JAVASCRIPT
     ====================================================== -->
-<script src="js/script.js?v=3"></script>
+<script>
+
+    (function () {
+
+        const modal = document.getElementById("newsletter-modal");
+
+        const openButton = document.getElementById("newsletter-open");
+
+        const closeButton = document.getElementById("newsletter-close");
+
+        if (!modal || !openButton || !closeButton) return;
+
+
+
+        const backdrop = modal.querySelector(".newsletter-modal-backdrop");
+
+        let previousOverflow = "";
+
+        let previousFocus = null;
+
+
+
+        function openNewsletter() {
+
+            if (modal.classList.contains("is-open")) return;
+
+            previousFocus = document.activeElement;
+
+            previousOverflow = document.body.style.overflow;
+
+            modal.classList.add("is-open");
+
+            modal.setAttribute("aria-hidden", "false");
+
+            openButton.setAttribute("aria-expanded", "true");
+
+            document.body.style.overflow = "hidden";
+
+            closeButton.focus();
+
+        }
+
+
+
+        function closeNewsletter() {
+
+            if (!modal.classList.contains("is-open")) return;
+
+            modal.classList.remove("is-open");
+
+            modal.setAttribute("aria-hidden", "true");
+
+            openButton.setAttribute("aria-expanded", "false");
+
+            document.body.style.overflow = previousOverflow;
+
+            if (previousFocus) previousFocus.focus();
+
+        }
+
+
+
+        openButton.addEventListener("click", openNewsletter);
+
+        closeButton.addEventListener("click", closeNewsletter);
+
+        if (backdrop) backdrop.addEventListener("click", closeNewsletter);
+
+        document.addEventListener("keydown", function (event) {
+
+            if (!modal.classList.contains("is-open")) return;
+
+            if (event.key === "Escape") {
+
+                event.preventDefault();
+
+                closeNewsletter();
+
+            }
+
+            if (event.key === "Tab") {
+
+                const items = Array.from(modal.querySelectorAll(
+
+                    'a[href], button, input, select, textarea, iframe, [tabindex]'
+
+                )).filter(function (element) {
+
+                    return !element.disabled && element.tabIndex >= 0 &&
+
+                        element.getClientRects().length > 0;
+
+                });
+
+                const first = items[0];
+
+                const last = items[items.length - 1];
+
+                if (event.shiftKey && document.activeElement === first) {
+
+                    event.preventDefault();
+
+                    last.focus();
+
+                } else if (!event.shiftKey && document.activeElement === last) {
+
+                    event.preventDefault();
+
+                    first.focus();
+
+                }
+
+            }
+
+        });
+
+    })();
+
+    </script><script src="js/script.js?v=3"></script>
 </body>
 </html>
