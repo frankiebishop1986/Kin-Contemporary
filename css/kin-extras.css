@@ -1,0 +1,212 @@
+/* =========================================================
+   KIN — SPRING STUDIO SALE (bar + popup) + MOBILE MENU
+   ========================================================= */
+
+/* ---------- announcement bar ---------- */
+.sale-bar {
+    display: block;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 11px 16px;
+}
+.sale-bar span { opacity: .75; font-weight: 500; }
+.sale-bar:hover { background: #000; color: #fff; }
+
+/* ---------- popup ---------- */
+.sale-popup {
+    position: fixed;
+    inset: 0;
+    z-index: 3000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+.sale-popup.is-open { display: flex; }
+.sale-popup-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(17, 17, 17, .55);
+}
+.sale-popup-card {
+    position: relative;
+    width: min(980px, 100%);
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+    background: #fff;
+    padding: 40px 40px 34px;
+    box-sizing: border-box;
+}
+.sale-popup-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: transparent;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    color: #111;
+}
+.sale-popup-head { text-align: center; margin-bottom: 28px; }
+.sale-popup-kicker {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #666;
+    margin: 0 0 10px;
+}
+.sale-popup-title {
+    margin: 0;
+    font-size: 44px;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+.sale-popup-sub {
+    margin: 12px 0 0;
+    font-size: 14px;
+    color: #333;
+}
+.sale-popup-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+.sale-offer { display: flex; flex-direction: column; gap: 14px; }
+.sale-offer img { display: block; width: 100%; height: auto; }
+.sale-offer p { flex: 1; margin: 0; font-size: 14px; line-height: 1.5; color: #333; }
+.sale-offer .sale-btn {
+    align-self: flex-start;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 15px 26px;
+}
+.sale-offer .sale-btn:hover { background: #333; color: #fff; }
+.sale-popup-note {
+    margin: 22px 0 0;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #767676;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+    .sale-popup { padding: 0; align-items: stretch; }
+    .sale-popup-card { max-height: 100vh; height: 100%; padding: 56px 20px 28px; }
+    .sale-popup-title { font-size: 32px; }
+    .sale-popup-grid { grid-template-columns: 1fr; gap: 28px; }
+    .sale-bar { font-size: 10px; letter-spacing: 1.5px; padding: 10px 12px; }
+    .sale-bar span { display: none; }
+}
+
+/* ---------- mobile hamburger menu ---------- */
+.menu-toggle { display: none; }
+.mobile-menu { display: none; }
+
+@media (max-width: 900px) {
+    .main-navigation {
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between;
+        padding: 16px 20px !important;
+        gap: 0 !important;
+    }
+    .brand { width: auto !important; }
+    .logo { width: 54px !important; }
+    .navigation-links {
+        margin-left: auto !important;
+        width: auto !important;
+        gap: 22px !important;
+        justify-content: flex-end !important;
+    }
+    /* hide the word links; keep search + bag */
+    .navigation-links li { display: none; }
+    .navigation-links li:nth-last-child(2),
+    .navigation-links li:last-child {
+        display: list-item;
+        position: static !important;
+    }
+    .navigation-links li a.icon-link { font-size: 19px; }
+
+    .menu-toggle {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+        width: 30px;
+        height: 30px;
+        margin-left: 22px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+    .menu-toggle span {
+        display: block;
+        width: 26px;
+        height: 1.5px;
+        background: #111;
+        transition: transform .3s ease;
+    }
+    .menu-open .menu-toggle span:first-child { transform: translateY(3.75px) rotate(45deg); }
+    .menu-open .menu-toggle span:last-child  { transform: translateY(-3.75px) rotate(-45deg); }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        inset: 0;
+        z-index: 2500;
+        background: #fff;
+        padding: 120px 28px 36px;
+        box-sizing: border-box;
+        overflow-y: auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s ease, visibility .3s ease;
+    }
+    .menu-open .mobile-menu { opacity: 1; visibility: visible; }
+    .menu-open .site-header { z-index: 2600; }
+    .mobile-menu ul { list-style: none; margin: 0; padding: 0; }
+    .mobile-menu li { border-bottom: 1px solid #ececec; }
+    .mobile-menu li a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 0;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #111;
+        text-decoration: none;
+    }
+    .mobile-menu li a::after { content: "→"; font-weight: 300; font-size: 20px; color: #999; }
+    .mobile-menu-foot {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 11px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #767676;
+    }
+    .mobile-menu-foot a { color: #111; text-decoration: none; }
+}

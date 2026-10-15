@@ -52,6 +52,7 @@
         rel="stylesheet"
         href="css/style.css?v=41"
     >
+    <link rel="stylesheet" href="css/kin-extras.css?v=1">
 
 
     <!-- Font Awesome -->
@@ -105,6 +106,9 @@
 
 
 <body>
+<!-- SPRING STUDIO SALE BAR (auto-hides after 1 Nov 2026) -->
+<a class="sale-bar" id="sale-bar" href="https://kin-contemporary.myshopify.com/collections/spring-sale">Spring Studio Sale &mdash; up to 30% off <span>&middot; ends Sun 1 Nov &rarr;</span></a>
+
 
 
     <!-- =====================================================
@@ -204,6 +208,7 @@
                 </li>
 
             </ul>
+            <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
 
         </nav>
 
@@ -676,9 +681,9 @@
 
             <div class="footer-column">
 
-                <h3>
+                <h4>
                     Navigation
-                </h3>
+                </h4>
 
                 <a href="artists.html">
                     Artists
@@ -704,9 +709,9 @@
 
             <div class="footer-column">
 
-                <h3>
+                <h4>
                     Support
-                </h3>
+                </h4>
 
                 <a href="shipping-return.html">
                     Shipping &amp; Returns
@@ -732,9 +737,9 @@
 
             <div class="footer-column">
 
-                <h3>
+                <h4>
                     Connect
-                </h3>
+                </h4>
 
 
                 <div class="socials">
@@ -762,9 +767,9 @@
 
 
 
-                <h3>
+                <h4>
                     Newsletter
-                </h3>
+                </h4>
 
 
                 <!-- NEWSLETTER TRIGGER -->
@@ -916,6 +921,47 @@
 
 
     <script src="js/script.js?v=3"></script>
+<!-- MOBILE MENU -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobile menu">
+    <ul>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="exhibitions.html">Exhibitions</a></li>
+        <li><a href="available-works.html">Available Works</a></li>
+        <li><a href="stockroom.html">Stockroom</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-foot">
+        <a href="https://www.instagram.com/kincontemporary/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <span>Kin Contemporary</span>
+    </div>
+</nav>
+<!-- SPRING STUDIO SALE POPUP (once per visitor, auto-hides after 1 Nov 2026) -->
+<div class="sale-popup" id="sale-popup" aria-hidden="true">
+    <div class="sale-popup-backdrop" data-sale-close></div>
+    <div class="sale-popup-card" role="dialog" aria-modal="true" aria-labelledby="sale-popup-title">
+        <button type="button" class="sale-popup-close" data-sale-close aria-label="Close">&times;</button>
+        <div class="sale-popup-head">
+            <p class="sale-popup-kicker">Until Sunday 1 November</p>
+            <h2 class="sale-popup-title" id="sale-popup-title">Spring Studio Sale</h2>
+            <p class="sale-popup-sub">Original works by <strong>JAKEY PEDRO</strong> and <strong>SEAN LOCH</strong>, for less.</p>
+        </div>
+        <div class="sale-popup-grid">
+            <div class="sale-offer">
+                <a href="https://kin-contemporary.myshopify.com/collections/jakey-pedro-spring-studio-sale"><img src="images/sale-jakey.jpg" alt="Jakey Pedro — 25% off every available work with code SPRING25"></a>
+                <p><strong>25% off</strong> every available Jakey Pedro work. Use code <strong>SPRING25</strong> at checkout.</p>
+                <a class="sale-btn" href="https://kin-contemporary.myshopify.com/collections/jakey-pedro-spring-studio-sale">Shop Jakey Pedro</a>
+            </div>
+            <div class="sale-offer">
+                <a href="https://kin-contemporary.myshopify.com/collections/sean-loch-the-stockroom"><img src="images/sale-sean.jpg" alt="Sean Loch — The Stockroom, now 30% off"></a>
+                <p><strong>30% off</strong> Sean Loch originals in the Stockroom. No code needed.</p>
+                <a class="sale-btn" href="https://kin-contemporary.myshopify.com/collections/sean-loch-the-stockroom">Shop the Stockroom</a>
+            </div>
+        </div>
+        <p class="sale-popup-note">Sold works are not part of the sale</p>
+    </div>
+</div>
+    <script src="js/kin-extras.js?v=1"></script>
 </body>
 
 </html>
