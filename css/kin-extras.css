@@ -210,3 +210,87 @@
     }
     .mobile-menu-foot a { color: #111; text-decoration: none; }
 }
+
+/* ---------- Jakey Pedro page: Spring Studio Sale banner ---------- */
+.artist-sale-banner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+    max-width: 1280px;
+    margin: 64px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.artist-sale-banner-text {
+    background: #5aacde;
+    color: #111;
+    padding: 56px 56px 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+.artist-sale-banner-text .asb-name {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.artist-sale-banner-text .asb-big {
+    margin: 0;
+    font-size: 104px;
+    line-height: .95;
+    font-weight: 800;
+    letter-spacing: -3px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.artist-sale-banner-text .asb-line {
+    margin: 4px 0 26px;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+.artist-sale-banner-text .asb-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 17px 28px;
+}
+.artist-sale-banner-text .asb-btn strong { font-weight: 800; letter-spacing: 3px; }
+.artist-sale-banner-text .asb-btn:hover { background: #333; color: #fff; }
+.artist-sale-banner-text .asb-note {
+    margin: 16px 0 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.artist-sale-banner-daisy {
+    background: #5aacde;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.artist-sale-banner-daisy img { width: min(240px, 80%); height: auto; display: block; }
+
+@media (max-width: 900px) {
+    .artist-sale-banner {
+        grid-template-columns: 1fr;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+    .artist-sale-banner-text { padding: 8px 26px 36px; order: 2; }
+    .artist-sale-banner-text .asb-big { font-size: 62px; letter-spacing: -2px; white-space: nowrap; }
+    .artist-sale-banner-text .asb-line { font-size: 16px; }
+    .artist-sale-banner-text .asb-btn { padding: 16px 20px; font-size: 12px; letter-spacing: 2px; }
+    .artist-sale-banner-daisy { order: 1; padding: 26px 0 0; }
+    .artist-sale-banner-daisy img { width: 150px; }
+}

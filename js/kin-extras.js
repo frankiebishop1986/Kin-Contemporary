@@ -18,6 +18,7 @@
         var popup = document.getElementById("sale-popup");
 
         if (!saleOn) {
+            document.querySelectorAll("[data-sale-only]").forEach(function (el) { el.remove(); });
             if (bar) bar.remove();
             if (popup) popup.remove();
         } else if (popup) {
