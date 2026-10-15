@@ -287,10 +287,26 @@
         margin: 40px auto;
         padding: 0 20px;
     }
-    .artist-sale-banner-text { padding: 8px 26px 36px; order: 2; }
-    .artist-sale-banner-text .asb-big { font-size: 62px; letter-spacing: -2px; white-space: nowrap; }
-    .artist-sale-banner-text .asb-line { font-size: 16px; }
-    .artist-sale-banner-text .asb-btn { padding: 16px 20px; font-size: 12px; letter-spacing: 2px; }
-    .artist-sale-banner-daisy { order: 1; padding: 26px 0 0; }
-    .artist-sale-banner-daisy img { width: 150px; }
+    .artist-sale-banner-text {
+        order: 2;
+        padding: 0 22px 32px;
+        align-items: center;
+        text-align: center;
+        gap: 4px;
+    }
+    .artist-sale-banner-text .asb-name { font-size: 20px; letter-spacing: 3px; }
+    .artist-sale-banner-text .asb-big { font-size: clamp(52px, 17vw, 72px); letter-spacing: -2px; white-space: nowrap; }
+    .artist-sale-banner-text .asb-line { font-size: 13px; letter-spacing: 2px; margin: 6px 0 22px; }
+    .artist-sale-banner-text .asb-btn {
+        align-self: stretch;
+        justify-content: center;
+        padding: 16px 12px;
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        gap: 8px;
+    }
+    .artist-sale-banner-text .asb-btn strong { letter-spacing: 2px; }
+    .artist-sale-banner-text .asb-note { font-size: 10px; letter-spacing: 1px; margin-top: 12px; }
+    .artist-sale-banner-daisy { order: 1; padding: 22px 0 6px; }
+    .artist-sale-banner-daisy img { width: 120px; }
 }
