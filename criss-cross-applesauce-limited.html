@@ -59,6 +59,46 @@
         crossorigin="anonymous"
     ></script>
 
+    <!-- Give the embedded form room for its horizontal desktop layout. -->
+    <style>
+      #fd-form-6ab345b1c94bc8b0f1ee938d { width: 100%; max-width: none; }
+      @media (min-width: 1100px) {
+        .newsletter-modal-content {
+          box-sizing: border-box;
+          width: min(1320px, calc(100vw - 64px));
+          max-width: none;
+          max-height: calc(100vh - 48px);
+          overflow-y: auto;
+        }
+        #fd-form-6ab345b1c94bc8b0f1ee938d > div {
+          box-sizing: border-box;
+          width: 100% !important;
+          max-width: none !important;
+        }
+      }
+    </style>
+    <!-- Flodesk form loader: include once per page -->
+    <script>
+      (function(w, d, t, h, s, n) {
+        w.FlodeskObject = n;
+        var fn = function() {
+          (w[n].q = w[n].q || []).push(arguments);
+        };
+        w[n] = w[n] || fn;
+        var f = d.getElementsByTagName(t)[0];
+        var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+        var sm = d.createElement(t);
+        sm.async = true;
+        sm.type = 'module';
+        sm.src = h + s + '.mjs' + v;
+        f.parentNode.insertBefore(sm, f);
+        var sn = d.createElement(t);
+        sn.async = true;
+        sn.noModule = true;
+        sn.src = h + s + '.js' + v;
+        f.parentNode.insertBefore(sn, f);
+      })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+    </script>
 </head>
 
 
@@ -139,14 +179,13 @@
                 <li>
 
                     <a
-                        href="#"
-                        class="icon-link"
-                        aria-label="Search"
-                    >
-
-                        <i class="fa-solid fa-magnifying-glass"></i>
-
-                    </a>
+    href="#"
+    class="icon-link search-toggle"
+    aria-label="Search"
+    aria-expanded="false"
+>
+    <i class="fa-solid fa-magnifying-glass"></i>
+</a>
 
                 </li>
 
@@ -170,6 +209,72 @@
         </nav>
 
     </header>
+    <!-- =====================================================
+         KIN SEARCH
+    ====================================================== -->
+    <div
+        class="site-search"
+        id="site-search"
+        aria-hidden="true"
+    >
+        <div class="site-search-inner">
+            <div class="site-search-top">
+                <div class="site-search-input-wrap">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                        type="search"
+                        id="site-search-input"
+                        placeholder="Search artists, artworks, paintings, sculptures..."
+                        autocomplete="off"
+                        aria-label="Search KIN Contemporary"
+                    >
+                </div>
+                <button
+                    type="button"
+                    class="site-search-close"
+                    aria-label="Close search"
+                >
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="site-search-suggestions">
+                <span>Popular searches</span>
+                <button
+                    type="button"
+                    data-search-term="painting"
+                >
+                    Painting
+                </button>
+                <button
+                    type="button"
+                    data-search-term="sculpture"
+                >
+                    Sculpture
+                </button>
+                <button
+                    type="button"
+                    data-search-term="prints"
+                >
+                    Prints
+                </button>
+                <button
+                    type="button"
+                    data-search-term="limited edition"
+                >
+                    Limited Edition
+                </button>
+            </div>
+            <div
+                class="site-search-results"
+                id="site-search-results"
+            ></div>
+        </div>
+    </div>
+    <div
+        class="site-search-backdrop"
+        aria-hidden="true"
+    ></div>
 
 
 
@@ -641,30 +746,60 @@
                 </h4>
 
 
-                <form class="newsletter">
-
-                    <label
-                        class="visually-hidden"
-                        for="artwork-newsletter-email"
-                    >
-                        Email address
-                    </label>
-
-
-                    <input
-                        id="artwork-newsletter-email"
-                        type="email"
-                        placeholder="Email Address"
-                        required
-                    >
-
-
-                    <button type="submit">
-                        Join
-                    </button>
-
-
-                </form>
+                <!-- NEWSLETTER TRIGGER -->
+<div class="newsletter-trigger">
+    <button
+        type="button"
+        class="newsletter-open"
+        id="newsletter-open"
+        aria-controls="newsletter-modal"
+        aria-expanded="false"
+        aria-haspopup="dialog"
+    >
+        Join our newsletter
+        <span>→</span>
+    </button>
+</div>
+<!-- NEWSLETTER POPUP -->
+<div
+    class="newsletter-modal"
+    id="newsletter-modal"
+    aria-hidden="true"
+>
+    <div class="newsletter-modal-backdrop"></div>
+    <div
+        class="newsletter-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="newsletter-title"
+    >
+        <!-- CLOSE BUTTON -->
+        <button
+            type="button"
+            class="newsletter-close"
+            id="newsletter-close"
+            aria-label="Close newsletter form"
+        >
+            ×
+        </button>
+        <img
+            src="images/kinlogo.png"
+            alt="KIN Contemporary"
+            style="display:block; width:140px; max-width:45%; height:auto; margin:0 auto 18px;"
+        >
+        <h2 id="newsletter-title" style="position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;">
+            Join the KIN community
+        </h2>
+       <!-- FLODESK NEWSLETTER FORM -->
+<div id="fd-form-6ab345b1c94bc8b0f1ee938d"></div>
+        <script>
+          window.fd('form', {
+            formId: '6ab345b1c94bc8b0f1ee938d',
+            containerEl: '#fd-form-6ab345b1c94bc8b0f1ee938d'
+          });
+        </script>
+    </div>
+</div>
 
             </div>
 
@@ -707,6 +842,67 @@
     <!-- =====================================================
          JAVASCRIPT
     ====================================================== -->
+    <!-- NEWSLETTER POPUP CONTROLS -->
+    <script>
+    (function () {
+        const modal = document.getElementById("newsletter-modal");
+        const openButton = document.getElementById("newsletter-open");
+        const closeButton = document.getElementById("newsletter-close");
+        if (!modal || !openButton || !closeButton) return;
+
+        const backdrop = modal.querySelector(".newsletter-modal-backdrop");
+        let previousOverflow = "";
+        let previousFocus = null;
+
+        function openNewsletter() {
+            if (modal.classList.contains("is-open")) return;
+            previousFocus = document.activeElement;
+            previousOverflow = document.body.style.overflow;
+            modal.classList.add("is-open");
+            modal.setAttribute("aria-hidden", "false");
+            openButton.setAttribute("aria-expanded", "true");
+            document.body.style.overflow = "hidden";
+            closeButton.focus();
+        }
+
+        function closeNewsletter() {
+            if (!modal.classList.contains("is-open")) return;
+            modal.classList.remove("is-open");
+            modal.setAttribute("aria-hidden", "true");
+            openButton.setAttribute("aria-expanded", "false");
+            document.body.style.overflow = previousOverflow;
+            if (previousFocus) previousFocus.focus();
+        }
+
+        openButton.addEventListener("click", openNewsletter);
+        closeButton.addEventListener("click", closeNewsletter);
+        if (backdrop) backdrop.addEventListener("click", closeNewsletter);
+        document.addEventListener("keydown", function (event) {
+            if (!modal.classList.contains("is-open")) return;
+            if (event.key === "Escape") {
+                event.preventDefault();
+                closeNewsletter();
+            }
+            if (event.key === "Tab") {
+                const items = Array.from(modal.querySelectorAll(
+                    'a[href], button, input, select, textarea, iframe, [tabindex]'
+                )).filter(function (element) {
+                    return !element.disabled && element.tabIndex >= 0 &&
+                        element.getClientRects().length > 0;
+                });
+                const first = items[0];
+                const last = items[items.length - 1];
+                if (event.shiftKey && document.activeElement === first) {
+                    event.preventDefault();
+                    last.focus();
+                } else if (!event.shiftKey && document.activeElement === last) {
+                    event.preventDefault();
+                    first.focus();
+                }
+            }
+        });
+    })();
+    </script>
 
     <script src="js/script.js?v=3"></script>
 
