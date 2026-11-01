@@ -337,3 +337,57 @@ body {
     }
 
 }
+
+/* =========================================================
+   EQUILIBRIUM — Alfonso Borghi
+   Order: logo, artist, title, subtitle, image, status, button
+========================================================= */
+
+.drift-landing p.drift-artist:hover {
+    opacity: 1;
+    transform: none;
+}
+
+.equilibrium-title {
+    margin-bottom: 26px;
+
+    font-size: clamp(52px, 8.4vw, 118px);
+}
+
+.drift-subtitle {
+    margin-bottom: 70px;
+}
+
+.equilibrium-image {
+    max-width: 600px;
+
+    margin-bottom: 55px;
+}
+
+@media (max-width: 700px) {
+
+    .equilibrium-title {
+        margin-bottom: 22px;
+
+        font-size: clamp(34px, 12.5vw, 72px);
+    }
+
+    .drift-subtitle {
+        margin-bottom: 48px;
+    }
+
+    .equilibrium-image {
+        margin-bottom: 42px;
+    }
+
+}
+
+.equilibrium-artist {
+    font-size: 22px;
+}
+
+@media (max-width: 700px) {
+    .equilibrium-artist {
+        font-size: 17px;
+    }
+}
