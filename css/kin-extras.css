@@ -310,3 +310,9 @@
     .artist-sale-banner-daisy { order: 1; padding: 22px 0 6px; }
     .artist-sale-banner-daisy img { width: 120px; }
 }
+
+/* Footer — same gap under each heading (Navigation, Support, Connect,
+   Newsletter) as between the links below it */
+.site-footer h4 {
+    margin-bottom: 9px;
+}
