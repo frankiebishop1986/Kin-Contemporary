@@ -1638,14 +1638,6 @@ document.addEventListener("DOMContentLoaded", function () {
         },
 
         {
-            title: "Sean Loch",
-            type: "Artist",
-            url: "sean-loch.html",
-            keywords:
-                "sean loch artist painting paintings"
-        },
-
-        {
             title: "Pablo Martín",
             type: "Artist",
             url: "pablo-martin.html",
