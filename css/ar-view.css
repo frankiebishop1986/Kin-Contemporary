@@ -1,0 +1,267 @@
+/* =========================================================
+   VIEW ON YOUR WALL (AR)
+   One outlined button under PURCHASE; frame choice lives in the panel
+========================================================= */
+
+.ar-view {
+    position: relative;
+    margin-top: 14px;
+}
+
+
+/* ---------- page button (outlined twin of PURCHASE) ---------- */
+
+.ar-view-button,
+.ar-launch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    width: 100%;
+
+    padding: 18px 25px;
+
+    border: 1px solid #111;
+
+    background: transparent;
+
+    color: #111;
+
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 0.14em;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.ar-view-button:hover {
+    background: #111;
+    color: #fff;
+}
+
+.ar-view-button i {
+    font-size: 12px;
+}
+
+/* the 3D viewer only launches AR; it is never shown on the page */
+.ar-model {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 1px;
+    height: 1px;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+
+/* ---------- panel ---------- */
+
+.ar-modal {
+    position: fixed;
+    inset: 0;
+
+    z-index: 3000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(17, 17, 17, 0.45);
+}
+
+.ar-modal[hidden] {
+    display: none;
+}
+
+.ar-modal-box {
+    position: relative;
+
+    width: calc(100% - 32px);
+    max-width: 440px;
+
+    padding: 40px 36px 32px;
+
+    background: #fff;
+
+    text-align: center;
+}
+
+.ar-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+
+    border: 0;
+
+    background: none;
+
+    color: #111;
+
+    font-size: 24px;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.ar-modal-title {
+    margin-bottom: 8px;
+
+    color: #111;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 0.14em;
+}
+
+.ar-modal-sub {
+    margin-bottom: 24px;
+
+    color: #444;
+
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+/* ---------- frame tiles ---------- */
+
+.ar-frames {
+    display: flex;
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-bottom: 26px;
+}
+
+.ar-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+
+    width: 104px;
+
+    padding: 12px 8px 10px;
+
+    border: 1px solid transparent;
+
+    background: none;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: border-color 0.25s ease;
+}
+
+.ar-frame:hover {
+    border-color: #ddd;
+}
+
+.ar-frame.is-active {
+    border-color: #111;
+}
+
+.ar-frame:focus-visible {
+    outline: 1px solid #111;
+    outline-offset: 2px;
+}
+
+.ar-frame-art {
+    display: block;
+
+    box-sizing: border-box;
+
+    width: 66px;
+    height: 88px;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+
+.ar-frame-art img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.ar-frame-black {
+    padding: 3px;
+    background: #111;
+}
+
+.ar-frame-oak {
+    padding: 3px;
+    background: linear-gradient(135deg, #dcb98a 0%, #c19463 55%, #d4ab78 100%);
+}
+
+.ar-frame-none {
+    padding: 0;
+}
+
+.ar-frame-name {
+    color: #333;
+
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+/* ---------- phone: launch button / desktop: QR ---------- */
+
+.ar-launch {
+    margin-bottom: 14px;
+
+    background: #111;
+
+    color: #fff;
+}
+
+.ar-launch:hover {
+    background: transparent;
+    color: #111;
+}
+
+.ar-on-desktop {
+    display: none;
+}
+
+.ar-modal.is-desktop .ar-on-desktop {
+    display: block;
+}
+
+.ar-modal.is-desktop .ar-on-phone {
+    display: none;
+}
+
+.ar-qr {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 18px;
+}
+
+.ar-modal-text {
+    color: #444;
+
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5;
+}
