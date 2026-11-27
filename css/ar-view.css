@@ -272,3 +272,9 @@
     display: flex;
     gap: 2px;
 }
+
+/* Works with a 2 cm frame */
+.ar-frames-thick .ar-frame-black,
+.ar-frames-thick .ar-frame-oak {
+    padding: 5px;
+}
