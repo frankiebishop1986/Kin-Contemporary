@@ -8,7 +8,6 @@
 
 (function () {
 
-    var FRAMES = ["black", "oak", "none"];
     var box = document.querySelector(".ar-view");
     var modal = document.querySelector(".ar-modal");
     if (!box || !modal) return;
@@ -17,7 +16,10 @@
     var viewer = box.querySelector("model-viewer");
     var tiles = modal.querySelectorAll(".ar-frame");
     var qrHolder = modal.querySelector(".ar-qr");
-    var frame = "black";
+    // the frame options come from the page (most works: black, oak, none)
+    var FRAMES = Array.prototype.map.call(tiles, function (t) { return t.getAttribute("data-frame"); });
+    var first = modal.querySelector(".ar-frame.is-active") || tiles[0];
+    var frame = first ? first.getAttribute("data-frame") : "black";
 
     // a frame chosen on a computer carries over through the QR code
     var fromUrl = new URLSearchParams(window.location.search).get("frame");

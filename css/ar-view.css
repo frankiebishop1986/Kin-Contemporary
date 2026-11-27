@@ -278,3 +278,30 @@
 .ar-frames-thick .ar-frame-oak {
     padding: 5px;
 }
+
+/* Fluo pink plexiglass frame option */
+.ar-frame-pink {
+    padding: 3px;
+    background: #ff3fae;
+}
+
+/* Works with a 6 mm frame */
+.ar-frames-thin .ar-frame-black,
+.ar-frames-thin .ar-frame-oak {
+    padding: 2px;
+}
+
+/* Four frame options: narrower tiles on phones */
+@media (max-width: 480px) {
+    .ar-frames-4 {
+        gap: 4px;
+    }
+    .ar-frames-4 .ar-frame {
+        width: 70px;
+        padding: 10px 4px 8px;
+    }
+    .ar-frames-4 .ar-frame-art {
+        width: calc(var(--art-w, 66px) * 0.85);
+        height: calc(var(--art-h, 88px) * 0.85);
+    }
+}
