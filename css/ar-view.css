@@ -266,3 +266,9 @@
     font-weight: 300;
     line-height: 1.5;
 }
+
+/* Diptychs: two framed panels side by side in each preview */
+.ar-frame-pair {
+    display: flex;
+    gap: 2px;
+}
